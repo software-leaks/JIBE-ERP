@@ -1,0 +1,263 @@
+﻿<div style="border-bottom: gray 1px solid; text-align: left; border-left: gray 1px solid; border-top: gray 1px solid; border-right: gray 1px solid">
+	<div style="text-align: center; margin: 10px; font-size: 16px; font-weight: bold; text-decoration: underline">
+		CREW EMPLOYMENT AGREEMENT</div>
+	<div class="error-message">
+		&nbsp;</div>
+	<table class="Data">
+		<tbody>
+			<tr>
+				<td>
+					Mr.</td>
+				<td>
+					<span id="ctl00_MainContent_lblCrewName" style="color: black; font-weight: bold"><input name="STAFF_NAME" type="text" value="NAME" /></span></td>
+				<td style="width: 200px">
+					&nbsp;</td>
+				<td>
+					Place:</td>
+				<td>
+					<span id="ctl00_MainContent_lblPlace" style="color: black; font-weight: bold">_ _ _ _ _ _</span></td>
+			</tr>
+			<tr>
+				<td>
+					Address.</td>
+				<td>
+					<span id="ctl00_MainContent_lblAddress" style="color: black; font-weight: bold" textmode="MultiLine"><input name="ADDRESS" size="50" type="text" value="ADDRESS" /></span></td>
+				<td style="width: 200px">
+					&nbsp;</td>
+				<td>
+					Date:</td>
+				<td>
+					<span id="ctl00_MainContent_lblDate" style="color: black; font-weight: bold">_ _ _ _ _ _</span></td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="Data">
+		<tbody>
+			<tr>
+				<td colspan="2">
+					We hereby confirm our agreement to employ you under the following terms and conditions but not limited to:-</td>
+			</tr>
+			<tr>
+				<td>
+					1.</td>
+				<td>
+					You will be employed in the capacity of <span id="ctl00_MainContent_lblCapacityOf" style="color: black; font-weight: bold"><input name="STAFF_RANK" size="6" type="text" value="RANK" /></span>onboard the vessel <span id="ctl00_MainContent_lblVesselName" style="color: black; font-weight: bold"><input name="VESSEL" size="6" type="text" value="VESSEL" /></span>or any other vessel(s) designated by us or Vessel Owners from time to time.</td>
+			</tr>
+			<tr>
+				<td>
+					2.</td>
+				<td>
+					The period of your employment with us, as aforesaid, will be for<input name="DURATION" size="15" type="text" value="0 Month(s) 0 Days " />, as from <input name="START_DAY" size="2" type="text" value="0" />Day of <span id="ctl00_MainContent_lblJoining_Mon" style="color: black; font-weight: bold"><input name="START_MONTH" size="8" type="text" value="MMM yyyy" /></span>provided however, that we shall be entitled automatically to extend the period of your employment until the vessel reaches a convenient port where repatriation is suitable for us, within 1 month after expiration of this contract.</td>
+			</tr>
+			<tr>
+				<td>
+					3.</td>
+				<td>
+					The remuneration for your services will be:- <!--To Be Replaced with grig -->
+					<table class="Wages">
+						<tbody>
+							<tr style="background-color: #d8d8d8; color: black; font-weight: bold">
+								<td>
+									Earning/Deduction</td>
+								<td>
+									Name</td>
+								<td>
+									Currency</td>
+								<td>
+									Amount</td>
+								<td>
+									Salary Type</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									Basic wages</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									Lump sum payment for overtime &amp; Allowance</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									120 hrs Overtime</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									Leave pay</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									Ship allowance</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									PSS/Health Contribution</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black">
+								<td>
+									Earning</td>
+								<td>
+									Seniority</td>
+								<td style="text-align: right">
+									USD</td>
+								<td style="text-align: right">
+									<input name="STAFF_NAME" size="6" type="text" value="0.00" /></td>
+								<td>
+									Per Month</td>
+							</tr>
+							<tr style="background-color: #cef6f5; color: black; font-weight: bold">
+								<td colspan="2">
+									Total</td>
+								<td style="text-align: right">
+									<span id="ctl00_MainContent_rpt2_ctl07_lblCurrency">USD</span></td>
+								<td style="text-align: right">
+									<span id="ctl00_MainContent_rpt2_ctl07_lblTotalAmt">7300.00</span></td>
+								<td>
+									<span id="ctl00_MainContent_rpt2_ctl07_lblPerMonth">Per Month</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					4.</td>
+				<td>
+					During the period of your employment, you will be required to work during such hours and at such times, as may from time to time be ordered by our company&rsquo;s and/or Owners representatives You will be further required to comply with any and all instructions and directions as may from time to time be given by company&rsquo;s, Owners and/or Charterers (or his Agents) representatives as aforesaid. In handling Charterers requests, instructions and responses, it is <span id="ctl00_MainContent_lblMasterName" style="color: black; font-weight: bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>/Master&rsquo;s responsibility to always consult Owners/his representatives prior to act and avoid mis-communication.</td>
+			</tr>
+			<tr>
+				<td>
+					5.</td>
+				<td>
+					In case of accident or illness during the period of your employment onboard the Vessel, the expenses of medical treatment and eventual hospitalization will be borne by the Owners.</td>
+			</tr>
+			<tr>
+				<td>
+					6.</td>
+				<td>
+					Any dental treatment will be at your expense, with the exception of tooth extraction, when in the nature of first aid, which shall be provided at the expense of the company/the Owners. In NO event shall the Company be liable for sick pay for any illness or injury contracted prior to the time you joined the services of our Company.</td>
+			</tr>
+			<tr>
+				<td>
+					7.</td>
+				<td>
+					The employee shall be entitled to a maximum of 30 days paid sick leave (Basic Pay only).</td>
+			</tr>
+			<tr>
+				<td>
+					8.</td>
+				<td>
+					Upon the termination of your employment, you will be entitled to repatriation at our expense to the country or place where you commenced your services, except in the event that the termination of your employment hereunder resulted from a breach by you of this agreement. There will not be any sign-off between 10th December and 10th January except in the event of shipwreck, illness, injury, bereavement of next of kin or first line family life threatening. A Seafarer will be repatriated upon his request and in agreement with the Principals, who will make every effort to arrange emergency relief as soon as possible in the event of bereavement of Seafarer&rsquo;s next of kin or in case of Seafarer&rsquo;s first line family life threatening, provided the Manning agent collects and submit to the Principals sufficient evidences confirming certainty of the event. The Seafarer shall strictly adhere to, and comply with, all the Employer&rsquo;s instructions, rules and regulations as laid down in the Principal&rsquo;s or the Vessel&rsquo;s Managers regulations and/or Manuals, circular letter files. The Seafarer will be further obliged to comply with any and all instructions and directions as may from time to time be given by the Employer&rsquo;s representative, the Master of the Vessel and/or the Seafarer&rsquo;s superiors.</td>
+			</tr>
+			<tr>
+				<td>
+					9.</td>
+				<td>
+					Notwithstanding anything to the contrary herein contained, we shall be entitled to terminate your employment at any time by giving you 7 (seven) days prior notice to that effect. In case you leave the services of the company before termination of this agreement, a prior notice of 30 (thirty) days should be given by you to the company, and you will be entitled to remuneration only up to the date when you leave the services of the company. We shall not be liable to pay the costs of your transportation from the port where you leave the services of the company. All costs associated with your repatriation and the replacement shall be borne by you.</td>
+			</tr>
+			<tr>
+				<td>
+					10.</td>
+				<td>
+					In case of any breach of discipline on your part, incompetence or negligence in their performance of your duties, then, notwithstanding anything to the contrary herein contained, we shall be entitled to terminate your employment forthwith, without any prior notice, and in case we choose to do so, we shall be relieved from all our obligations and liabilities hereunder as from the date of such termination.</td>
+			</tr>
+			<tr>
+				<td>
+					11.</td>
+				<td>
+					It is agreed and understood that, save for the payments expressly provided for in this agreement, you will not be entitled to any payments or compensation whatsoever, including inter alia, severance pay, in connection with the termination, for any reason whatsoever, of your employment hereunder.</td>
+			</tr>
+			<tr>
+				<td>
+					12.</td>
+				<td>
+					This agreement shall be governed by the provisions of, and interpreted in accordance with: - The laws of the State of ship&rsquo;s flag aboard which the Seafarer is employed; - The terms, conditions and exceptions stipulated in the Manning Agreement between Principals and Manning Agent; - The manuals, instructions and directions stipulated in the Safety Management System of the Company.</td>
+			</tr>
+			<tr>
+				<td>
+					13.</td>
+				<td>
+					The parties hereto waive and agree to dispense with all necessity of any notarial or other official notices or protests in or about these present.</td>
+			</tr>
+			<tr>
+				<td>
+					14.</td>
+				<td>
+					In case of breach of contract, the Seafarer will bear all expenses in connection with his relief, including transportation of relief, agency fees or shorthand dues and all the expenses associated with his Replacement crew.</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					&nbsp;</td>
+				<td>
+					<table style="color: black" width="100%">
+						<tbody>
+							<tr>
+								<td style="text-align: center; width: 50%">
+									_____________________________________</td>
+								<td style="text-align: center">
+									_____________________________________</td>
+							</tr>
+							<tr>
+								<td style="text-align: center">
+									SEAMAN</td>
+								<td style="text-align: center">
+									AGENT (ON BEHALF OF PRINCIPALS)</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,22 @@
+﻿<Exception>
+  <InvalidException>
+    <InvalidEmail>Invalid Email Id.</InvalidEmail>
+  </InvalidException>
+  <RequiredFieldException>
+    <LastName>Please Enter Last Name</LastName>
+  </RequiredFieldException>
+  <SuccessMessage>
+    <SaveMessage>Saved successfully</SaveMessage>
+    <UpdateMessage>Updated successfully</UpdateMessage>
+    <DeleteMessage>Deleted successfully</DeleteMessage>
+  </SuccessMessage>
+  <FailureMessage>
+    <DataSaveMessage>Data save failed</DataSaveMessage>
+  </FailureMessage>
+  <InformationMessage>
+    <DataExists>Data already exists</DataExists>
+  </InformationMessage>
+  <SystemError>
+    <GeneralMessage>There is an error while processing your request.</GeneralMessage>
+  </SystemError>
+</Exception>

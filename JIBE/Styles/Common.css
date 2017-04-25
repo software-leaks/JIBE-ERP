@@ -1,0 +1,261 @@
+﻿
+
+
+.RedCell
+{
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+}
+
+
+
+.GridView-css
+{
+    color: #333333;
+}
+.FooterStyle-css
+{
+    background-color: #5D7B9D;
+    font-weight: normal;
+    font-size: 11px;
+    color: White; /*ForeColor:White;*/
+}
+.PagerStyle-css
+{
+    background-color: Silver;
+    color: Black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold; /*HorizontalAlign:Center;*/
+}
+.HeaderStyle-css
+{
+    
+    font-weight: bold;
+    font-size: 12px;
+    color: #F0FFF0;
+    /*min-height:20px;*/
+    font-family: Tahoma;
+    border-spacing: 3px;
+    border: 1px dotted #efefef;
+    border-collapse :collapse;
+    background: url(../Images/bg.png) left -356px repeat-x; 
+  
+}
+
+.HeaderStyle-css-light
+{
+    
+    font-weight: bold;
+    font-size: 12px;
+    color:Black;
+   min-height:25px;
+    font-family: Tahoma;
+    border-spacing: 3px;
+  
+    background: url(../Images/bg.png) left -10px repeat-x;
+}
+
+
+
+.AlternatingRowStyle-css
+{
+    background-color: #F4F9FF;
+    color: #333333;
+    font-size: 11px;
+}
+.SelectedRowStyle-Css
+{
+    background-color:#DBFDF2; /* B2FFE5  */
+    color: Black;
+    font-size: 11px;
+    border:1px Dotted Gray;
+    border-collapse:collapse;
+}
+.RowStyle-css
+{
+    font-size: 11px;
+    background-color: white;
+    color: #333333;
+    border:1px Dotted Gray;
+    border-collapse:collapse;
+}
+
+
+
+
+.tdTooltip
+{
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+
+
+
+#blur-on-updateprogress
+{
+    width: 100%;
+    background-color: black;
+    moz-opacity: 0.5;
+    khtml-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 700;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#dvDisabled
+{
+    width: 100%;
+    background-color: black;
+    moz-opacity: 0.5;
+    khtml-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 700;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page-title
+{
+    border: 1px solid #cccccc;
+    height: 20px;
+    vertical-align: bottom;
+    background: url(../Images/bg.png) left -10px repeat-x;
+    color: Black;
+    text-align: left;
+    padding: 0px;
+    background-color: #F6CEE3;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    font-size:12px;
+}
+
+#page-content
+{
+    border:1px solid #cccccc;
+   
+    padding: 0px;
+    color: #282829;
+    width: 100%;
+}
+.tdh
+{
+    font-size: 11px;
+    text-align: right;
+    padding: 2px 2px 0px 0px;
+    vertical-align: middle;
+    font-weight: bold;
+   
+ 
+}
+.tdd
+{
+    font-size: 11px;
+    text-align: left;
+    padding: 2px 2px 0px 0px;
+    vertical-align: middle;
+}
+
+.task-Company
+{
+     background: url(../Images/bg.png) left -356px repeat-x;
+     padding: 5px 0px 5px 0px;
+     color:White;
+}
+.task-project
+{
+     background: url(../Images/bg.png) left -1321px repeat-x;
+     padding: 5px 0px 5px 0px;
+     color:White;
+}
+.task-module
+{
+     background: url(../Images/bg.png) left -846px repeat-x;
+     padding: 5px 0px 5px 0px;
+     color:White;
+}
+.task-task
+{
+     background: url(../Images/bg.png) left -1748px repeat-x;
+     padding: 5px 0px 5px 0px;
+     color:White;
+    
+}
+
+.txtReadOnly
+{
+    background-color: #F2F2F2;
+    border-color:#E6E6E6;
+    border-width:1px;
+    border-style:solid;
+    font-family:Tahoma;
+    font-size:12px;
+    height:inherit;
+}
+
+
+.txtInput
+{
+    background-color: #F7F8E0;
+    border-color:#cccccc;
+    border-width:1px;
+    border-style:solid;
+    font-family:Tahoma;
+    font-size:12px; 
+     height:inherit;
+}
+
+
+.tdHeader
+{
+    
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    padding:0px;
+    font-family:Tahoma;
+    font-size:11px; 
+    font-weight: bold;
+    height:22px;  
+    
+    
+}
+
+.CreateHtmlRemark-table
+{
+    background-color: #FFFFFF;
+    width:100%
+}
+
+  
+
+.CreateHtmlRemak-Header
+{
+    
+ font-weight: bold;
+ color: #F0FFF0;
+ background-color: #566F88;    
+}   
+
+
+
+
+.CreateHtmlRemak-Item
+{
+ 
+ color: black;
+ background-color:white;    
+ border-bottom :1px dotted black;
+}   
+
+

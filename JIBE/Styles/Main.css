@@ -1,0 +1,26 @@
+﻿
+.footer
+{
+}
+.textNotify
+{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+}
+.box
+{
+    border: 1px solid #ddccdd;
+    background-color: #ffffff;
+    padding: 1px;
+}
+.boxheader{font-weight:bold;background-color: #A9A9F5;}
+#pg-default  #nav-bar #nav-menu #li0{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-users    #nav-bar #nav-menu #li1{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-projects #nav-bar #nav-menu #li2{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-modules  #nav-bar #nav-menu #li3{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-buglist  #nav-bar #nav-menu #li4{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-bugentry #nav-bar #nav-menu #li5{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-mytasks  #nav-bar #nav-menu #li6{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+
+

@@ -1,0 +1,191 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using SMS.Business.QMS;
+using System.Management;
+using SMS.Business.Infrastructure;
+using System.IO;
+
+public partial class CheckInForm : System.Web.UI.Page
+{
+    BLL_QMS_Document objQMS = new BLL_QMS_Document();
+    BLL_Infra_UploadFileSize objUploadFilesize = new BLL_Infra_UploadFileSize();
+    int fileID = 0;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        fileID = Convert.ToInt32(Request.QueryString["FileID"].ToString());
+        DataSet dsLastestFileAccessType = objQMS.getLatestFileOperationByUserID(fileID, Convert.ToInt32(Session["USERID"]));
+        if (dsLastestFileAccessType.Tables[0].Rows.Count > 0)
+        {
+            getFolderName(dsLastestFileAccessType.Tables[0].Rows[0]["FilePath"].ToString(), dsLastestFileAccessType.Tables[0].Rows[0]["Orinal_FileName"].ToString());
+            if (dsLastestFileAccessType.Tables[0].Rows[0]["Operation_Type"].ToString() == "CHECKED IN")
+            {
+                pnlForFileUpload.Enabled = false;
+                String msg = String.Format("myMessage('You have already Checked In the file,Please Check Out the file and then Check In')");
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "msg", msg, true);
+
+            }
+            else
+                CheckInFileOpertion(fileID);
+
+        }
+        else
+            CheckInFileOpertion(fileID);
+
+    }
+
+    /// <summary>
+    /// get the folder name as a string by passing the file path.
+    /// </summary>
+    /// <param name="FilePathText"></param>
+    public void getFolderName(string FilePathText, string original_fileName)
+    {
+        string[] FilePath = FilePathText.Split('/');
+        //this is showing the last parent folder name of the document
+        txtFolderName.Text = FilePath[FilePath.Length - 2].ToString();
+        //this is showing the document name
+        txtFileName.Text = original_fileName;// FilePath[FilePath.Length - 1].ToString();
+    }
+
+    /// <summary>
+    /// this is a method to do file operation by passing the file ID.
+    /// </summary>
+    /// <param name="fileID"></param>
+    public void CheckInFileOpertion(int fileID)
+    {
+        DataSet dsOperationInfo = objQMS.getCheckedFileInfo(fileID);
+        if (dsOperationInfo.Tables[0].Rows.Count > 0)
+        {
+            //get the last row of the table to know the current status of the file
+            int dataRow = dsOperationInfo.Tables[0].Rows.Count - 1;
+            string FileStatus = dsOperationInfo.Tables[0].Rows[dataRow]["Operation_Type"].ToString();
+            int UserID = Convert.ToInt32(dsOperationInfo.Tables[0].Rows[dataRow]["UserID"].ToString());
+
+            if (UserID != Convert.ToInt32(Session["USERID"]))
+            {
+                pnlForFileUpload.Enabled = false;
+                string Message = "file is already Check Out by " + dsOperationInfo.Tables[0].Rows[dataRow]["UserName"].ToString() + " " + ",\n currently this file is not availabe for Check In";
+                String msg = String.Format("myMessage('" + Message + "')");
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "msg", msg, true);
+            }
+
+            if ((UserID == Convert.ToInt32(Session["USERID"])) && (FileStatus.Equals("CHECKED IN") == true))
+            {
+                MessageForCheckInFirst();
+            }
+
+        }
+        else
+            MessageForCheckInFirst();
+    }
+
+
+    /// <summary>
+    /// this is use for the display the custom message.
+    /// </summary>
+    public void MessageForCheckInFirst()
+    {
+        pnlForFileUpload.Enabled = false;
+        string Message = "Please Check Out file first for edit.";
+        String msg = String.Format("myMessage('" + Message + "')");
+        ScriptManager.RegisterStartupScript(Page, Page.GetType(), "msg", msg, true);
+    }
+
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+        lblMessage.Text = "";
+        DataTable dt = new DataTable();
+        dt = objUploadFilesize.Get_Module_FileUpload("QMS_");
+        if (dt.Rows.Count > 0)
+        {
+            string datasize = dt.Rows[0]["Size_KB"].ToString();
+            if (CheckInfileUp.HasFile)
+            {
+                if (CheckInfileUp.PostedFile.ContentLength < Int32.Parse(dt.Rows[0]["Size_KB"].ToString()) * 1024)
+                {
+                    string FileName = System.IO.Path.GetFileName(CheckInfileUp.PostedFile.FileName);
+
+                    if (FileName.ToUpper().Equals(txtFileName.Text.ToUpper()) == true)
+                    {
+                        //get latest File details by the file ID
+                        DataSet dsFileDetails = objQMS.getFileDetailsByID(fileID, 0);
+
+                        if (dsFileDetails.Tables[0].Rows.Count > 0)
+                        {
+                            //string[] filePath = dsFileDetails.Tables[0].Rows[0]["FilePath"].ToString().Split('/');
+                            string PhPath = dsFileDetails.Tables[0].Rows[0]["FilePath"].ToString().Replace("/", "\\");
+
+                            string oldfileName = System.IO.Path.GetFileName(dsFileDetails.Tables[0].Rows[0]["FilePath"].ToString());
+
+
+                            string DestinationPath = Server.MapPath(PhPath);
+                            string sFileExt = System.IO.Path.GetExtension(FileName);
+                            string sGuidFileName = "QMS_" + System.Guid.NewGuid() + sFileExt;
+                            DestinationPath = DestinationPath.Replace(oldfileName, sGuidFileName);
+
+                            CheckInfileUp.PostedFile.SaveAs(DestinationPath);
+                            FileInfo f = new FileInfo(DestinationPath);
+                            long filelengh = f.Length;
+                            objQMS.insertRecordAtCheckIN(fileID, sGuidFileName, Convert.ToInt32(Session["USERID"]), filelengh);
+
+                            //string[] createFolderPathText = DestinationPath.Split('\\');
+                            //string TargetFolder = DestinationPath.Replace(createFolderPathText[createFolderPathText.Length - 1].ToString(), "") + FileInfoAfterUpdationDB.Tables[0].Rows[0]["ID"].ToString();
+                            //System.IO.Directory.CreateDirectory(DestinationPath);                                        
+
+                            BLL_Infra_UploadFileSize objBLL = new BLL_Infra_UploadFileSize();
+                            int rowcountx = 0;
+                            long defsize = 450 * 1024;
+                            DataTable dtx = objBLL.SearchConfigureFileSize("QMS_", null, null, 1, 10, ref  rowcountx);
+                            if (dtx.Rows.Count > 0)
+                            {
+                                if (dtx.Rows[0]["Syncable"].ToString() == "1")
+                                {
+                                    defsize = Convert.ToInt32(dtx.Rows[0]["Size_KB"]) * 1024;
+                                }
+                            }
+                         
+                            long sizeinkb = defsize / 1024;
+                            String msg = String.Format("myMessage('File is checked-in successfully,\\nPlease browse the file from tree to see latest.');window.parent.location.href='fileloader.aspx?docid=" + fileID + "';");
+                            if (filelengh > defsize)
+                            {
+                                msg = String.Format("myMessage('File is checked-in successfully,\\nPlease browse the file from tree to see latest.\\nThis file exceeds the file size limit(" + sizeinkb + "KB), you have to sync this file manually');window.parent.location.href='fileloader.aspx?docid=" + fileID + "';");
+                            }
+
+                            txtRemarks.Text = ""; 
+                            ScriptManager.RegisterStartupScript(Page, Page.GetType(), "msg", msg, true);
+                        }
+                    }
+                    else
+                    {
+                        String msg2 = String.Format("myMessage('Sorry you have browsed diffrent file,\\n please select file as mentioned in Document Name.')");
+                        ScriptManager.RegisterStartupScript(Page, Page.GetType(), "msg2", msg2, true);
+                    }
+                }
+                else
+                {
+                    lblMessage.Text = datasize + " KB File size exceeds maximum limit";
+                }
+            }
+            else
+            {
+                String msg = String.Format("myMessage('Please browse required document to upload into server')");
+                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "msg", msg, true);
+            }
+        }
+        else
+        {
+            string js2 = "alert('Upload size not set!');";
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert9", js2, true);
+        }
+
+    }
+}

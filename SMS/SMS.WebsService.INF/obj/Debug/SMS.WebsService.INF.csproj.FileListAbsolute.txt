@@ -1,0 +1,16 @@
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.WebsService.INF.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.WebsService.INF.pdb
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Business.INFRA.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Business.LIB.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Data.INFRA.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Properties.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\AjaxControlToolkit.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Data.LIB.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Business.INFRA.pdb
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Business.LIB.pdb
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Data.INFRA.pdb
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Properties.pdb
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\bin\Debug\SMS.Data.LIB.pdb
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\obj\Debug\SMS.WebsService.INF.csprojResolveAssemblyReference.cache
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\obj\Debug\SMS.WebsService.INF.dll
+C:\Development\JIBEV1.0\APP\JIBE\SMS\SMS.WebsService.INF\obj\Debug\SMS.WebsService.INF.pdb

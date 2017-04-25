@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.Business.CREW</RootNamespace>
+    <AssemblyName>SMS.Business.CREW</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crew\BLL_Crew_Admin.cs" />
+    <Compile Include="Crew\BLL_Crew_CardApproval.cs" />
+    <Compile Include="Crew\BLL_Crew_Contract.cs" />
+    <Compile Include="Crew\BLL_Crew_CrewDetails.cs" />
+    <Compile Include="Crew\BLL_Crew_CrewList.cs" />
+    <Compile Include="Crew\BLL_Crew_CrewMail.cs" />
+    <Compile Include="Crew\BLL_Crew_CrewRotation.cs" />
+    <Compile Include="Crew\BLL_Crew_Disbursement.cs" />
+    <Compile Include="Crew\BLL_Crew_Evaluation.cs" />
+    <Compile Include="Crew\BLL_Crew_Interview.cs" />
+    <Compile Include="Crew\BLL_Crew_Seniority.cs" />
+    <Compile Include="Crew\BLL_Crew_Training.cs" />
+    <Compile Include="Crew\BLL_Crew_Queries.cs" />
+    <Compile Include="Crew\BLL_Crew_MedHistory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Data.CREW\SMS.Data.Crew.csproj">
+      <Project>{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}</Project>
+      <Name>SMS.Data.Crew</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.DMS\SMS.Data.DMS.csproj">
+      <Project>{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}</Project>
+      <Name>SMS.Data.DMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.INFRA\SMS.Data.Infra.csproj">
+      <Project>{786FB69E-CB47-418D-9145-F8E530A907C8}</Project>
+      <Name>SMS.Data.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Properties\SMS.Properties.csproj">
+      <Project>{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}</Project>
+      <Name>SMS.Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

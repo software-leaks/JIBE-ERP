@@ -1,0 +1,13 @@
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.BuildService.dll
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.BuildService.pdb
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Business.INFRA.dll
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Data.INFRA.dll
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Properties.dll
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Data.LIB.dll
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Business.INFRA.pdb
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Data.INFRA.pdb
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Properties.pdb
+C:\Development\SMSLog\SMS\SMS.BuildService\bin\Debug\SMS.Data.LIB.pdb
+C:\Development\SMSLog\SMS\SMS.BuildService\obj\Debug\SMS.BuildService.csprojResolveAssemblyReference.cache
+C:\Development\SMSLog\SMS\SMS.BuildService\obj\Debug\SMS.BuildService.dll
+C:\Development\SMSLog\SMS\SMS.BuildService\obj\Debug\SMS.BuildService.pdb

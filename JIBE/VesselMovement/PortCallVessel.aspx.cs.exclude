@@ -1,0 +1,453 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+//using SMS.Business.PURC;
+using SMS.Business.Infrastructure;
+using SMS.Business.VM;
+using System.Data;
+using System.Web.UI.HtmlControls;
+using SMS.Properties;
+
+
+public partial class VesselMovement_PortCallVessel : System.Web.UI.Page
+{
+    public string OperationMode = "";
+    public Boolean uaEditFlag = false;
+    public Boolean uaDeleteFlage = false;
+
+    public UserAccess objUA = new UserAccess();
+    BLL_Infra_VesselLib objBLL = new BLL_Infra_VesselLib();
+    BLL_VM_PortCall objPortCall = new BLL_VM_PortCall();
+    BLL_Infra_Port objBLLPort = new BLL_Infra_Port();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+        UserAccessValidation();
+        if (!IsPostBack)
+        {
+            string tabid = TabSCM.ActiveTab.ID;
+            string tabindex = TabSCM.ActiveTab.TabIndex.ToString();
+            txtFrom.Text = System.DateTime.Now.ToString("dd-MM-yyyy");
+            txtTo.Text = System.DateTime.Now.AddMonths(6).ToString("dd-MM-yyyy");
+            Load_VesselList();
+            Load_PortList();
+            BindPortCall();
+            BindTab();
+
+        }
+
+    }
+
+    private void BindPortTemplate()
+    {
+        DataTable dt = objPortCall.Get_PortCallTemplate(UDFLib.ConvertIntegerToNull(DDLVesselFilter.SelectedValue));
+
+        if (dt.Rows.Count > 0)
+        {
+
+            gvTemplate.DataSource = dt;
+            gvTemplate.DataBind();
+            gvTemplate.Visible = true;
+
+        }
+        else
+        {
+            gvTemplate.DataSource = dt;
+            gvTemplate.DataBind();
+            //gvTemplate.Visible = false;
+        }
+
+    }
+
+    protected void UserAccessValidation()
+    {
+        int CurrentUserID = GetSessionUserID();
+        string PageURL = UDFLib.GetPageURL(Request.Path.ToUpper());
+
+        BLL_Infra_UserCredentials objUser = new BLL_Infra_UserCredentials();
+        objUA = objUser.Get_UserAccessForPage(CurrentUserID, PageURL);
+
+        if (objUA.View == 0)
+            Response.Redirect("~/default.aspx?msgid=1");
+
+       // if (objUA.Add == 0) ImgAdd.Visible = false;
+        if (objUA.Edit == 1)
+            uaEditFlag = true;
+        else
+           // btnsave.Visible = false;
+        if (objUA.Delete == 1) uaDeleteFlage = true;
+
+    }
+
+
+    private int GetSessionUserID()
+    {
+        if (Session["USERID"] != null)
+            return int.Parse(Session["USERID"].ToString());
+        else
+            return 0;
+    }
+
+
+    public void Load_VesselList()
+    {
+        DataTable dt = objPortCall.Get_PortCall_VesselList(0, 0, 0, "", 1);
+        chkVessel.DataSource = dt;
+        chkVessel.DataTextField = "VESSEL_NAME";
+        chkVessel.DataValueField = "VESSEL_ID";
+        chkVessel.DataBind();
+        int i = 0;
+        foreach (ListItem chkitem in chkVessel.Items)
+        {
+
+            if (dt.Rows[i]["Active_Status"].ToString() == "1")
+            {
+                chkitem.Selected = true;
+            }
+            else
+            {
+                chkitem.Selected = false;
+            }
+            i++;
+        }
+
+
+        //ddlvessel.DataSource = dt;
+        //ddlvessel.DataTextField = "VESSEL_NAME";
+        //ddlvessel.DataValueField = "VESSEL_ID";
+        //ddlvessel.DataBind();
+        //ddlvessel.Items.Insert(0, new ListItem("All Vessel", "0"));
+
+        //ddlCrewVessel.DataSource = dt;
+        //ddlCrewVessel.DataTextField = "VESSEL_NAME";
+        //ddlCrewVessel.DataValueField = "VESSEL_ID";
+        //ddlCrewVessel.DataBind();
+        //ddlCrewVessel.Items.Insert(0, new ListItem("--Select--", "0"));
+    }
+
+
+    public void Load_PortList()
+    {
+
+        DataTable dt = objPortCall.Get_PortCall_PortList(0, UDFLib.ConvertIntegerToNull(DDLVesselFilter.SelectedValue));
+        if (dt.Rows.Count > 0)
+        {
+            DDLPort.DataSource = dt;
+            DDLPort.DataTextField = "Port_Name";
+            DDLPort.DataValueField = "Port_ID";
+            DDLPort.DataBind();
+            btnsave.Enabled = true;
+        }
+        else
+        {
+            DDLPort.DataSource = dt;
+            DDLPort.DataTextField = "Port_Name";
+            DDLPort.DataValueField = "Port_ID";
+            DDLPort.DataBind();
+            btnsave.Enabled = false;
+        }
+        DataTable dtport = objBLLPort.Get_PortList_Mini();
+
+        ddlportfilter.DataSource = dtport;
+        ddlportfilter.DataTextField = "Port_Name";
+        ddlportfilter.DataValueField = "Port_ID";
+        ddlportfilter.DataBind();
+        ddlportfilter.Items.Insert(0, new ListItem("All Port", "0"));
+    }
+    public void BindPortCall()
+    {
+        string js = "";
+        if (Convert.ToDateTime(txtFrom.Text) > Convert.ToDateTime(txtTo.Text))
+        {
+            js = "alert('From Date can't be before of To Date.');";
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertpc", js, true);
+            //string message = "alert('From Date can't be before of To Date.')";
+            //ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+
+        }
+        int rowcount = 1;// ucCustomPagerItems.isCountRecord;
+
+        string sortbycoloumn = (ViewState["SORTBYCOLOUMN"] == null) ? null : (ViewState["SORTBYCOLOUMN"].ToString());
+        int? sortdirection = null; if (ViewState["SORTDIRECTION"] != null) sortdirection = Int32.Parse(ViewState["SORTDIRECTION"].ToString());
+
+
+        DataTable dt = objPortCall.Get_PortCall_Search(null, UDFLib.ConvertIntegerToNull(DDLVesselFilter.SelectedValue), null, Convert.ToDateTime(txtFrom.Text), Convert.ToDateTime(txtTo.Text), sortbycoloumn, sortdirection, ucCustomPagerItems.CurrentPageIndex, ucCustomPagerItems.PageSize, ref  rowcount);
+        if (dt.Rows.Count > 0)
+        {
+            gvPortCall.DataSource = dt;
+            gvPortCall.DataBind();
+            table1.Visible = true;
+        }
+        else
+        {
+            gvPortCall.DataSource = dt;
+            gvPortCall.DataBind();
+            table1.Visible = false;
+        }
+    }
+
+    protected void btnFilter_Click(object sender, EventArgs e)
+    {
+        string tabid = TabSCM.ActiveTab.ID;
+        string tabindex = TabSCM.ActiveTab.TabIndex.ToString();
+        BindPortCall();
+        Load_PortList();
+        BindPortCall();
+        BindTab();
+
+    }
+
+    protected void btnRefresh_Click(object s, EventArgs e)
+    {
+        string tabid = TabSCM.ActiveTab.ID;
+        string tabindex = TabSCM.ActiveTab.TabIndex.ToString();
+        BindPortCall();
+        Load_PortList();
+        BindPortTemplate();
+    }
+
+  
+
+    protected void lbtnDelete_Click(object s, CommandEventArgs e)
+    {
+        string[] arg = e.CommandArgument.ToString().Split(',');
+        int Port_call_ID = UDFLib.ConvertToInteger(arg[0]);
+        int Vessel_ID = UDFLib.ConvertToInteger(arg[1]);
+
+        objPortCall.Del_PortCall_Details_DL(Convert.ToInt32(Port_call_ID), Vessel_ID, Convert.ToInt32(Session["USERID"].ToString()));
+        string tabid = TabSCM.ActiveTab.ID;
+        string tabindex = TabSCM.ActiveTab.TabIndex.ToString();
+        BindPortCall();
+        Load_PortList();
+        BindPortCall();
+        BindTab();
+
+    }
+    protected void ImgExpExcel_Click(object sender, EventArgs e)
+    {
+
+        BLL_Infra_Supplier objSupp = new BLL_Infra_Supplier();
+
+        int rowcount = ucCustomPagerItems.isCountRecord;
+
+        string sortbycoloumn = (ViewState["SORTBYCOLOUMN"] == null) ? null : (ViewState["SORTBYCOLOUMN"].ToString());
+        int? sortdirection = null; if (ViewState["SORTDIRECTION"] != null) sortdirection = Int32.Parse(ViewState["SORTDIRECTION"].ToString());
+
+
+        DataTable dt = objSupp.Get_Suppliers_List_Search(null, sortbycoloumn, sortdirection, ucCustomPagerItems.CurrentPageIndex, ucCustomPagerItems.PageSize, ref  rowcount);
+
+        string[] HeaderCaptions = { "Vessel", "Port", "Arrival", "Berthing", "Departure", "Remaks" };
+        string[] DataColumnsName = { "Vessel_Name", "Port_Name", "Arrival", "Berthing", "Departure", "Port_Remarks" };
+
+        GridViewExportUtil.ShowExcel(dt, HeaderCaptions, DataColumnsName, "PortCall", "Port Call", "");
+
+    }
+
+
+
+
+    protected void gvPortCall_ItemCommand(object source, DataListCommandEventArgs e)
+    {
+        if (e.CommandName == "Delete")
+        {
+            string[] arg = e.CommandArgument.ToString().Split(',');
+            int Port_call_ID = UDFLib.ConvertToInteger(arg[0]);
+            int Vessel_ID = UDFLib.ConvertToInteger(arg[1]);
+
+            objPortCall.Del_PortCall_Details_DL(Convert.ToInt32(Port_call_ID), Vessel_ID, Convert.ToInt32(Session["USERID"].ToString()));
+            BindPortCall();
+        }
+    }
+
+
+    protected void btnsave_Click(object sender, EventArgs e)
+    {
+
+        objPortCall.Ins_Copy_PortCall_Details(UDFLib.ConvertToInteger(DDLVesselFilter.SelectedValue), UDFLib.ConvertToInteger(DDLPort.SelectedValue), Convert.ToInt32(Session["USERID"].ToString()));
+        BindPortCall();
+    }
+
+
+    protected void gvTemplate_RowEditing(object sender, GridViewEditEventArgs de)
+    {
+        GridView _gridView = (GridView)sender;
+
+        _gridView.EditIndex = de.NewEditIndex;
+        _gridView.SelectedIndex = de.NewEditIndex;
+        BindPortTemplate();
+
+        GridViewRow row = gvTemplate.Rows[de.NewEditIndex];
+        DropDownList ddlCAgent = (DropDownList)(row.FindControl("ddlCAgent"));
+        DropDownList ddlOAgent = (DropDownList)(row.FindControl("ddlOAgent"));
+        Label lblCagent = (Label)(row.FindControl("lblc"));
+        Label lblOagent = (Label)(row.FindControl("lblo"));
+        DataSet ds = objPortCall.Get_PortCall_AgentList(UDFLib.ConvertToInteger(DDLVesselFilter.SelectedValue));
+        ddlCAgent.DataSource = ds.Tables[0];
+        ddlCAgent.DataTextField = "SHORT_NAME";
+        ddlCAgent.DataValueField = "SUPPLIER";
+        ddlCAgent.DataBind();
+        ddlCAgent.Items.Insert(0, new ListItem("-Select-", "0"));
+        ddlOAgent.DataSource = ds.Tables[1];
+        ddlOAgent.DataTextField = "SHORT_NAME";
+        ddlOAgent.DataValueField = "SUPPLIER";
+        ddlOAgent.DataBind();
+        ddlOAgent.Items.Insert(0, new ListItem("-Select-", "0"));
+
+        ddlCAgent.SelectedValue = lblCagent.Text.ToString();
+        ddlOAgent.SelectedValue = lblOagent.Text.ToString();
+
+    }
+    protected void gvTemplate_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+    {
+        GridView _gridView = (GridView)sender;
+        _gridView.EditIndex = -1;
+        BindPortTemplate();
+    }
+    protected void gvTemplate_RowUpdating(object sender, GridViewUpdateEventArgs e)
+    {
+
+        GridView _gridView = (GridView)sender;
+        int nCurrentRow = e.RowIndex;
+        _gridView.EditIndex = -1;
+        BindPortTemplate();
+    }
+    protected void gvTemplate_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+
+        GridView _gridView = (GridView)sender;
+        int nCurrentRow = Int32.Parse(e.CommandArgument.ToString());
+
+        if (e.CommandName.ToUpper().Equals("UPDATE"))
+        {
+            int id = Convert.ToInt16(_gridView.DataKeys[Convert.ToInt32(e.CommandArgument)].Value.ToString());
+            TextBox txtSeaTime = (TextBox)_gridView.Rows[nCurrentRow].FindControl("txtSeaTime");
+            TextBox txtInportTime = (TextBox)_gridView.Rows[nCurrentRow].FindControl("txtInportTime");
+            DropDownList ddlCAgent = (DropDownList)_gridView.Rows[nCurrentRow].FindControl("ddlCAgent");
+            DropDownList ddlOAgent = (DropDownList)_gridView.Rows[nCurrentRow].FindControl("ddlOAgent");
+
+            char[] delimiterChars = { ' ', ',', '.', ':', '\t', '/' };
+
+            string seatime = txtSeaTime.Text;
+            string porttime = txtInportTime.Text;
+            string[] Seatime1 = seatime.Split(delimiterChars);
+            string[] porttime1 = porttime.Split(delimiterChars);
+
+            if (Seatime1.Length == 3 && porttime1.Length == 3)
+            {
+
+                if (Convert.ToInt16(Seatime1[1]) >= 24 || Convert.ToInt16(Seatime1[2]) > 60 || Convert.ToInt16(porttime1[1]) > 24 || Convert.ToInt16(porttime1[2]) > 60)
+                {
+
+                    string message = "alert('Please Enter Correct Time.')";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+
+                }
+                else
+                {
+                    objPortCall.Upd_PortCall_Template_Details(Convert.ToInt32(id), txtSeaTime.Text, txtInportTime.Text, UDFLib.ConvertStringToNull(ddlCAgent.SelectedValue), UDFLib.ConvertStringToNull(ddlOAgent.SelectedValue), Convert.ToInt32(Session["USERID"].ToString()));
+                }
+            }
+            else
+            {
+                string message = "alert('Please Enter Correct format(day/hh:mm)')";
+                ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+            }
+        }
+
+        BindPortTemplate();
+    }
+    protected void TabSCM_ActiveTabChanged(object sender, EventArgs e)
+    {
+        BindTab();
+
+    }
+    protected void BindTab()
+    {
+        if (TabSCM.ActiveTabIndex == 0)
+        {
+            BindPortTemplate();
+        }
+        else if (TabSCM.ActiveTabIndex == 1)
+        {
+            ddlCrewVessel.SelectedValue = DDLVesselFilter.SelectedValue;
+            txtAsofDate.Text = System.DateTime.Now.ToString("dd-MM-yyyy");
+            ddlCrewStatus.SelectedValue = "2";
+            BindcrewList();
+        }
+        else if (TabSCM.ActiveTabIndex == 2)
+        {
+            BindPortCallHistory(1, UDFLib.ConvertIntegerToNull(ddlportfilter.SelectedValue), UDFLib.ConvertIntegerToNull(ddlvessel.SelectedValue));
+        }
+        else if (TabSCM.ActiveTabIndex == 3)
+        {
+            BindPortCallAlert(0, 0, 0);
+        }
+    }
+    protected void btnportfilter_Click(object s, EventArgs e)
+    {
+        BindPortCallHistory(1, UDFLib.ConvertIntegerToNull(ddlportfilter.SelectedValue), UDFLib.ConvertIntegerToNull(ddlvessel.SelectedValue));
+
+    }
+    protected void imgCrewFilter_Click(object s, EventArgs e)
+    {
+        BindcrewList();
+
+    }
+    protected void BindPortCallAlert(int Type, int? PortID, int? VesselID)
+    {
+        DataTable dt = objPortCall.Get_PortCallHistory(Type, PortID, VesselID);
+        if (dt.Rows.Count > 0)
+        {
+            gvPortAlert.DataSource = dt;
+            gvPortAlert.DataBind();
+            gvPortAlert.Visible = true;
+        }
+        else
+        {
+            gvPortAlert.DataSource = dt;
+            gvPortAlert.DataBind();
+        }
+    }
+    protected void BindPortCallHistory(int Type, int? PortID, int? VesselID)
+    {
+        DataTable dt = objPortCall.Get_PortCallHistory(Type, PortID, VesselID);
+        if (dt.Rows.Count > 0)
+        {
+            gvPortCallHistory.DataSource = dt;
+            gvPortCallHistory.DataBind();
+            gvPortCallHistory.Visible = true;
+        }
+        else
+        {
+            gvPortCallHistory.DataSource = dt;
+            gvPortCallHistory.DataBind();
+        }
+    }
+    protected void BindcrewList()
+    {
+        DataTable dt = objPortCall.Get_PortCall_CrewList(Convert.ToInt32(ddlCrewVessel.SelectedValue), Convert.ToDateTime(txtAsofDate.Text), UDFLib.ConvertIntegerToNull(ddlCrewStatus.SelectedValue));
+        if (dt.Rows.Count > 0)
+        {
+            gvCrewList.DataSource = dt;
+            gvCrewList.DataBind();
+            gvCrewList.Visible = true;
+        }
+        else
+        {
+            gvCrewList.DataSource = dt;
+            gvCrewList.DataBind();
+            //gvCrewList.Visible = true;
+        }
+    }
+    
+
+
+    protected void btnPrintDPL_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Port_DPL.aspx");
+    }
+}

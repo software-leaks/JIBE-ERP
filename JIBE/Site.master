@@ -1,0 +1,381 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<%@ Register Src="UserControl/WebUserControlLogin.ascx" TagName="WebUserControlLogin2"
+    TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <%--<link href="Styles/Menu.css" rel="stylesheet" type="text/css" />--%>
+    <link rel="Shortcut Icon" href="jibe.ico" type="image/x-icon" />
+    <link id="DynamicLink" rel="stylesheet" runat="server" type="text/css" />
+    <link href="Styles/jQueryMenu.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%# Page.ResolveClientUrl("~/Scripts/jquery.min.js") %>"></script>
+    <%--Used Page.ResolveClientUrl to resolve correct paths to javascript scripts--%>
+    <script type="text/javascript" src="<%# Page.ResolveClientUrl("~/Scripts/ModalPopUp.js") %>"></script>
+    <script type="text/javascript" src="<%# Page.ResolveClientUrl("~/Scripts/Common_Functions.js") %>"></script>
+    <script type="text/javascript">
+
+        function ShowUserSetting() {
+            document.getElementById('dvUsersettingmenu').style.display = "block";
+
+        }
+
+        function PreviewTheme(theme) {
+
+            document.getElementById('ctl00_DynamicLink').href = "Styles/" + theme;
+
+        }
+
+        function ChangeUserTheme(theme) {
+            document.getElementById('ctl00_hdfuserDefaultTheme').value = theme;
+        }
+
+        function SetDefaultTheme() {
+
+            document.getElementById('ctl00_DynamicLink').href = "Styles/" + document.getElementById('ctl00_hdfuserDefaultTheme').value;
+        }
+
+        
+    </script>
+    <style type="text/css">
+        #divUserSettings
+        {
+            border: 4px solid rgb(169, 208, 245);
+            font-family: Tahoma;
+            text-align: left;
+            font-size: 12px;
+            color: Black;
+            width: 20%;
+            left: 560.167px !important;
+            background-color: white;
+            top: 344.167px !important;
+            z-index: 1000;
+            position: absolute;
+            padding: 0px;
+            display: none;
+        }
+        
+        .pnlUserSetting
+        {
+            position: absolute;
+            z-index: 1000;
+            display: none;
+            background-color: #B2F0F1;
+            color: Black;
+            right: 0px;
+        }
+        .Report-Issue-Button
+        {
+            margin: 10px;
+            color: white;
+        }
+        body:nth-of-type(1) img[src*="Blank.gif"]
+        {
+            display: none;
+        }
+        .ReportIssue
+        {
+            border: 1px solid White;
+            background-color: White;
+            text-decoration: none !important;
+        }
+    </style>
+    <style type="text/css">
+        .TableStyleCSS
+        {
+            width: 100%;
+        }
+        
+        .QuestionCSS
+        {
+        }
+        .QuestionCSS-Icon
+        {
+            width: 20px;
+        }
+        .QuestionCSS-FAQ
+        {
+            width: 90%;
+        }
+        .QuestionCSS-FAQ a
+        {
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none !important;
+        }
+        .VideoCSS a
+        {
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none !important;
+        }
+        .VideoCSS-Icon
+        {
+            width: 26px;
+            width: 20px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMaster" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" OnAsyncPostBackError="ScriptManager1_AsyncPostBackError">
+    </asp:ScriptManager>
+    <asp:HiddenField ID="hdfuserDefaultTheme" runat="server" />
+    <asp:HiddenField ID="hdnDateFromatMasterPage" ClientIDMode="Static" runat="server"
+        Value="dd-MM-yyyy" />
+    <div class="page" style="margin-bottom: 20px;">
+        <div class="header">
+            <div class="title">
+                <asp:Image ImageUrl="~/Images/app_logo.png" Height="60px" runat="server" Style="vertical-align: bottom;" />
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [<a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <div style="float: right; padding-left: 10px">
+                            <asp:Image ID="Image2" ImageUrl="~/Images/company_logo.jpg" Height="60px" runat="server"
+                                Style="vertical-align: bottom;" />
+                        </div>
+                        <div style="float: right">
+                            <span class="bold">
+                                <%=(Session["USERFULLNAME"]==null)?"":Session["USERFULLNAME"].ToString()%>
+                            </span>
+                            <div style="padding: 2px 2px 8px 2px;">
+                                <asp:LoginStatus ID="HeadLoginStatus" runat="server" OnLoggingOut="LogoutMe" LogoutText="Log Out"
+                                    Font-Size="11px" LogoutPageUrl="~/account/login.aspx" />
+                                |
+                                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="White" Font-Size="11px"
+                                    NavigateUrl="~/Account/ChangePassword.aspx">Change Password</asp:HyperLink>
+                            </div>
+                            <div id="dvUsersettingmenu" style="width: 150px" class="pnlUserSetting">
+                                <table cellpadding="1" cellspacing="0" style="text-align: left; border: 1px solid #CCCCCC;"
+                                    width="100%">
+                                    <tr>
+                                        <td style="padding-left: 4px">
+                                            changepassrd
+                                            <asp:Image ID="Image1" AlternateText="sestting" ImageAlign="Bottom" ImageUrl="~/Images/UserSetting.png"
+                                                onclick="ShowUserSetting()" runat="server" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-top: 1px solid #CCCCCC">
+                                            <table style="border-collapse: collapse" width="100%">
+                                                <tr>
+                                                    <td colspan="5" style="font-size: 10px; padding-left: 4px">
+                                                        Choose theme
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="background-color: Silver; width: 24%; height: 15px" onmouseover="PreviewTheme('smscss_gray.css')">
+                                                    </td>
+                                                    <td style="background-color: #6495ED; width: 25%; height: 15px" onmouseover="PreviewTheme('smscss_blue.css')">
+                                                    </td>
+                                                    <td style="background-color: Green; width: 24%; height: 15px">
+                                                    </td>
+                                                    <td style="background-color: Orange; width: 24%; height: 15px">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </tr> </table>
+                            </div>
+                            <div>
+                                <span style='font-size: 12px; color: black;'>
+                                    <%=(Session["USERCOMPANY"] == null) ? "" : Session["USERCOMPANY"].ToString()%>
+                                </span>
+                            </div>
+                        </div>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td style="background-color: White; padding-top: 5px">
+                        </td>
+                    </tr>
+                    <tr style="height: 18px">
+                        <td>
+                            <div style="position: absolute; right: 0px;" class="Report-Issue-Button">
+                                <asp:LoginView ID="LoginView1" runat="server" EnableViewState="false">
+                                    <LoggedInTemplate>
+                                        <asp:UpdatePanel ID="UpdPnlReportIssue" UpdateMode="Conditional" runat="server">
+                                            <ContentTemplate>
+                                                <asp:LinkButton ID="ImgReportBug" ToolTip="Feedback to Jibe team" CssClass="ReportIssue"
+                                                    ForeColor="Red" Font-Bold="true" runat="server" Text="Report an Issue" OnClientClick="ReportIssue_Click(event);return false;"></asp:LinkButton>
+                                                <%--<auc:ReportIssue ID="uc_Report_Issue" runat="server" Visible="false" />--%>
+                                                &nbsp;<asp:Image ID="ImgHelp" runat="server" ImageUrl="Images/help16.png" ToolTip="Help"
+                                                    onclick="Get_PageHelp(event);" />
+                                            </ContentTemplate>
+                                        </asp:UpdatePanel>
+                                    </LoggedInTemplate>
+                                </asp:LoginView>
+                            </div>
+                            <uc2:WebUserControlLogin2 ID="WebUserControlLogin2" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+                <asp:HiddenField ID="hdnClient" runat="server" />
+            </div>
+        </div>
+        <div id="dv_MainContent_master" class="main" style="min-height: 420px">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" style="display: none">
+        <div class="status-box" style="width: 200px;">
+            &nbsp;</div>
+        <div class="status-box">
+            This site is best viewed with Internet Explorer Version 8 and above and screen resolution
+            1440 x 900.</div>
+        <div class="status-box" style="width: 100px;">
+            &nbsp;</div>
+        <div class="status-box" style="width: 100px;">
+            &nbsp;</div>
+        <div class="status-box" style="width: 100px;">
+            &nbsp;</div>
+    </div>
+    <script type="text/javascript">
+        function ReportIssue_Click(evt) {
+
+            html2canvas(document.getElementById('dv_MainContent_master'), {
+                onrendered: function (canvas) {
+
+                    var img = canvas.toDataURL().replace(/^data[:]image\/(png|jpg|jpeg)[;]base64,/i, "");
+
+                    document.getElementById('ctl00_hdnClient').value = img;
+                    var USERCOMPANYID = '<%= Session["USERCOMPANYID"]%>';
+                    var USERID = '<%= HttpContext.Current.Session["USERID"] %>';
+                    var USERNAME = '<%= Session["USERFULLNAME"]%>';
+                    var USERMAILID = '<%= Session["USERMAILID"]%>';
+                    var DepID = '<%= Session["USERDEPARTMENTID"]%>';
+                    var Jibe_CRM = '<%=ConfigurationManager.AppSettings["Jibe_CRM"]%>';
+                    var pos = document.URL.toUpperCase().indexOf(('<%=ConfigurationManager.AppSettings["APP_NAME"]%>').toUpperCase());
+                    var len = ('<%=ConfigurationManager.AppSettings["APP_NAME"]%>').length + 1;
+                    var url = document.URL.substr(pos + len);
+
+                    var HostName = document.URL.substr(7, (pos - 7)); //"103.24.4.60/"; //"seachange.jibe.com.sg/";
+                    document.getElementById('ReportIssue').src = Jibe_CRM + 'CRM/Task/ReportsBugToJibeCRM.aspx?USERID=' + USERID + '&USERNAME=' + USERNAME + '&USERCOMPANYID=' + USERCOMPANYID + '&USERMAILID=' + USERMAILID + '&DepID=' + DepID + '&URL=' + document.URL + '&AppName=' + '<%=ConfigurationManager.AppSettings["APP_NAME"]%>';
+
+                    var _jiturl = Jibe_CRM + 'CRM/Task/ReportsBugToJibeCRM.aspx?USERID=' + USERID + '&USERNAME=' + USERNAME + '&USERCOMPANYID=' + USERCOMPANYID + '&USERMAILID=' + USERMAILID + '&DepID=' + DepID + '&URL=' + url + '&HostName=' + HostName + '<%=ConfigurationManager.AppSettings["APP_NAME"]%>';
+
+                    //                    document.getElementById('ReportIssue').src = Jibe_CRM + 'CRM/Task/ReportsBugToJibeCRM.aspx?USERID=' + USERID + '&USERNAME=' + USERNAME + '&USERCOMPANYID=' + USERCOMPANYID + '&USERMAILID=' + USERMAILID + '&DepID=' + DepID + '&URL=' + url;
+
+                    //                    var _jiturl = Jibe_CRM + 'CRM/Task/ReportsBugToJibeCRM.aspx?USERID=' + USERID + '&USERNAME=' + USERNAME + '&USERCOMPANYID=' + USERCOMPANYID + '&USERMAILID=' + USERMAILID + '&DepID=' + DepID + '&URL=' + url;
+                    showReportissueModal(evt, 'dvIframeReportIssue');
+
+
+                    return false;
+                }
+            });
+        }
+
+        function Get_PageHelp(evt) {
+
+            var USERID = '<%= HttpContext.Current.Session["USERID"] %>';
+            var USERCOMPANYID = '<%= Session["USERCOMPANYID"]%>';
+            var USERNAME = '<%= Session["USERFULLNAME"]%>';
+            var keywords = ""// $('meta[name=keywords]').attr("content");
+            var appname = '<%=ConfigurationManager.AppSettings["APP_NAME"]%>';
+            var APP_URL = ('<%=ConfigurationManager.AppSettings["APP_URL"]%>');
+            // var keywords = (document.getElementsByTagName("title")[0].innerText || document.getElementsByTagName("title")[0].textContent).replace(/ /gi, ",");
+
+            //            $('[id$=hdnKeywords]').val(keywords);
+            //            $('[id$=hdnUserName]').val(USERNAME);
+            //            $('[id$=HdnValue]').val(USERID);
+            //            $('[id$=hdnCompanyID]').val(USERCOMPANYID);
+            //            $('[id$=hdnAppName]').val('<%=ConfigurationManager.AppSettings["APP_NAME"]%>');
+
+            document.getElementById('<%=hdnKeywords.ClientID%>').value = keywords;
+            document.getElementById('<%=hdnUserName.ClientID%>').value = USERNAME;
+            document.getElementById('<%=HdnValue.ClientID%>').value = USERID;
+            document.getElementById('<%=hdnCompanyID.ClientID%>').value = USERCOMPANYID;
+            document.getElementById('<%=hdnAppName.ClientID%>').value = appname;
+            document.getElementById('<%=hdnAppUrl.ClientID%>').value = APP_URL;
+            showFAQModal(evt, 'dvHelp');
+        }
+
+    </script>
+    <div id="popupContact" style="width: 100%; height: 100%; top: 0; left: 0; opacity: 90;
+        display: none; position: fixed; background-color: transparent; overflow: auto;
+        z-index: 10001">
+        <div id="dvIframeReportIssue" style="display: block; width: 670px; top: 5px; left: 10px;
+            position: absolute; border: 2px solid #aabbee; background-color: white" title='Report an Issue'>
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width: 670px; height: 20; color: Black; background-color: #A9D0F5; font-weight: Bold;
+                        cursor: default">
+                        Report an Issue
+                    </td>
+                    <td style="text-align: center; background-color: #A9D0F5;">
+                        <%--<img src="/JIBE/images/close.png" width="20px" height="17px" title="close" onclick="hideReportIssueModal()" />--%>
+                        <asp:ImageButton ID="imgReportIssue" ImageUrl="/images/close.png" runat="server"
+                            ToolTip="Close" OnClientClick="hideReportIssueModal();return false;"></asp:ImageButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <iframe id="ReportIssue" style="height: 350px; width: 670px; border: 0px; padding: 0;
+                            margin: 0;" frameborder="0" src=""></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="dvHelp" style="display: block; top: 5px; position: absolute; left: 10px;
+        border: 2px solid #aabbee; background-color: #ECF6FF; display: none;">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tr style="background-color: #3498DB; color: White">
+                <td style="text-align: left; font-weight: bold; height: 1px;">
+                    &nbsp;Help :
+                </td>
+                <td align="right" style="height: 1px;">
+                    <asp:ImageButton ID="ImageButton1" ImageUrl="/images/Cancel.png" runat="server" OnClientClick="hideFAQModal();return false;">
+                    </asp:ImageButton>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="margin-top: 2px;">
+                    <div style="height: 100%; width: 100%; border: 0px; padding: 0; margin: 0;">
+                        <div style="vertical-align: bottom; text-align: left; margin-bottom: 20px; margin-right: 10px;">
+                            <table style="width: 100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <div id="dvasyncFAQList">
+                                            loading....
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <asp:HiddenField ID="hdnCompanyID" runat="server" />
+                            <asp:HiddenField ID="HdnValue" runat="server" />
+                            <asp:HiddenField ID="hdnUserName" runat="server" />
+                            <asp:HiddenField ID="hdnKeywords" runat="server" />
+                            <asp:HiddenField ID="hdnAppName" runat="server" />
+                            <asp:HiddenField ID="hdnAppUrl" runat="server" />
+                            <small>
+                                <asp:Label Visible="false" runat="server" ForeColor="#7f7f7f" ID="lblBreadCrumb"
+                                    Style="font-size: 15px;"></asp:Label></small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

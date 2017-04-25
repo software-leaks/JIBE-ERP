@@ -1,0 +1,20 @@
+﻿
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+   <telerik:RadGrid  runat="server" 
+                    HeaderStyle-Height="30px" 
+                   
+                    ItemStyle-Height="12px"
+                   HeaderStyle-HorizontalAlign="Center" 
+                    AlternatingItemStyle-BackColor="#F6F6F6"
+                    Skin="Office2007" 
+                    GridLines="None"
+                    CellPadding="0" 
+                    CellSpacing="0"
+                    Font-Names="Tahoma"
+                    ShowStatusBar="false"
+                    BorderColor="Gray"
+                    PageSize="16" 
+
+                    />
+                     

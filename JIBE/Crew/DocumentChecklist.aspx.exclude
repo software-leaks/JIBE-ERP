@@ -1,0 +1,263 @@
+﻿<%@ Page Title="Document Checklist" Language="C#" MasterPageFile="~/Site.master"
+    AutoEventWireup="true" CodeFile="DocumentChecklist.aspx.cs" Inherits="Crew_DocumentChecklist" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
+    <script type="text/javascript">
+        function PrintDiv(dvID) {
+
+            var a = window.open('', '', 'left =' + screen.width + ',top=' + screen.height + ',width=0,height=0,toolbar=0,scrollbars=0,status=0');
+            a.document.write(document.getElementById(dvID).innerHTML);
+            a.document.close();
+            a.focus();
+            a.print();
+            a.close();
+            return false;
+        }
+    </script>
+    <style type="text/css">
+        input
+        {
+            width: 80px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+    <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>--%>
+    <div id="page-content" style="z-index: -2; overflow: auto; text-align: center;">
+        <div class="NoPrint" style="text-align: right">
+            <style type="text/css" media="print">
+                .NoPrint
+                {
+                    display: none;
+                }
+                #pgHeader
+                {
+                    color: Black;
+                }
+                #tblCheckList
+                {
+                    border-width: 1px;
+                }
+            </style>
+            <img src="../Images/Printer.png" style="cursor: pointer;" alt="" onclick="PrintDiv('page-content')" />
+        </div>
+        <div id="pageTitle" style="background-color: gray; color: White; font-size: 12px;
+            text-align: center; padding: 2px; font-weight: bold;">
+            <asp:Label ID="lblPageTitle" runat="server" Text="DOCUMENT CHECK LIST"></asp:Label>
+        </div>
+        <div class="error-message">
+            <asp:Label ID="lblMessage" runat="server"></asp:Label>
+        </div>
+        <asp:HiddenField ID="hdnCrewID" runat="server" Value="0" />
+        <div>
+        </div>
+        <center>
+            <div style="text-align: left; border: 1px solid gray;">
+                <table cellspacing="0" cellpadding="2" rules="rows" style="background-color: White;
+                    width: 100%;">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Crew Name:
+                                        <asp:Label ID="lblCrewName" runat="server" ForeColor="Black" Font-Bold="true"></asp:Label>
+                                    </td>
+                                </tr>
+                                <%--<tr>
+                                            <td>
+                                                Staff Code:
+                                                <asp:Label ID="lblStaffCode" runat="server" ForeColor="Black" Font-Bold="true"></asp:Label>
+                                            </td>
+                                        </tr>--%>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            LICENSE / STCW COURSES / DOCUMENTS / TRAINING / SHORE BASED TRAINING (All Spaces
+                            must be Completed with - Yes / No / Not Applicable)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ObjectDataSource ID="ObjDataSourceDDLJoinRank" runat="server" SelectMethod="Get_RankList"
+                                TypeName="SMS.Business.Crew.BLL_Crew_Admin"></asp:ObjectDataSource>
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="100%"
+                                AllowSorting="True" DataKeyNames="DocTypeID" CellPadding="4" ForeColor="#333333"
+                                GridLines="Both" 
+                                OnRowEditing="GridView1_RowEditing" 
+                                OnRowCancelingEdit="GridView1_RowCancelEdit"
+                                OnRowUpdating="GridView1_RowUpdating"
+                                OnRowDataBound="GridView1_RowDataBound">
+                                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                                <Columns>
+                                    <asp:TemplateField HeaderText="Document">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblDocName" runat="server" Text='<%#Eval("DocTypeName") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:Label ID="lblDocName" runat="server" Text='<%#Eval("DocTypeName") %>'></asp:Label>
+                                            <asp:FileUpload ID="docUploader" runat="server" />
+                                        </EditItemTemplate>
+                                        <ControlStyle Width="250px" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Legend">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblLegend" runat="server" Text='<%#Eval("Legend") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Y/N/NA">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblYN" runat="server" Text='<%#Eval("AnswerYNText") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:DropDownList ID="ddlYN" runat="server" Text='<%#Bind("AnswerYN") %>' ValidationGroup="ValidateDoc">
+                                                <asp:ListItem Text="NA" Value="2"></asp:ListItem>
+                                                <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
+                                                <asp:ListItem Text="No" Value="0"></asp:ListItem>
+                                            </asp:DropDownList>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Rank">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblRankName" runat="server" Text='<%#Eval("Rank_Short_Name") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:DropDownList ID="ddRank" runat="server" DataSourceID="ObjDataSourceDDLJoinRank"
+                                                Text='<%#Bind("RankID") %>' DataTextField="Rank_short_Name" DataValueField="ID"
+                                                Width="70px" AppendDataBoundItems="true" ValidationGroup="ValidateDoc">
+                                                <asp:ListItem Text="-Select-" Value="0"></asp:ListItem>
+                                            </asp:DropDownList>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Remark">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblRemark" runat="server" Text='<%#Eval("Remark")%>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txtRemark" runat="server" Text='<%#Bind("Remark")%>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Deck">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblDeck" runat="server" Text='<%#Eval("Deck") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Engine">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblEngine" runat="server" Text='<%#Eval("Engine") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Doc.No">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblDocNo" runat="server" Text='<%#Eval("DocNo") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txtDocNo" runat="server" Text='<%#Bind("DocNo") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Issue Date">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblIssueDate" runat="server" Text='<%#Eval("IssueDate","{0:dd/MM/yyyy}") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txtIssueDate" runat="server" Text='<%#Bind("IssueDate","{0:dd/MM/yyyy}") %>'></asp:TextBox>
+                                            <ajaxToolkit:CalendarExtender ID="calFrom" runat="server" TargetControlID="txtIssueDate"
+                                                Format="dd/MM/yyyy">
+                                            </ajaxToolkit:CalendarExtender>
+                                            
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Exp. Date">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblExpDate" runat="server" Text='<%#Eval("ExpiryDate","{0:dd/MM/yyyy}") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txtExpDate" runat="server" Text='<%#Bind("ExpiryDate","{0:dd/MM/yyyy}") %>'></asp:TextBox>
+                                            <ajaxToolkit:CalendarExtender ID="calExpDate" runat="server" TargetControlID="txtExpDate"
+                                                Format="dd/MM/yyyy">
+                                            </ajaxToolkit:CalendarExtender>
+                                        </EditItemTemplate>
+                                        <ItemStyle Width="100px" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Issue Place">
+                                        <ItemTemplate>
+                                            <asp:Label ID="lblIssuePlace" runat="server" Text='<%#Eval("IssuePlace") %>'></asp:Label>
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="txtIssuePlace" runat="server" Text='<%#Bind("IssuePlace") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField ShowHeader="false">
+                                        <ItemTemplate>
+                                            <asp:HyperLink ID="ImgAttachment" runat="server" ImageUrl="~/images/Attach.png" Height="16px"
+                                                Width="16px" />
+                                        </ItemTemplate>
+                                        <EditItemTemplate>
+                                        </EditItemTemplate>
+                                        <ItemStyle CssClass="NoPrint" />
+                                        <HeaderStyle CssClass="NoPrint" />
+                                    </asp:TemplateField>
+                                    <asp:TemplateField ShowHeader="False">
+                                        <EditItemTemplate>
+                                            <asp:ImageButton ID="LinkButton1" runat="server" ImageUrl="~/images/accept.png" Width="16px"
+                                                CommandName="Update" AlternateText="Update" CausesValidation="false" >
+                                            </asp:ImageButton>
+                                            <asp:ImageButton ID="LinkButton2" runat="server" ImageUrl="~/images/reject.png" Width="16px"
+                                                CommandName="Cancel" AlternateText="Cancel"></asp:ImageButton>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:ImageButton ID="LinkButton2" runat="server" ImageUrl="~/images/edit.gif" Width="16px"
+                                                CommandName="Edit" AlternateText="Edit"></asp:ImageButton>
+                                        </ItemTemplate>
+                                        <ItemStyle CssClass="NoPrint" />
+                                        <HeaderStyle CssClass="NoPrint" />
+                                    </asp:TemplateField>
+                                </Columns>
+                                <EditRowStyle BackColor="#58FAAC" />
+                                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                            </asp:GridView>
+                            <%--<asp:ObjectDataSource ID="ObjectDataSource_CheckList" runat="server" SelectMethod="Get_Crew_DocumentChecklist"
+                                TypeName="SMS.Business.Crew.BLL_Crew_CrewDetails" UpdateMethod="UPDATE_DocumentChecklist">
+                                <SelectParameters>
+                                    <asp:QueryStringParameter Name="CrewID" QueryStringField="CrewID" Type="Int32" />
+                                </SelectParameters>
+                                <UpdateParameters>
+                                    <asp:QueryStringParameter Name="CrewID" QueryStringField="CrewID" Type="Int32" />
+                                    <asp:Parameter Name="DocID" Type="Int32" DefaultValue="0" />
+                                    <asp:Parameter Name="DocTypeID" Type="Int32" />
+                                    <asp:Parameter Name="AnswerYN" Type="Int32" />
+                                    <asp:Parameter Name="RankID" Type="Int32" />
+                                    <asp:Parameter Name="Remark" Type="String" />
+                                    <asp:Parameter Name="DocNo" Type="String" />
+                                    <asp:Parameter Name="IssueDate" Type="String" />
+                                    <asp:Parameter Name="IssuePlace" Type="String" />
+                                    <asp:Parameter Name="ExpiryDate" Type="String" />
+                                    <asp:Parameter Name="FilePath" Type="String" DefaultValue="" />
+                                    <asp:SessionParameter Name="Modified_By" Type="Int32" SessionField="userid" />
+                                </UpdateParameters>
+                            </asp:ObjectDataSource>--%>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </div>
+    <%--</ContentTemplate>
+    </asp:UpdatePanel>--%>
+</asp:Content>

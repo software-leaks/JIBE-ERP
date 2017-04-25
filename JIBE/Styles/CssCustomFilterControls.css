@@ -1,0 +1,208 @@
+﻿.pnlListSection-list-ucListBox
+{
+    position: absolute;
+    color: Black;
+    text-align: left;
+    z-index: 1;
+}
+
+
+.tbl-pnlsearchSection-ucListBox
+{
+    border-top: 2px solid #FF8C00;
+    border-left: 2px solid #FF8C00;
+    border-right: 2px solid #FF8C00;
+    border-bottom: 1px solid #FF8C00;
+    color: Black;
+    border-collapse: collapse;
+    background-color: White;
+    width: 100%;
+    z-index: 0;
+}
+
+.tbl-pnlListSection-ucListBox
+{
+    border-left: 1px solid #FF8C00;
+    border-right: 1px solid #FF8C00;
+    border-bottom: 2px solid #FF8C00;
+    color: Black;
+    border-collapse: collapse;
+    background-color: White;
+    white-space: nowrap;
+}
+.watermarked
+{
+    background-color: #F0F8FF;
+    color: gray;
+    font-size: 11px;
+    height: 18px;
+    width: 97%;
+    border: 1px solid #FFD1B2;
+}
+
+.lstboxItems-ucDateFilter-css
+{
+    height: 123px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.lstboxItems-ucStringFilter-css
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    height: 110px;
+}
+
+.lstboxItems-ucNumberFilter-css
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    height: 110px;
+}
+
+.ddl-txtSearchItems-td-css
+{
+    text-align: center;
+    border: 1px solid #FF8C00;
+    background-color: #FFE0CC;
+    padding: 3px;
+    width: 90%;
+}
+
+
+.ddl-txtSearchItems-css
+{
+    height: 18px;
+    width: 97%;
+    border: 1px solid #FFD1B2;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+.ddl-imgCollapseExpandDDL-td-css
+{
+    text-align: left;
+    border: 1px solid #FF8C00;
+    background-color: #FFE0CC;
+    padding: 3px;
+    width: 10%;
+}
+
+.ddl-footer-td-css
+{
+    border: 1px solid #FF8C00;
+    background-color: #FFE0CC;
+    padding: 3px;
+}
+
+
+
+.tbl-pnlsearchSection-ucListBox-white
+{
+    border-top: 1px solid #90908F;
+    border-left: 1px solid #90908F;
+    border-right: 1px solid #90908F;
+    border-bottom: 1px solid #90908F;
+    color: Black;
+    border-collapse: collapse;
+    background-color: White;
+    width: 100%;
+}
+
+.tbl-pnlListSection-ucListBox-white
+{
+    border-top: 1px solid #C1D5F8;
+    border-left: 1px solid #90908F;
+    border-right: 1px solid #90908F;
+    border-bottom: 1px solid #90908F;
+    color: Black;
+    border-collapse: collapse;
+    background-color: White;
+    white-space: nowrap;
+}
+
+.ddl-txtSearchItems-td-css-white
+{
+    text-align: center;
+    border: 1px solid #90908F;
+    background-color: White;
+    padding: 0px;
+    width: 90%;
+}
+
+
+.ddl-txtSearchItems-css-white
+{
+    height: 18px;
+    width: 97%;
+    border: 0px solid #90908F;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+.ddl-imgCollapseExpandDDL-td-css-white
+{
+    text-align: left;
+    border: 1px solid #90908F;
+    background-color: White;
+    padding: 0px 2px 0px 2px;
+    width: 10%;
+}
+
+.ddl-imgCollapseExpandDDL-td-css-white-OnFilterApplied
+{
+    text-align: left;
+    border: 1px solid #90908F;
+    background-color: #FFD589;
+    padding: 0px 2px 0px 2px;
+    width: 10%;
+}
+
+.ddl-footer-td-css-white
+{
+    border: 1px solid #90908F;
+    background-color: #F5F5DC;
+    padding: 3px;
+}
+
+.watermarked-white
+{
+    background-color: #FAFAFA;
+    color: gray;
+    font-size: 11px;
+    height: 18px;
+    width: 97%;
+    border: 0px solid #FFD1B2;
+}
+
+.AsyncListBoxListItemPortlist
+{
+    width: 100%;
+    height: 100%;
+    border:0px solid gray;
+    border-top:1px solid #C1D5F8;
+}
+
+
+.ddl-AsynctxtDisplayPortName-css-white
+{
+    height: 18px;
+    width: 97%;
+    border: 0px solid #90908F;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+
+
+.ddl-AsynctxtSearchItems-css-white
+{
+    height: 18px;
+    width: 95%;
+    border: 0px solid #90908F;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+
+.hide-CustomDropDown
+{
+    display:none;
+}

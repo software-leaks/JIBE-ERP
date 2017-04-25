@@ -1,0 +1,189 @@
+﻿
+function Async_get_Quotation_Evaluation(Catalogue, ReqsnCode, DocumentCode, VesselCode, SupplierCodes, QuotationCodes, ExchangeRates) {
+
+    var url = "../webservice.asmx/Purc_Get_Quotation_Items_Compare";
+    var params = 'Catalogue=' + Catalogue + "&ReqsnCode=" + ReqsnCode + "&DocumentCode=" + DocumentCode + "&VesselCode=" + VesselCode + "&SupplierCodes=" + SupplierCodes + "&QuotationCodes=" + QuotationCodes + "&ExchangeRates=" + ExchangeRates;
+
+
+    obj = new AsyncResponse(url, params, response_Quotation_Evaluation);
+    obj.getResponse();
+
+}
+
+function response_Quotation_Evaluation(retval) {
+    var ar, arS;
+    var fixed_column_count = 23;
+    var supplier_group_count = 10;
+    var column_count_db_tbl = 0;
+
+
+    if (retval.indexOf('Working') >= 0) { return; }
+    try {
+
+        retval = clearXMLTags(retval);
+
+        if (retval.trim().length > 0) {
+
+            var arVal = eval(retval);
+
+            var tbl_items = document.createElement('table');
+            tbl_items.id = "tblCompareItems";
+            tbl_items.className = 'tblCompareItems';
+
+            var tr_fixed_header_row = document.createElement('tr');
+
+            var th_fixed_serial_no = document.createElement('th');
+            var th_fixed_draw_no = document.createElement('th');
+            var th_fixed_part_no = document.createElement('th');
+            var th_fixed_item_name = document.createElement('th');
+            var th_fixed_unit = document.createElement('th');
+            var th_fixed_order_unit = document.createElement('th');
+            var th_fixed_rob = document.createElement('th');
+            var th_fixed_reqst_qty = document.createElement('th');
+            var th_fixed_ord_qty = document.createElement('th');
+
+            th_fixed_serial_no.innerHTML = "S.N.";
+            th_fixed_draw_no.innerHTML = "Draw.No.";
+            th_fixed_part_no.innerHTML = "Part No.";
+            th_fixed_item_name.innerHTML = "Item Name";
+            th_fixed_unit.innerHTML = "Unit";
+            th_fixed_order_unit.innerHTML = "Order Unit";
+            th_fixed_rob.innerHTML = "ROB";
+            th_fixed_reqst_qty.innerHTML = "Reqst Qty";
+            th_fixed_ord_qty.innerHTML = "Order Qty";
+
+            tr_fixed_header_row.appendChild(th_fixed_serial_no);
+            tr_fixed_header_row.appendChild(th_fixed_draw_no);
+            tr_fixed_header_row.appendChild(th_fixed_part_no);
+            tr_fixed_header_row.appendChild(th_fixed_item_name);
+            tr_fixed_header_row.appendChild(th_fixed_unit);
+            tr_fixed_header_row.appendChild(th_fixed_order_unit);
+            tr_fixed_header_row.appendChild(th_fixed_rob);
+            tr_fixed_header_row.appendChild(th_fixed_reqst_qty);
+            tr_fixed_header_row.appendChild(th_fixed_ord_qty);
+
+
+            // create dynamic header
+
+            var arrQtn = document.getElementById(hdf_Quotation_Codes).value.split(',');
+            var Dyn_header_count = (arrQtn_Count.length) * supplier_group_count;
+            column_count_db_tbl = fixed_column_count + Dyn_header_count;
+
+            for (var i = 0; i < arrQtn.length; i++) {
+
+                var th_unit_price = document.createElement('th');
+                var th_discount = document.createElement('th');
+                var th_amount = document.createElement('th');
+                var th_lead_days = document.createElement('th');
+                var th_item_type = document.createElement('th');
+                var th_remark = document.createElement('th');
+                var th_select = document.createElement('th');
+
+                th_unit_price.innerHTML = "Unit Price";
+                th_discount.innerHTML = "Discount";
+                th_amount.innerHTML = "Amount";
+                th_lead_days.innerHTML = "Lead days";
+                th_item_type.innerHTML = "Item Type";
+                th_remark.innerHTML = "Remark";
+                th_select.innerHTML = "Select";
+
+                var chk_select = document.createElement("input");
+                chk_select.type = "checkbox";
+                chk_select.id = arrQtn[i].toString() + "_select";
+
+
+                tr_fixed_header_row.appendChild(th_unit_price);
+                tr_fixed_header_row.appendChild(th_discount);
+                tr_fixed_header_row.appendChild(th_amount);
+                tr_fixed_header_row.appendChild(th_lead_days);
+                tr_fixed_header_row.appendChild(th_item_type);
+                tr_fixed_header_row.appendChild(th_remark);
+                th_select.appendChild(chk_select);
+                tr_fixed_header_row.appendChild(th_select);
+
+
+
+            }
+            // create data row
+            for (var i = 0; i < arVal.length; i++) {
+
+                var tr_data_row = document.createElement('tr');
+
+                var td_fixed_serial_no = document.createElement('td');
+                var td_fixed_draw_no = document.createElement('td');
+                var td_fixed_part_no = document.createElement('td');
+                var td_fixed_item_name = document.createElement('td');
+                var td_fixed_unit = document.createElement('td');
+                var td_fixed_order_unit = document.createElement('td');
+                var td_fixed_rob = document.createElement('td');
+                var td_fixed_reqst_qty = document.createElement('td');
+                var td_fixed_ord_qty = document.createElement('td');
+                var txt_order_qty = document.createElement('input');
+                txt_order_qty.type = "text";
+                txt_order_qty.id = "txt_order_qty";
+
+                td_fixed_serial_no.innerHTML = arVal[i].ITEM_SERIAL_NO;
+                td_fixed_draw_no.innerHTML = arVal[i].Drawing_Number;
+                td_fixed_part_no.innerHTML = arVal[i].Part_Number;
+                td_fixed_item_name.innerHTML = arVal[i].ITEM_SHORT_DESC;
+                td_fixed_unit.innerHTML = arVal[i].Unit_and_Packings;
+                td_fixed_order_unit.innerHTML = arVal[i].ORDER_UNIT_ID;
+                td_fixed_rob.innerHTML = arVal[i].ROB_QTY;
+                td_fixed_reqst_qty.innerHTML = arVal[i].QUOTED_QTY;
+
+                txt_order_qty.innerHTML = arVal[i].ORDER_QTY;
+
+
+
+                for (var j = 0; j < column_count_db_tbl; j++) {
+
+                    var pr = 'ITEM_SERIAL_NO';
+                    var vl = arVal[i][pr];
+
+                    var td = document.createElement('td');
+                    var tdchk = document.createElement('td');
+                    td.id = "td_" + i.toString() + "_" + j.toString();
+                    td.innerHTML = vl.toString();
+
+                    var cb = document.createElement("input");
+                    cb.type = "checkbox";
+                    cb.checked = true;
+                    cb.id = "chk_" + i.toString() + "_" + j.toString();
+                    cb.setAttribute('onclick', 'printmsg(event)')
+
+                    tdchk.appendChild(cb);
+                    trRow.appendChild(td);
+                    trRow.appendChild(tdchk);
+
+                }
+
+                t.appendChild(trRow);
+
+            } //for --
+
+
+
+
+            var dvRes = document.getElementById('dvComp_Quotation_Items');
+            dvRes.innerHTML = "";
+            dvRes.innerHTML = '<table id="tblitemsmain" style="border-top:1px solid gray;border-right:1px solid gray"  cellpadding=0 cellspacing=0>' + t.innerHTML.toString() + '</table>';
+            //dvRes.appendChild(t);
+
+
+        }
+        else {
+            var dvRes = document.getElementById('dvComp_Quotation_Items');
+            dvRes.innerHTML = "";
+        }
+    }
+    catch (ex) { alert(ex.message); }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+﻿.tdh
+{
+    font-size: 11px;
+    text-align: right;
+    padding: 0px 3px 0px 0px;
+    width: 16%;
+    height: 20px;
+    vertical-align: middle;
+    font-weight: bold;
+    border:1px solid gray;
+}
+.tdd
+{
+    font-size: 11px;
+    text-align: left;
+    padding: 0px 0px 0px 3px;
+    height: 20px;
+    vertical-align: middle;
+    border:1px solid gray;
+}
+
+
+
+
+.txtReadOnly
+{
+    background-color: #F2F2F2;
+    border-color:#E6E6E6;
+    border-width:1px;
+    border-style:solid;
+    font-family:Tahoma;
+    font-size:12px;
+    height:inherit;
+}
+
+
+.txtInput
+{
+    border: 1px solid #cccccc;
+    background-color: #F7F8E0;
+    font-family:Tahoma;
+    font-size:12px; 
+     text-align: left;
+}
+
+.watermarked
+{
+    
+    background-color: #F7F8E0;
+    border-color:#cccccc;
+    border-width:1px;
+    border-style:solid;
+    font-family:Tahoma;
+    font-size:12px; 
+    height:inherit;  
+    color:Silver;
+    
+}

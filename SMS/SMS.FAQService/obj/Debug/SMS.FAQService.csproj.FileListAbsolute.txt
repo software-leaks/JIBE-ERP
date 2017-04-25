@@ -1,0 +1,13 @@
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.FAQService.dll
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.FAQService.pdb
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Business.LMS.dll
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Properties.dll
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Data.LMS.dll
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Data.LIB.dll
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Business.LMS.pdb
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Properties.pdb
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Data.LMS.pdb
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\bin\Debug\SMS.Data.LIB.pdb
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\obj\Debug\SMS.FAQService.csprojResolveAssemblyReference.cache
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\obj\Debug\SMS.FAQService.dll
+C:\Development\JIBEV1.0\JIBE\JIBE\SMS.FAQService\obj\Debug\SMS.FAQService.pdb

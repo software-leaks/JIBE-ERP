@@ -1,0 +1,30 @@
+body 
+{
+    font: 12px Arial;
+}
+
+#dropZone 
+{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    width: 400px;
+    height:60px;
+    padding:50;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin:30 0 0 0 
+}
+
+#dropZone.hover 
+{
+    border-color: #aaa;
+    background-color: #ddd;
+}
+
+#dropZone.error
+{
+    border-color: #f00;
+    background-color: #faa;
+}

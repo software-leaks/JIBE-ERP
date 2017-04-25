@@ -1,0 +1,270 @@
+﻿<%@ Page Title="LshingGearInventoryReport" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="LashingGearInventoryReport.aspx.cs" Inherits="eForms_eFormTempletes_LashingGearInventoryReport" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+ <style type="text/css">
+        .eform-vertical-text
+        {
+            font: bold 14px verdana;
+            font-weight: normal;
+            writing-mode: tb-rl;
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+        }
+     .style2
+     {
+         width: 176px;
+     }
+     .style3
+     {
+         width: 272px;
+     }
+     .style4
+     {
+         width: 372px;
+         height: 18px;
+     }
+     .style5
+     {
+         width: 272px;
+         height: 18px;
+     }
+     .style6
+     {
+         height: 18px;
+     }
+     .style7
+     {
+         width: 104px;
+     }
+     .style8
+     {
+         width: 104px;
+         height: 18px;
+     }
+     .style9
+     {
+         width: 372px;
+     }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+ <div id="page-title" class="page-title">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr class="eform-report-header">
+                <td style="width: 33%;">
+                </td>
+                <td style="width: 34%; text-align: center;">
+                    <asp:Label ID="lblPageTitle" runat="server" Text="Lashing Gear Inventory Report"></asp:Label>
+                </td>
+                <td style="width: 33%; text-align: right;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="dvPageContent" class="page-content-main">
+     <div style="margin-top: 2px; border: 1px solid #cccccc; vertical-align: bottom; padding: 2px;
+            color: Black; text-align: left; background-color: #fff;">
+               <table>
+                <tr>
+                    <td style="width: 200px">
+                        Vessel Name:
+                    </td>
+                    <td style="width: 200px" class="eform-field-data">
+                        <asp:Label ID="lblVesselName" runat="server"></asp:Label>
+                    </td>
+                    <td style="width: 200px">
+                        Report Date:
+                    </td>
+                    <td class="eform-field-data">
+                        <asp:Label ID="lblReportDate" runat="server"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+           
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                         <table style="width: 100%">
+                <tr>
+                    <td>
+                        <asp:GridView ID="GridView_LashingInventoryRPT" DataKeyNames="ID" runat="server"
+                            AutoGenerateColumns="False" OnRowDataBound="GridView_LashingInventoryRPT_RowDataBound"
+                            CellPadding="7" AllowPaging="false" Width="100%" ShowFooter="false" EmptyDataText="No Record Found"
+                            CaptionAlign="Bottom" GridLines="Both">
+                        <AlternatingRowStyle CssClass="AlternatingRowStyle-css" />
+                        <RowStyle CssClass="RowStyle-css" />
+                        <HeaderStyle CssClass="HeaderStyle-css" Height="35px" />
+                        <SelectedRowStyle BackColor="#FFFFCC" />
+                        <EmptyDataRowStyle ForeColor="Red" HorizontalAlign="Center" Font-Bold="true" Font-Size="12px" />
+                            <Columns>
+                             <asp:TemplateField HeaderText="Sr.No">
+                                   
+                                    <ItemTemplate>
+                                        <%--<asp:Label ID="lblNo" runat="server" Text='<%# DataBinder.Eval(Container,"DataItem.ROWNUM") %>'></asp:Label>--%>
+                                        <%# Container.DataItemIndex + 1 %>
+                                    </ItemTemplate>
+                              </asp:TemplateField>
+                          <asp:TemplateField HeaderText="Item Description">
+                                    <ItemTemplate>
+                                        <%# Eval("Item_Description")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                     <asp:TemplateField HeaderText="Model">
+                                    <ItemTemplate>
+                                        <%# Eval("Model_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Opening R.O.B.">
+                                    <ItemTemplate>
+                                        <%# Eval("OpeningROB")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="ROwner">
+                                    <ItemTemplate>
+                                        <%# Eval("UR_Owner_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Charterer">
+                                    <ItemTemplate>
+                                        <%# Eval("UR_Charterer_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Owner">
+                                    <ItemTemplate>
+                                        <%# Eval("OP_Owner_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Charterer">
+                                    <ItemTemplate>
+                                        <%# Eval("OP_Charterer_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Units Refurbished/Repaired">
+                                    <ItemTemplate>
+                                        <%# Eval("UNIT_Repaired_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Units Claimed from Stevedores">
+                                    <ItemTemplate>
+                                        <%# Eval("Unit_Claimed_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Closing R.O.B.">
+                                    <ItemTemplate>
+                                        <%# Eval("ClosingROB")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Requirement per Cargo Securing Manual">
+                                    <ItemTemplate>
+                                        <%# Eval("Carg_Securing_Mannual_No")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                           
+                                 <asp:TemplateField HeaderText="Supply Required">
+                                    <ItemTemplate>
+                                        <%# Eval("SupplyReq")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                
+                            </Columns>
+                            <HeaderStyle CssClass="HeaderStyle-css Crew-HeaderStyle-css" />
+                            <PagerStyle CssClass="PagerStyle-css" />
+                            <RowStyle CssClass="RowStyle-css" />
+                            <AlternatingRowStyle CssClass="AlternatingRowStyle-css" />
+                            <SelectedRowStyle CssClass="SelectedRowStyle-css" />
+                            <SortedAscendingCellStyle CssClass="SortedAscendingCellStyle-css" />
+                            <SortedAscendingHeaderStyle CssClass="SortedAscendingHeaderStyle-css" />
+                            <SortedDescendingCellStyle CssClass="SortedDescendingCellStyle-css" />
+                            <SortedDescendingHeaderStyle CssClass="SortedDescendingHeaderStyle" />
+                        </asp:GridView>
+                        <tr>
+                    <td>
+                        <table cellpadding="1" cellspacing="1" width="100%">
+                            <tr>
+                                <td colspan="2">
+                                    * For results on Lashing Gear Inventory Report&nbsp; :
+                                </td>
+                            </tr>
+                          
+                            <tr>
+                                
+                                <td class="style9">
+                                   
+                                   Note:
+                                </td>
+                                <td class="style7">
+                                  
+                                    
+                                <td>
+                                </td>
+                                <tr>
+                                <td class="style9">
+                                   1.Complete Inventory of lashing gear items (used or unused)</td>
+                                </tr>
+                            </tr>
+                             <tr>
+                                <td class="style9">
+                                  2.This form is to be made ship specific and kept consistent.</td>
+                                </tr>
+                            </tr>
+                            <tr>
+                                <td class="style9">
+                                 3.Item no.6 can not checked because operation in cargo hold.</td>
+                                </tr>
+                            </tr>
+                            <tr>
+                                <td class="style9">
+                                    Master's Signature:</td>
+                                <td class="style3">
+                                  <asp:Label ID="lblMasterSignature" runat="server"></asp:Label>
+                                </td>
+                                <td class="style7">
+                                   Date: 
+                                </td>
+                                <td>
+                                  <asp:Label ID="lblmasterDate" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style4">
+                                    Chief Officer's Signature:</td>
+                                <td class="style5">
+                             <asp:Label ID="lblchiefofficer" runat="server"></asp:Label>
+                                  
+                                </td>
+                                <td class="style8">
+                                   Date: 
+                                </td>
+                                <td class="style6">
+                                 <asp:Label ID="lblchiefofficerdate" runat="server"></asp:Label>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td class="style9">
+                                    Remarks</td>
+                                <td class="style3">
+                                   
+                                   <asp:TextBox ID="txtremarks" Width="300px" TextMode="MultiLine" runat="server"></asp:TextBox>
+                                </td>
+                                <td class="style7">
+                                    &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="style9">
+                                </td>
+                                <td class="style3">
+                                </td>
+                                <td class="style7">
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                        </ContentTemplate>
+                         </asp:UpdatePanel>
+                            
+                 
+            </div>
+    </div>
+</asp:Content>
+

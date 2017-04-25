@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F697886E-0FBF-4B3F-B8F9-59C151C6632C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.VMService</RootNamespace>
+    <AssemblyName>SMS.VMService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SMS.Properties, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMS.Properties\bin\Debug\SMS.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VMService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Business.INFRA\SMS.Business.INFRA.csproj">
+      <Project>{6D724EE6-4263-4C02-B19F-8D786CC26E6B}</Project>
+      <Name>SMS.Business.INFRA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.LIB\SMS.Business.LIB.csproj">
+      <Project>{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}</Project>
+      <Name>SMS.Business.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.VM\SMS.Business.VM.csproj">
+      <Project>{9F321A2A-8B73-4178-AAED-AE1B316B7072}</Project>
+      <Name>SMS.Business.VM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.INFRA\SMS.Data.INFRA.csproj">
+      <Project>{786FB69E-CB47-418D-9145-F8E530A907C8}</Project>
+      <Name>SMS.Data.INFRA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.LIB\SMS.Data.LIB.csproj">
+      <Project>{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}</Project>
+      <Name>SMS.Data.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.VM\SMS.Data.VM.csproj">
+      <Project>{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}</Project>
+      <Name>SMS.Data.VM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

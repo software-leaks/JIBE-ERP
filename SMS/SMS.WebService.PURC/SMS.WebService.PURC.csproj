@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E236DEED-BADC-4388-8E83-F34176FF2039}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.WebService.PURC</RootNamespace>
+    <AssemblyName>SMS.WebService.PURC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\JIBE\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.ASL">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.ASL.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.CREW">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Business.CREW\bin\Debug\SMS.Business.CREW.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.FAQ">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.FAQ.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.FMS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.FMS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.INFRA">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Business.INFRA\bin\Debug\SMS.Business.INFRA.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.INSP">
+      <HintPath>..\..\JIBE\Bin\SMS.Business.INSP.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.LIB">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Business.LIB\bin\Debug\SMS.Business.LIB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.LMS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.LMS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.OPS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.OPS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.PBILL">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.PBILL.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.PURC">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Business.PURC\bin\Debug\SMS.Business.PURC.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.QMSDB">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.QMSDB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.TECH">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Business.Tech\bin\Debug\SMS.Business.TECH.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.TRAV">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.TRAV.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.VET">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Business.VET\bin\Debug\SMS.Business.VET.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Business.VM">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Business.VM.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.ASL">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.ASL.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.CREW">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.CREW.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.DMS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.DMS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.FAQ">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.FAQ.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.FMS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.FMS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.INFRA">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Data.INFRA\bin\Debug\SMS.Data.INFRA.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.INSP">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.INSP.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.LIB">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Data.LIB\bin\Debug\SMS.Data.LIB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.LMS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.LMS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.OPS">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.OPS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.PBILL">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.PBILL.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.PURC">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Data.PURC\bin\Debug\SMS.Data.PURC.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.QMSDB">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.QMSDB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.TECH">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Data.Tech\bin\Debug\SMS.Data.TECH.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.TRAV">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.TRAV.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.VET">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.VET.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Data.VM">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.Data.VM.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.Properties">
+      <HintPath>..\..\CodeBase\JIBE\SMS\SMS.Properties\bin\Debug\SMS.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.WebService">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.WebService.dll</HintPath>
+    </Reference>
+    <Reference Include="SMS.WebsService.PURC">
+      <HintPath>..\SMS.WebsService.PURC\bin\Debug\SMS.WebsService.PURC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PURC_Purchase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PURC_Technical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CodeBase\JIBE\SMS\SMS.Business.PMS\SMS.Business.PMS.csproj">
+      <Project>{6A3406D5-B2E2-4304-804D-E907578B1F5E}</Project>
+      <Name>SMS.Business.PMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

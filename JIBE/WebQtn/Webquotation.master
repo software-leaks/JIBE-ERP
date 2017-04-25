@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Webquotation.master.cs"
+    Inherits="WebQuotation_Webquotation" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/Menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin: 0px; padding: 0px;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="page" style="margin-bottom: 20px;">
+        <div class="header">
+            <div class="title">
+                <asp:Image ID="Image1" ImageUrl="~/Images/app_logo.png" runat="server" Style="vertical-align: bottom;" />
+            </div>
+            <div class="loginDisplay">
+                <asp:Label ID="Label1" runat="server" Font-Size="12px" Font-Names="Calibri" Text="Welcome:"></asp:Label>
+                <asp:Label ID="lbluname" Font-Size="12px" Font-Names="Calibri" runat="server"></asp:Label>
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                        &nbsp;<asp:LoginStatus ID="LoginStatus1" OnLoggingOut="logoutmed" runat="server"
+                            Font-Names="Calibri" Font-Size="11px" ForeColor="navy" LoginText="Log In" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                <a href="ChangePassword.aspx" style="color: Navy; font-size: 11px" id="changepwd">Change
+                    Password </a>
+            </div>
+            <div class="clear hideSkiplink">
+                &nbsp;
+            </div>
+        </div>
+        <div id="dv_MainContent_master" class="main" style="min-height: 420px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer" style="display: none">
+        <div class="status-box" style="width: 200px;">
+            &nbsp;</div>
+        <div class="status-box">
+            This site is best viewed with Internet Explorer Version 8 and above and screen resolution
+            1440 x 900.</div>
+        <div class="status-box" style="width: 100px;">
+            &nbsp;</div>
+        <div class="status-box" style="width: 100px;">
+            &nbsp;</div>
+        <div class="status-box" style="width: 100px;">
+            &nbsp;</div>
+    </div>
+    <!--  
+   <script type="text/javascript">
+        qm_create(0,false,0,500,false,false,false,false,false);
+    </script>-->
+    </form>
+</body>
+</html>

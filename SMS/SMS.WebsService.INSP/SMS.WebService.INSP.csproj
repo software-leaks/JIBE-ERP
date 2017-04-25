@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0806952-7B73-438A-A8AE-5DC8282C3050}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.WebsService.INSP</RootNamespace>
+    <AssemblyName>SMS.WebsService.INSP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inspection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Business.CREW\SMS.Business.CREW.csproj">
+      <Project>{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}</Project>
+      <Name>SMS.Business.CREW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.FAQ\SMS.Business.FAQ.csproj">
+      <Project>{BDF77340-717E-4BA5-887C-A2F5826A8F43}</Project>
+      <Name>SMS.Business.FAQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.INFRA\SMS.Business.INFRA.csproj">
+      <Project>{6D724EE6-4263-4C02-B19F-8D786CC26E6B}</Project>
+      <Name>SMS.Business.INFRA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.INSP\SMS.Business.INSP.csproj">
+      <Project>{84293C27-07CC-4745-95CC-712BA9DF1649}</Project>
+      <Name>SMS.Business.INSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.LIB\SMS.Business.LIB.csproj">
+      <Project>{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}</Project>
+      <Name>SMS.Business.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.LMS\SMS.Business.LMS.csproj">
+      <Project>{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}</Project>
+      <Name>SMS.Business.LMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.OPS\SMS.Business.OPS.csproj">
+      <Project>{01975551-250D-478E-AEEA-16446D2DEA99}</Project>
+      <Name>SMS.Business.OPS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.PBill\SMS.Business.PBILL.csproj">
+      <Project>{FE52527F-6836-46BD-BDCC-C5B0C990FC76}</Project>
+      <Name>SMS.Business.PBILL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.PMS\SMS.Business.PMS.csproj">
+      <Project>{6A3406D5-B2E2-4304-804D-E907578B1F5E}</Project>
+      <Name>SMS.Business.PMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.PURC\SMS.Business.PURC.csproj">
+      <Project>{758B2069-A346-4B5C-B8CC-C54E9C48356D}</Project>
+      <Name>SMS.Business.PURC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.Tech\SMS.Business.TECH.csproj">
+      <Project>{FB920997-5C03-4381-AF86-FB8AF556DB66}</Project>
+      <Name>SMS.Business.TECH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.TRAV\SMS.Business.TRAV.csproj">
+      <Project>{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}</Project>
+      <Name>SMS.Business.TRAV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.VM\SMS.Business.VM.csproj">
+      <Project>{9F321A2A-8B73-4178-AAED-AE1B316B7072}</Project>
+      <Name>SMS.Business.VM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.CREW\SMS.Data.CREW.csproj">
+      <Project>{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}</Project>
+      <Name>SMS.Data.CREW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.INFRA\SMS.Data.INFRA.csproj">
+      <Project>{786FB69E-CB47-418D-9145-F8E530A907C8}</Project>
+      <Name>SMS.Data.INFRA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.INSP\SMS.Data.INSP.csproj">
+      <Project>{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}</Project>
+      <Name>SMS.Data.INSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.OPS\SMS.Data.OPS.csproj">
+      <Project>{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}</Project>
+      <Name>SMS.Data.OPS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.PBill\SMS.Data.PBILL.csproj">
+      <Project>{AEE84C45-9BED-4BAA-B08E-4679D7D72674}</Project>
+      <Name>SMS.Data.PBILL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.PURC\SMS.Data.PURC.csproj">
+      <Project>{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}</Project>
+      <Name>SMS.Data.PURC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.Tech\SMS.Data.TECH.csproj">
+      <Project>{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}</Project>
+      <Name>SMS.Data.TECH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Properties\SMS.Properties.csproj">
+      <Project>{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}</Project>
+      <Name>SMS.Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

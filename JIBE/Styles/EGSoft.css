@@ -1,0 +1,114 @@
+﻿.grid-row-header
+{
+    
+    background-color: #3F75A2;
+    font-weight: bold;
+    color: WhiteSmoke;
+    text-align: center;
+    background: url(../Images/bg.png) left -1322px repeat-x;
+    font-size :12px;
+    font-family:Tahoma;
+     /*background: url(../Images/grid_header_bg.png) left 0px repeat-x;*/
+}
+.grid-row-data
+{
+    background-color: #efefef;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size :12px;
+    font-family:Tahoma;
+}
+
+.grid-childrow-header
+{
+    background-color: #AADDFF;
+    font-weight:normal;
+    color: Black;
+    text-align: center;
+    font-size :12px;
+    font-family:Tahoma;
+    
+}
+.grid-childrow-data
+{
+    background-color: #C7fff0;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    border: 1px solid #efefef;
+    font-size :12px;
+    font-family:Tahoma;
+}
+
+.toolBox
+{
+    position: absolute;
+    border: 3px solid gray;
+    padding: 5px;
+    margin-left: 70px;
+    background-color: White;
+    text-align: left;
+}
+.popup-link-button
+{
+    text-decoration: none;
+    color: Blue;
+    cursor: pointer;
+}
+
+
+
+.Repeater-AlternatingRowStyle-css
+{
+    background-color: #CEE3F6;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    
+}
+
+.Repeater-RowStyle-css
+{
+    background-color: white;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    
+}
+
+.autocomplete_completionListElement 
+{  
+	margin : 0px!important;
+	background-color : #F3F9E6;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow-y:scroll;
+	height : 300px;
+    text-align : left; 
+    list-style-type : none;
+    padding:0px 0px 0px 10px;
+  
+}
+
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem
+{
+	background-color:Yellow;
+	color: black;
+	padding: 1px;
+}
+
+/* AutoComplete item */
+
+.autocomplete_listItem 
+{
+	background-color : #F3F9E6;
+	color : windowtext;
+	padding : 1px;
+	  text-align:left;
+}

@@ -1,0 +1,20 @@
+C:\Development\CodeBase\JIBE\JIBE\WebQtn\QoutationEntry.aspx
+
+
+
+File Upload Validation
+Pages:-
+Crew\AddCrewMedicalHistory.aspx ,
+Crew\Crew_UploadPhoto.aspx ,
+Crew\CrewDetails_Feedback.aspx  ,
+Crew\CrewFeedbackViewer.aspx,
+Crew\CrewPrepDocuments.aspx,
+Crew\CrewVoyageDocuments.aspx,
+Infrastructure\Libraries\Vessel\SearchVessel.aspx,
+QMS\AddNewFile.aspx,
+QMS\CheckInForm.aspx,
+QMS\FBM\FBM_Main_Report_Details.aspx ,
+Travel\IssueTicket.aspx  
+
+
+File Upload Validation                                                           

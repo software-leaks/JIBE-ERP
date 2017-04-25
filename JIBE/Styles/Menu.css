@@ -1,0 +1,25 @@
+﻿#MenuDiv
+{
+    padding:2px;
+}
+.DynamicMenu a
+{
+    background-color: transparent;
+    color: White;
+    font-weight:bold;
+    margin-right:10px;    
+}
+.MenuBox
+{
+    color: blue;
+    padding:5px;
+    background-color:#848484;
+    border:1px solid #fff;
+    margin-top:1px;
+}
+.DynamicMenu .MenuItem
+{
+    color: blue;
+    padding-right:2px;padding-left:2px;
+}
+

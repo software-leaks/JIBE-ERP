@@ -1,0 +1,112 @@
+﻿body
+{
+    
+    font-size: 11px;
+    background-image:url(../Images/top.jpg);
+    background-repeat:repeat-x;
+}
+.header
+{
+    /*height: 85px;
+    background-color: #ddffdd;
+    */
+}
+.title
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-style:normal;
+    
+    color:Black;
+}
+
+#nav-bar
+{
+    /*background-color: #ccffcc;
+    height: 22px;*/
+}
+#nav-menu ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#nav-menu li
+{
+    float: left;
+    margin: 0 0.15em;
+}
+#nav-menu li a
+{
+    background: url(../images/css-nav.gif) #fff bottom left repeat-x;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    width: 9em;
+    display: block;
+    /*border: 1px solid #dcdce9;*/
+    border-top: 1px solid #dcdce9;
+    border-left: 1px solid #dcdce9;
+    border-right: 1px solid #dcdce9;
+    color: #0d2474;
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+
+#line {height:1px;background-color:#dcdce9;}
+
+/* Hide from IE5-Mac \*/#nav-menu li a
+{
+    float: none;
+}
+/* End hide */#nav-menu
+{
+    /*width: 75.4em;*/
+}
+.footer
+{
+}
+.textNotify
+{
+    
+    font-weight: bold;
+    font-size: 12px;
+}
+.box
+{
+    border: 1px solid #ddccdd;
+    background-color: #ffffff;
+    padding: 1px;
+}
+.xMessage
+{
+	position:absolute;
+	top:2px;left:200px;width:400px;
+	border:1px solid outset;padding:5px;
+	background-color:#BEF781;
+	font-weight:bold;
+	
+	font-size:11px;
+}
+
+.AlertMessage
+{
+	position:absolute;
+	top:2px;left:281px;
+	width:437px;
+	font-weight:bold;
+	
+	font-size:11px;
+	height: 22px;
+}
+#pg-default  #nav-bar #nav-menu #li0{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-users    #nav-bar #nav-menu #li1{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-projects #nav-bar #nav-menu #li2{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-modules  #nav-bar #nav-menu #li3{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-buglist  #nav-bar #nav-menu #li4{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-bugentry #nav-bar #nav-menu #li5{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+#pg-mytasks  #nav-bar #nav-menu #li6{font-weight:bold;height: 20px;border: 1px solid #dcdce9;}
+
+

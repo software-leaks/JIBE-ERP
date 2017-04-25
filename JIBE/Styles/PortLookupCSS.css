@@ -1,0 +1,33 @@
+﻿body
+{
+}
+.popupBox
+{   
+    position:fixed;
+    border: 1px solid #D0A9F5;
+    color: Black;
+    text-align: left;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    color: Black;
+}
+.popupBox2
+{   
+    position:fixed;
+    top:0%;
+    border: 1px solid #D0A9F5;
+    color: Black;
+    text-align: left;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    color: Black;
+}
+.user-control1
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#F8D79B',EndColorStr='#F1C15F');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8D79B), to(#F1C15F));
+    background: -moz-linear-gradient(top,  #F8D79B,  #F1C15F);
+    color: Black;
+}

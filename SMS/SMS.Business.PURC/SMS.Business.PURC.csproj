@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{758B2069-A346-4B5C-B8CC-C54E9C48356D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.Business.PURC</RootNamespace>
+    <AssemblyName>SMS.Business.PURC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\SMSLog\Bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PURC\BLL_PURC_ApprovalLimit.cs" />
+    <Compile Include="PURC\BLL_PURC_AssignVessel.cs" />
+    <Compile Include="PURC\BLL_PURC_BondItem.cs" />
+    <Compile Include="PURC\BLL_PURC_Catalog.cs" />
+    <Compile Include="PURC\BLL_PURC_Common.cs" />
+    <Compile Include="PURC\BLL_PURC_ConfigPO.cs" />
+    <Compile Include="PURC\BLL_PURC_CTP.cs" />
+    <Compile Include="PURC\BLL_PURC_DeliveredItems.cs" />
+    <Compile Include="PURC\BLL_PURC_Department.cs" />
+    <Compile Include="PURC\BLL_PURC_FileAttachement.cs" />
+    <Compile Include="PURC\BLL_PURC_InventoryItem.cs" />
+    <Compile Include="PURC\BLL_PURC_InvoiceBudget.cs" />
+    <Compile Include="PURC\BLL_PURC_Items.cs" />
+    <Compile Include="PURC\BLL_PURC_LibraryCatalogue.cs" />
+    <Compile Include="PURC\BLL_PURC_Location.cs" />
+    <Compile Include="PURC\BLL_PURC_LOG.cs" />
+    <Compile Include="PURC\BLL_PURC_OpeningBalance.cs" />
+    <Compile Include="PURC\BLL_PURC_OrderRaised.cs" />
+    <Compile Include="PURC\BLL_PURC_PayDetailsOnDeliveredItems.cs" />
+    <Compile Include="PURC\BLL_PURC_PendingRequisition.cs" />
+    <Compile Include="PURC\BLL_PURC_Permissions.cs" />
+    <Compile Include="PURC\BLL_PURC_Provision.cs" />
+    <Compile Include="PURC\BLL_PURC_QuatationEvalution.cs" />
+    <Compile Include="PURC\BLL_PURC_Report.cs" />
+    <Compile Include="PURC\BLL_PURC_Reports.cs" />
+    <Compile Include="PURC\BLL_PURC_ReqsnMandatory.cs" />
+    <Compile Include="PURC\BLL_PURC_SubCatalog.cs" />
+    <Compile Include="PURC\BLL_PURC_Supplier.cs" />
+    <Compile Include="PURC\BLL_PURC_Technical.cs" />
+    <Compile Include="PURC\BLL_PURC_UnitPackings.cs" />
+    <Compile Include="PURC\BLL_PURC_Vessels.cs" />
+    <Compile Include="PURC\BLL_PURC_ItemLocation.cs" />
+    <Compile Include="PURC\CTP_RFQ_Mail.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Business.CREW\SMS.Business.CREW.csproj">
+      <Project>{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}</Project>
+      <Name>SMS.Business.CREW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.INFRA\SMS.Business.INFRA.csproj">
+      <Project>{6D724EE6-4263-4C02-B19F-8D786CC26E6B}</Project>
+      <Name>SMS.Business.INFRA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.LIB\SMS.Business.LIB.csproj">
+      <Project>{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}</Project>
+      <Name>SMS.Business.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.PURC\SMS.Data.PURC.csproj">
+      <Project>{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}</Project>
+      <Name>SMS.Data.PURC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Properties\SMS.Properties.csproj">
+      <Project>{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}</Project>
+      <Name>SMS.Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

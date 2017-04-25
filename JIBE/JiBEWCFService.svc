@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="JiBEWCFService.Service" CodeBehind="SMS.WCFService.dll"  %>

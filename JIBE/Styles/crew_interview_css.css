@@ -1,0 +1,218 @@
+﻿/* ----- =============== --------------------*/
+/* -----  General Section ------------------ */
+/* ----- =============== --------------------*/
+
+body
+{
+}
+
+.gradiant-css-browne
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#81F79F',EndColorStr='#088A4B');
+    background: -webkit-gradient(linear, left top, left bottom, from(#81F79F), to(#088A4B));
+    background: -moz-linear-gradient(top,  #81F79F,  #088A4B);
+    color: Black;
+}
+.gradiant-css-orange
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#F8D79B',EndColorStr='#F1C15F');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8D79B), to(#F1C15F));
+    background: -moz-linear-gradient(top,  #F8D79B,  #F1C15F);
+    color: Black;
+}
+.gradiant-css-blue
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    color: Black;
+}
+.rounded-corner-box-blue
+{
+    border: 2px solid #A9BCF5;
+    padding: 2px;
+    text-align: center;
+    color: Black;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.rounded-corner-box-orange
+{
+    border: 2px solid #F1C15F;
+    padding: 2px;
+    text-align: center;
+    color: Black;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.section-title-broad-lightyellow
+{
+    text-align: left; 
+    font-size: 18px; 
+    background-color: #F9F2CC; 
+    border-bottom: 1px solid #cccccc;
+    padding: 6px;
+}
+
+.watermarked
+{
+    color: #cccccc;
+}
+.linkbtn a
+{
+    color: Black;
+}
+
+.linkbtn
+{
+    color: black;
+    font-size:14px;
+    text-align:center;
+    background-color: white;
+    text-decoration: none;
+    border-left: 1px solid #cccccc;
+    padding-left: 10px;
+    border-top: 1px solid #cccccc;
+    padding-top: 5px;
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 3px;
+    background-color: #F1F8E0;
+}
+
+.modal-popup-container
+{
+    display: none; 
+    background-color: #CBE1EF;
+    border-color: #5C87B2; 
+    border-style: solid; 
+    border-width: 1px; 
+    position: absolute; 
+    color: black;
+    cursor:move;
+}
+.modal-popup-content
+{
+    background-color:White;
+    cursor:default;    
+}
+
+/* ----- =============== --------------------*/
+/* ----- INTERVIEW LIBRARY PAGES------------ */
+/* ----- =============== --------------------*/
+
+
+.page-title-div
+{
+    font-size: 12px; 
+    border: 1px solid #CEE3F6;
+    text-align: center; 
+    padding: 3px; 
+    font-weight: bold;
+}
+.page-content-div
+{     
+    border: 1px solid #CEE3F6; 
+    z-index: -2;
+    padding: 10px; 
+    margin-top: -1px; 
+}
+.crew-interview-grid-css
+{
+    color:#333333;
+    
+}
+.crew-interview-grid-header
+{
+    border-bottom: 1px solid #cccccc;
+    background-color:White;
+    font-weight:bold;
+    color:Black;    
+}
+.crew-interview-grid-editrow
+{
+    background-color:#58FA82;
+}
+.crew-interview-grid-alternaterow
+{
+    background-color:White;
+    color:#284775;
+}
+.crew-interview-grid-row
+{
+    color:#333333;
+    background-color:#F7F6F3;
+}
+.crew-interview-grid-selected-row
+{
+    color:#333333;
+    background-color:#E2DED6;
+    font-weight:bold;
+    border:1px solid gray;
+}
+.crew-interview-grid-selected-row td
+{
+    background-color:#E2DED6;
+    font-weight:normal;
+}
+.crew-interview-grid-na-row
+{
+    color:#333333;
+    background-color:#efefef;
+    font-weight:bold;
+    border:1px solid gray;
+}
+.crew-interview-grid-na-row td
+{
+    color:#cccccc;
+    background-color:#efefef;
+    font-weight:normal;
+}
+
+.crew-interview-grid-col-sorted-asc
+{
+    background-color:#E9E7E2;
+}
+.crew-interview-grid-header-sorted-asc
+{
+    background-color:#506C8C;
+}
+.crew-interview-grid-col-sorted-desc
+{
+    background-color:#FFFDF8;
+}
+.crew-interview-grid-header-sorted-desc
+{
+    background-color:#6F8DAE;
+}
+
+.interview-question-box
+{
+    border: 1px solid #cccccc;    
+    background-color:#fff;
+    font-size:14px;
+    vertical-align:top;
+}
+.interview-answer-box
+{
+    border: 1px solid #cccccc;    
+    background-color:#DEF7FF;
+    vertical-align:top;
+}
+.interview-answer-sheet-fixed
+{
+    height:400px;
+    overflow:auto;
+}
+
+.interview-questionbank-fixed
+{
+    height:600px;
+    overflow:auto;    
+}
+.highlight {
+    background-color: #FFFF88;
+}

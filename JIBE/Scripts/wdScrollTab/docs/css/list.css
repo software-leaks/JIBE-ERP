@@ -1,0 +1,128 @@
+
+
+
+/****************************************************************
+  docking boxes core CSS: YOU MUST NOT CHANGE OR OVERRIDE THESE 
+*****************************************************************/
+.dbx-clone {
+	position:absolute;
+	visibility:hidden;
+	}
+.dbx-clone, 
+.dbx-clone .dbx-handle-cursor {
+	cursor:move !important;
+	}
+.dbx-dummy {
+	display:block;
+	width:0;
+	height:0;
+	overflow:hidden;
+	margin:0 !important;
+	padding:0 !important;
+	}
+.dbx-group, .dbx-box, .dbx-handle {
+	position:relative;
+	display:block;
+	}
+
+
+
+/****************************************************************
+  avoid padding, margins or borders on dbx-box, 
+  to reduce visual discrepancies between it and the clone.  
+  overall, dbx-box is best left as visually unstyled as possible 
+*****************************************************************/
+.dbx-box {
+	margin:0;
+	padding:0;
+	border:none;
+	}
+
+
+
+/****************************************************************
+  otherwise, do what you like :) 
+*****************************************************************/
+
+
+
+
+
+/* group container(s) */
+ol.dbx-group {
+	float:left;
+	padding:0;
+	margin:0 50px 50px 20px;
+	background:#fff;
+	width:32em;
+	list-style-type:none;
+	}
+	
+
+
+
+
+/* boxes */
+li.dbx-box 
+{
+	display:block;
+	background:transparent;
+	font:normal normal normal 1em/1.2 tahoma,sans-serif;
+	list-style-type:none;
+}
+	
+li.dbx-box-hover, li.dbx-box-focus
+{
+	background:#eeeef3;
+}
+
+
+
+
+
+
+/* handles */
+li.dbx-box a.dbx-handle, 
+li.dbx-box a.dbx-handle:visited 
+{
+	border-bottom:1px solid #aaa;
+	border-top:1px solid #fff;
+	color:#555;
+	text-decoration:none;
+	padding:3px 15px 5px 5px;
+}
+
+li.dbx-box.first-child 
+{
+	font-weight:bold;
+}
+
+li.dbx-box.last-child a.dbx-handle, 
+li.dbx-box.last-child a.dbx-handle:visited
+{
+	border-bottom:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* hacks for IE6 */
+* html .dbx-tooltip {
+	font-weight:normal !important;
+	}
+	
+* html ol.dbx-group {
+	display:inline !important;
+	}			
+
+	
+	
+	

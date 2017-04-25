@@ -1,0 +1,236 @@
+﻿
+body {
+    background: #b6b7bc none repeat scroll 0 0;
+    color: #696969;
+    font-family: Tahoma,Tahoma,sans-serif,vrdana;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+a:link, a:visited {
+    color: #034af3;
+}
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active {
+    color: #034af3;
+}
+p {
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #666666;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-weight: 200;
+    margin-bottom: 0;
+    text-transform: none;
+}
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1.1em;
+}
+h5, h6 {
+    font-size: 1em;
+}
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0;
+}
+.page {
+    background-color: #fff;
+    border: 1px solid #496077;
+    margin: 5px auto 0;
+    width: 1440px;
+}
+.header {
+    background: #3498db none repeat scroll 0 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.header h1 {
+    border: medium none;
+    color: #f9f9f9;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+.main {
+    margin: 5px;
+    min-height: 420px;
+    padding: 0;
+}
+.leftCol {
+    margin: 12px 8px 8px;
+    min-height: 200px;
+    padding: 6px 0;
+    width: 200px;
+}
+.footer {
+    background: #f6cee3 url("../Images/bg.png") repeat-x scroll left 0;
+    border: 1px solid #cccccc;
+    bottom: 0;
+    color: Black;
+    font-size: 11px;
+    height: 22px;
+    line-height: normal;
+    padding: 8px 0 0;
+    position: fixed;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.status-box {
+    border-left: 1px solid gray;
+    float: left;
+    height: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+div.hideSkiplink {
+    background-color: #3a4f63;
+    width: 100%;
+}
+div.DynamicMenu {
+    padding: 4px 0 4px 8px;
+}
+div.DynamicMenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+div.DynamicMenu ul li a, div.DynamicMenu ul li a:visited {
+    background-color: #465c71;
+    border: 1px solid #4e667d;
+    color: white;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+div.DynamicMenu ul li a:hover {
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+div.DynamicMenu ul li a:active {
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+fieldset {
+    border: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 1em;
+}
+fieldset p {
+    margin: 2px 12px 10px 10px;
+}
+fieldset.login label, fieldset.register label, fieldset.changePassword label {
+    display: block;
+}
+fieldset label.inline {
+    display: inline;
+}
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px;
+}
+input.textEntry {
+    border: 1px solid #ccc;
+    width: 320px;
+}
+input.passwordEntry {
+    border: 1px solid #ccc;
+    width: 320px;
+}
+div.accountInfo {
+    width: 42%;
+}
+.clear {
+    clear: both;
+}
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+.loginDisplay {
+    color: White;
+    display: block;
+    font-size: 1.1em;
+    padding: 0;
+    text-align: right;
+}
+.loginDisplay a:link {
+    color: white;
+}
+.loginDisplay a:visited {
+    color: white;
+}
+.loginDisplay a:hover {
+    color: white;
+}
+.failureNotification {
+    color: Red;
+    font-size: 1.2em;
+}
+.bold {
+    font-weight: bold;
+}
+.submitButton {
+    padding-right: 10px;
+    text-align: right;
+}
+.CreateHtmlTableFromDataTable-table {
+    background-color: #ffffff;
+    width: 100%;
+}
+.CreateHtmlTableFromDataTable-PageHeader {
+    background-color: #f6b680;
+    border: 1px solid #b1b1b1;
+}
+.CreateHtmlTableFromDataTable-DataHedaer {
+    background-color: #f2f2f2;
+    border: 1px solid #b1b1b1;
+    text-align: center;
+}
+.CreateHtmlTableFromDataTable-Data {
+    border: 1px solid #b1b1b1;
+}
+button[disabled]:active, button[disabled], input[type="reset"][disabled]:active, input[type="reset"][disabled], input[type="button"][disabled]:active, input[type="button"][disabled], select[disabled] > input[type="button"], select[disabled] > input[type="button"]:active, input[type="submit"][disabled]:active, input[type="submit"][disabled] {
+    border: 0 solid white;
+    color: Black;
+    font-family: Verdana;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.watermarked {
+    background-color: #f0f8ff;
+    color: gray;
+}
+.button-Filter {
+    background: rgba(0, 0, 0, 0) url("../Images/bg.png") repeat-x scroll left -10px;
+}
+

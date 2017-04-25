@@ -1,0 +1,212 @@
+﻿/*------------------------------GENERAL STYLE--------------------------------------*/
+body
+{
+    font-family: Tahoma ,Tahoma, Sans-Serif;
+}
+button
+{
+    height: 20px;
+    font-family: Tahoma;
+    letter-spacing: normal;
+    font-size: 10px;
+    border: 1px solid gray;
+}
+input
+{
+    font-size: 10px;
+    font-family: Tahoma;
+}
+select
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    background-color: White;
+}
+
+/*------------------------------PAGE/POPUPS/CONTROLS/GRADIENTS/TOOL TIPS STYLE--------------------------------------*/
+
+
+.page-title
+{
+    border: 1px solid #cccccc;
+    height: 20px;
+    vertical-align: bottom;
+    background: url(/JIBE/Images/bg.png) left -10px repeat-x;
+    color: Black;
+    text-align: left;
+    padding: 2px;
+    background-color: #F6CEE3;
+    text-align: center;
+    font-weight: bold;
+}
+
+.page-content-main
+{
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+    margin-top: -1px;
+}
+.popup-css
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CBE1EF',EndColorStr='#8fb9cc');
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9eff2), to(#8fb9cc));
+    background: -moz-linear-gradient(top,  #e9eff2,  #8fb9cc);
+    color: Black;
+}
+.select-css
+{
+    position: relative;
+    top: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+.radio-css
+{
+    color: Green;
+}
+.checkbox-css
+{
+    color: Green;
+}
+.listbox-css
+{
+    color: Green;
+    border-style: solid;
+    border-color: Green;
+    border-width: 1px;
+}
+.label-css
+{
+    color: Black;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+
+
+/*------------------------------GRID STYLE--------------------------------------*/
+.GridView-css
+{    
+    border: 1px solid #959EAF;
+    background-color: White;
+}
+.HeaderStyle-css
+{
+    background: url(../Images/grid-header-gray.png) left -0px repeat-x;
+    /*background: url(../Images/gridheaderbg-image.png) left -0px repeat-x;*/
+    color: #000;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #959EAF;
+    border-left: 1px solid #959EAF;
+    border-right: 1px solid #959EAF;
+    border-bottom: 1px solid #EAEAEA;
+    border-collapse: collapse;
+    min-height:25px;
+}
+.HeaderStyle-css th
+{
+    border: 0px solid #959EAF;
+    border-collapse: collapse;
+}
+.AlternatingRowStyle-css
+{
+    /*EDF1F8*/
+    background-color: #F6F6F6;
+    color: #333333;
+    font-size: 11px;
+}
+.AlternatingRowStyle-css td
+{
+    border-bottom: 1px solid #EAEAEA;
+}
+.RowStyle-css
+{
+    font-size: 11px;
+    background-color: white;
+    color: #333333;
+}
+.RowStyle-css td
+{
+    border-bottom: 1px solid #EAEAEA;
+}
+.gridmain-css
+{
+    border-collapse: collapse;
+    border: 1px solid #959EAF;
+}
+.FooterStyle-css
+{
+    background: url(/JIBE/STYLES/Images/gridheaderbg-image.png) left -15px repeat-x;
+    background-color: #5D7B9D;
+    font-weight: normal;
+    font-size: 11px;
+    color: White; /*ForeColor:White;*/
+    border: 1px solid #959EAF;
+}
+.SelectedRowStyle-Css
+{
+    background-color: Navy;
+    color: #284775;
+    font-size: 11px;
+}
+.EmptyDataRowStyle
+{
+}
+
+.SortedAscendingCellStyle-css
+{
+}
+.SortedAscendingHeaderStyle-css
+{
+}
+.SortedDescendingCellStyle-css
+{
+}
+.SortedDescendingHeaderStyle
+{
+}
+
+/* ---------------------------------------------------- E-FORMS ----------------------------------*/
+.eform-report-header
+{
+    font-weight:bold;
+    font-size:16px;
+    text-align:center;
+    color:Black;            
+}
+.eform-report-sub-header
+{
+    font-weight:bold;
+    font-size:14px;
+    padding:4px;
+    text-align:center;
+    background-color:#cccccc;
+}
+.eform-header-row
+{
+    font-weight:bold;
+    font-size:12px;
+    background-color:#efefef;
+    text-align:center;
+}    
+.eform-field-caption
+{
+    font-weight:bold;
+    font-size:12px;
+}    
+.eform-field-data
+{
+    font-weight:normal;
+    font-size:12px;
+    padding:4px;            
+    background-color:#FAF8CC;
+}    
+.eform-report-table
+{
+            
+}

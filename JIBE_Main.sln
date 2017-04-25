@@ -1,0 +1,730 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.DMS", "SMS\SMS.Business.DMS\SMS.Business.DMS.csproj", "{045A10A7-6E8C-472B-8F3E-692DCE2971E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.INFRA", "SMS\SMS.Business.INFRA\SMS.Business.INFRA.csproj", "{6D724EE6-4263-4C02-B19F-8D786CC26E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.LIB", "SMS\SMS.Business.LIB\SMS.Business.LIB.csproj", "{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.OPS", "SMS\SMS.Business.OPS\SMS.Business.OPS.csproj", "{01975551-250D-478E-AEEA-16446D2DEA99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.PBILL", "SMS\SMS.Business.PBill\SMS.Business.PBILL.csproj", "{FE52527F-6836-46BD-BDCC-C5B0C990FC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.PURC", "SMS\SMS.Business.PURC\SMS.Business.PURC.csproj", "{758B2069-A346-4B5C-B8CC-C54E9C48356D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.QMS", "SMS\SMS.Business.QMS\SMS.Business.QMS.csproj", "{467D7578-A86A-4B05-A801-3692DED55958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.TECH", "SMS\SMS.Business.Tech\SMS.Business.TECH.csproj", "{FB920997-5C03-4381-AF86-FB8AF556DB66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.TRAV", "SMS\SMS.Business.TRAV\SMS.Business.TRAV.csproj", "{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.CREW", "SMS\SMS.Data.CREW\SMS.Data.CREW.csproj", "{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.DMS", "SMS\SMS.Data.DMS\SMS.Data.DMS.csproj", "{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.INFRA", "SMS\SMS.Data.INFRA\SMS.Data.INFRA.csproj", "{786FB69E-CB47-418D-9145-F8E530A907C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.LIB", "SMS\SMS.Data.LIB\SMS.Data.LIB.csproj", "{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.OPS", "SMS\SMS.Data.OPS\SMS.Data.OPS.csproj", "{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.PBILL", "SMS\SMS.Data.PBill\SMS.Data.PBILL.csproj", "{AEE84C45-9BED-4BAA-B08E-4679D7D72674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.PURC", "SMS\SMS.Data.PURC\SMS.Data.PURC.csproj", "{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.QMS", "SMS\SMS.Data.QMS\SMS.Data.QMS.csproj", "{FC9FD0D0-C8D1-41F2-8785-36FDBDEB311A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.SEP", "SMS\SMS.Data.SEP\SMS.Data.SEP.csproj", "{AD199762-0D24-4CF5-8D66-EF3FD47FA916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.TRAV", "SMS\SMS.Data.TRAV\SMS.Data.TRAV.csproj", "{012F6AD6-3FE7-486D-9E52-CD4F3FA9F2B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Properties", "SMS\SMS.Properties\SMS.Properties.csproj", "{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebQuotation", "SMS\WebQuotation\WebQuotation.csproj", "{73E43AE3-8630-44DA-8FB8-CC68DD23B93B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.WebService", "SMS\SMS.WebService\SMS.WebService.csproj", "{5B1B2A82-A871-46B9-A18D-8E5E7C0D6DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.PMS", "SMS\SMS.Business.PMS\SMS.Business.PMS.csproj", "{6A3406D5-B2E2-4304-804D-E907578B1F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.PMS", "SMS\SMS.Data.PMS\SMS.Data.PMS.csproj", "{689D494B-5773-4E70-A409-F6077427E0A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.TECH", "SMS\SMS.Data.Tech\SMS.Data.TECH.csproj", "{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.QMSDB", "SMS\SMS.Business.QMSDB\SMS.Business.QMSDB.csproj", "{2C99893B-FB60-4E9A-ABD5-5419029DCC45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.QMSDB", "SMS\SMS.Data.QMSDB\SMS.Data.QMSDB.csproj", "{95A7B066-C1D3-4EA6-B659-A6FD96D1D849}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JIBE", "JIBE", "{9EBA7C65-8315-4C01-AFC9-A9873595584C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/JIBE", FXXCAAAA"
+		SccAuxPath = ""
+		SccLocalPath = ".."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}|SMS.Data.CREW.dll;{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}|SMS.Data.LIB.dll;{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}|SMS.Properties.dll;{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}|SMS.Data.DMS.dll;{786FB69E-CB47-418D-9145-F8E530A907C8}|SMS.Data.INFRA.dll;{045A10A7-6E8C-472B-8F3E-692DCE2971E9}|SMS.Business.DMS.dll;{6D724EE6-4263-4C02-B19F-8D786CC26E6B}|SMS.Business.INFRA.dll;{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}|SMS.Business.LIB.dll;{01975551-250D-478E-AEEA-16446D2DEA99}|SMS.Business.OPS.dll;{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}|SMS.Data.OPS.dll;{FE52527F-6836-46BD-BDCC-C5B0C990FC76}|SMS.Business.PBILL.dll;{AEE84C45-9BED-4BAA-B08E-4679D7D72674}|SMS.Data.PBILL.dll;{6A3406D5-B2E2-4304-804D-E907578B1F5E}|SMS.Business.PMS.dll;{689D494B-5773-4E70-A409-F6077427E0A8}|SMS.Data.PMS.dll;{758B2069-A346-4B5C-B8CC-C54E9C48356D}|SMS.Business.PURC.dll;{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}|SMS.Data.PURC.dll;{467D7578-A86A-4B05-A801-3692DED55958}|SMS.Business.QMS.dll;{FC9FD0D0-C8D1-41F2-8785-36FDBDEB311A}|SMS.Data.QMS.dll;{2C99893B-FB60-4E9A-ABD5-5419029DCC45}|SMS.Business.QMSDB.dll;{95A7B066-C1D3-4EA6-B659-A6FD96D1D849}|SMS.Data.QMSDB.dll;{FB920997-5C03-4381-AF86-FB8AF556DB66}|SMS.Business.TECH.dll;{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}|SMS.Data.TECH.dll;{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}|SMS.Business.TRAV.dll;{012F6AD6-3FE7-486D-9E52-CD4F3FA9F2B1}|SMS.Data.TRAV.dll;{73E43AE3-8630-44DA-8FB8-CC68DD23B93B}|WebQuotation.dll;{5B1B2A82-A871-46B9-A18D-8E5E7C0D6DE9}|SMS.WebService.dll;{D12E2E33-2C95-4726-8294-960624B248BB}|SMS.Business.eForms.dll;{B63E1ECC-6541-47C7-AEC0-E335782793D7}|SMS.Data.eForms.dll;{6CDD8BDE-85AC-4BDC-BEDC-AFF8600D3068}|SMS.WCFService.dll;{F89F5EDF-3662-481A-ADE7-9EC89192961F}|SMS.Business.ASL.dll;{97A618E3-9676-4E5B-AC50-62DB37EE9B68}|SMS.Data.ASL.dll;{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}|SMS.Business.LMS.dll;{F8065B55-B8E3-4CDE-9F19-73688EEBB5E8}|SMS.Data.LMS.dll;{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}|SMS.Business.CREW.dll;{9F321A2A-8B73-4178-AAED-AE1B316B7072}|SMS.Business.VM.dll;{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}|SMS.Data.VM.dll;{CB32FF39-7509-4913-B16D-FE1754AEF76B}|SMS.DPLService.dll;{3D395C43-A056-4DB3-8172-2BFDD6BAB306}|SMS.Business.ODM.dll;{3683C021-649B-4F0C-AFAB-10B9BA935E42}|SMS.Data.ODM.dll;{4B76A329-716B-429A-A295-9D333650BE28}|SMS.Business.JRA.dll;{279E27FB-4F4C-4F88-8E03-2478C9BBAA95}|SMS.Data.JRA.dll;{BDF77340-717E-4BA5-887C-A2F5826A8F43}|SMS.Business.FAQ.dll;{1137E879-C38F-4431-9931-654B0FA8800A}|SMS.Data.FAQ.dll;{CB7896A4-B14F-4EAF-9EC7-5B34855B5D36}|SMS.Business.FMS.dll;{068E3271-9584-491B-AC5E-2765A7A03CDD}|SMS.Data.FMS.dll;{84293C27-07CC-4745-95CC-712BA9DF1649}|SMS.Business.INSP.dll;{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}|SMS.Data.INSP.dll;{A0806952-7B73-438A-A8AE-5DC8282C3050}|SMS.WebsService.INSP.dll;{6639CC2C-4802-4C0E-AFB7-294380D906DA}|SMS.Business.CP.dll;{EA15F215-C74A-48E3-A618-C24E3A8502F7}|SMS.Data.CP.dll;{16D09A2F-4134-405E-BCA0-DFC0696509F1}|SMS.Business.POLOG.dll;{2D1B76FC-0DF4-4ED9-92DD-7631785B3722}|SMS.Data.POLOG.dll;{7E16EC4E-7C13-4F9B-B486-5C376E4D1D95}|SMS.Business.SLC.dll;{FC9E9E6A-1955-4EAE-BBAB-8870B5868B1F}|SMS.Data.SLC.dll;{E018BE25-A7C3-46B5-96AD-8B7633DE3DA5}|SMS.Business.SURV.dll;{0BB027A2-8B56-4800-9953-C9E560947EC5}|SMS.Data.SURV.dll;{F697886E-0FBF-4B3F-B8F9-59C151C6632C}|SMS.VMService.dll;{FF1EBD32-B96A-4329-B104-3ABB61163A7E}|SMS.Business.TMSA.dll;{C2533754-83C1-4156-AF9E-D004F0C3E72A}|SMS.Data.TMSA.dll;{948EEA42-88FE-4D98-B41D-0C5D3E913919}|SMS.WebsService.INF.dll;{CD676421-F4A3-4C81-BBDD-3486394FC307}|SMS.KPI.Service.dll;{593AA15A-8A01-4BCF-AA74-CE7A2D9EE3BC}|SMS.JiBeMenuService.dll;{DBE66176-9A2B-4307-A20F-CC7F1A70B32C}|SMS.WCFMobileService.dll;{77FD46CC-3673-4FDE-B224-4EF7A46D7EFE}|SMS.Business.Dashboard.dll;{9D52262C-B30F-4D69-A9D8-96D201696899}|SMS.Data.Dashboard.dll;{F28E8921-C016-4991-B6E3-4C767F62097C}|SMS.DashboardService.dll;{38E2322A-C752-4D66-9C2A-DB168AA21153}|SMS.BuildService.dll;{42EAC2C8-9680-4516-B7E2-5E337FF0080C}|SMS.Business.VET.dll;{EE0CBB4D-C583-46B2-9F49-CB5B77962103}|SMS.Data.VET.dll;{7CD6B758-FB8B-448A-9EA1-F202FAA0E91B}|SMS.Business.BDS.dll;{F3A93E8A-1DEE-491F-9AFF-7E38B0E959E1}|SMS.Data.BDS.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/JIBE"
+		Debug.AspNetCompiler.PhysicalPath = "JIBE\"
+		Debug.AspNetCompiler.TargetPath = "..\..\..\..\Publish\JIBE\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "true"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/JIBE"
+		Release.AspNetCompiler.PhysicalPath = "JIBE\"
+		Release.AspNetCompiler.TargetPath = "..\..\..\..\Publish\JIBE\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "true"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7947"
+		VWDDynamicPort = "false"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.eForms", "SMS\SMS.Business.eForms\SMS.Business.eForms.csproj", "{D12E2E33-2C95-4726-8294-960624B248BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.eForms", "SMS\SMS.Data.eForms\SMS.Data.eForms.csproj", "{B63E1ECC-6541-47C7-AEC0-E335782793D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.WCFService", "SMS\SMS.WCFService\SMS.WCFService.csproj", "{6CDD8BDE-85AC-4BDC-BEDC-AFF8600D3068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.ASL", "SMS\SMS.Business.ASL\SMS.Business.ASL.csproj", "{F89F5EDF-3662-481A-ADE7-9EC89192961F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.ASL", "SMS\SMS.Data.ASL\SMS.Data.ASL.csproj", "{97A618E3-9676-4E5B-AC50-62DB37EE9B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.LMS", "SMS\SMS.Business.LMS\SMS.Business.LMS.csproj", "{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.LMS", "SMS\SMS.Data.LMS\SMS.Data.LMS.csproj", "{F8065B55-B8E3-4CDE-9F19-73688EEBB5E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.CREW", "SMS\SMS.Business.CREW\SMS.Business.CREW.csproj", "{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.VM", "SMS\SMS.Business.VM\SMS.Business.VM.csproj", "{9F321A2A-8B73-4178-AAED-AE1B316B7072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.VM", "SMS\SMS.Data.VM\SMS.Data.VM.csproj", "{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.ODM", "SMS\SMS.Business.ODM\SMS.Business.ODM.csproj", "{3D395C43-A056-4DB3-8172-2BFDD6BAB306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.ODM", "SMS\SMS.Data.ODM\SMS.Data.ODM.csproj", "{3683C021-649B-4F0C-AFAB-10B9BA935E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.DPLService", "SMS\SMS.DPLService\SMS.DPLService.csproj", "{CB32FF39-7509-4913-B16D-FE1754AEF76B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.FAQService", "SMS\SMS.FAQService\SMS.FAQService.csproj", "{F2F3CE4A-9FA0-4901-A10C-18BF3024A87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.BuildService", "SMS\SMS.BuildService\SMS.BuildService.csproj", "{38E2322A-C752-4D66-9C2A-DB168AA21153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.JRA", "SMS\SMS.Data.JRA\SMS.Data.JRA.csproj", "{279E27FB-4F4C-4F88-8E03-2478C9BBAA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.JRA", "SMS\SMS.Business.JRA\SMS.Business.JRA.csproj", "{4B76A329-716B-429A-A295-9D333650BE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.CP", "SMS\SMS.Business.CP\SMS.Business.CP.csproj", "{6639CC2C-4802-4C0E-AFB7-294380D906DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.FAQ", "SMS\SMS.Business.FAQ\SMS.Business.FAQ.csproj", "{BDF77340-717E-4BA5-887C-A2F5826A8F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.POLOG", "SMS\SMS.Business.POLOG\SMS.Business.POLOG.csproj", "{16D09A2F-4134-405E-BCA0-DFC0696509F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.CP", "SMS\SMS.Data.CP\SMS.Data.CP.csproj", "{EA15F215-C74A-48E3-A618-C24E3A8502F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.FAQ", "SMS\SMS.Data.FAQ\SMS.Data.FAQ.csproj", "{1137E879-C38F-4431-9931-654B0FA8800A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.POLOG", "SMS\SMS.Data.POLOG\SMS.Data.POLOG.csproj", "{2D1B76FC-0DF4-4ED9-92DD-7631785B3722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.WebService.INSP", "SMS\SMS.WebsService.INSP\SMS.WebService.INSP.csproj", "{A0806952-7B73-438A-A8AE-5DC8282C3050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.FMS", "SMS\SMS.Business.FMS\SMS.Business.FMS.csproj", "{CB7896A4-B14F-4EAF-9EC7-5B34855B5D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.INSP", "SMS\SMS.Business.INSP\SMS.Business.INSP.csproj", "{84293C27-07CC-4745-95CC-712BA9DF1649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.FMS", "SMS\SMS.Data.FMS\SMS.Data.FMS.csproj", "{068E3271-9584-491B-AC5E-2765A7A03CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.INSP", "SMS\SMS.Data.INSP\SMS.Data.INSP.csproj", "{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.SURV", "SMS\SMS.Business.SURV\SMS.Business.SURV.csproj", "{E018BE25-A7C3-46B5-96AD-8B7633DE3DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.SURV", "SMS\SMS.Data.SURV\SMS.Data.SURV.csproj", "{0BB027A2-8B56-4800-9953-C9E560947EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.SLC", "SMS\SMS.Business.SLC\SMS.Business.SLC.csproj", "{7E16EC4E-7C13-4F9B-B486-5C376E4D1D95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.SLC", "SMS\SMS.Data.SLC\SMS.Data.SLC.csproj", "{FC9E9E6A-1955-4EAE-BBAB-8870B5868B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.VMService", "SMS\SMS.VMService\SMS.VMService.csproj", "{F697886E-0FBF-4B3F-B8F9-59C151C6632C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.TMSA", "SMS\SMS.Business.TMSA\SMS.Business.TMSA.csproj", "{FF1EBD32-B96A-4329-B104-3ABB61163A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.TMSA", "SMS\SMS.Data.TMSA\SMS.Data.TMSA.csproj", "{C2533754-83C1-4156-AF9E-D004F0C3E72A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.KPI.Service", "SMS\SMS.KPI.Service\SMS.KPI.Service.csproj", "{CD676421-F4A3-4C81-BBDD-3486394FC307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.WebsService.INF", "SMS\SMS.WebsService.INF\SMS.WebsService.INF.csproj", "{948EEA42-88FE-4D98-B41D-0C5D3E913919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.JiBeMenuService", "SMS\SMS.JiBeMenuService\SMS.JiBeMenuService.csproj", "{593AA15A-8A01-4BCF-AA74-CE7A2D9EE3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.Dashboard", "SMS\SMS.Business.Dashboard\SMS.Business.Dashboard.csproj", "{77FD46CC-3673-4FDE-B224-4EF7A46D7EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.Dashboard", "SMS\SMS.Data.Dashboard\SMS.Data.Dashboard.csproj", "{9D52262C-B30F-4D69-A9D8-96D201696899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.DashboardService", "SMS\SMS.DashboardService\SMS.DashboardService.csproj", "{F28E8921-C016-4991-B6E3-4C767F62097C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.WCFMobileService", "SMS\SMS.WCFMobileService\SMS.WCFMobileService.csproj", "{DBE66176-9A2B-4307-A20F-CC7F1A70B32C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.VET", "SMS\SMS.Business.VET\SMS.Business.VET.csproj", "{42EAC2C8-9680-4516-B7E2-5E337FF0080C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.VET", "SMS\SMS.Data.VET\SMS.Data.VET.csproj", "{EE0CBB4D-C583-46B2-9F49-CB5B77962103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.BDS", "SMS\SMS.Data.BDS\SMS.Data.BDS.csproj", "{F3A93E8A-1DEE-491F-9AFF-7E38B0E959E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.BDS", "SMS\SMS.Business.BDS\SMS.Business.BDS.csproj", "{7CD6B758-FB8B-448A-9EA1-F202FAA0E91B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Business.OCAAdmin", "SMS\SMS.Business.OCAAdmin\SMS.Business.OCAAdmin.csproj", "{1FF5CB05-7EB2-4248-9A2E-BBFC1AF236CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMS.Data.OCAAdmin", "SMS\SMS.Data.OCAAdmin\SMS.Data.OCAAdmin.csproj", "{1818A666-16A8-4768-A35A-F647795D25B3}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 77
+		SccProjectName0 = \u0022$/JIBE\u0022,\u0020FXXCAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = SMS\\SMS.Business.DMS\\SMS.Business.DMS.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = SMS\\SMS.Business.DMS\\
+		SccProjectUniqueName2 = SMS\\SMS.Business.eForms\\SMS.Business.eForms.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = SMS\\SMS.Business.eForms\\
+		SccProjectUniqueName3 = SMS\\SMS.Business.INFRA\\SMS.Business.INFRA.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = SMS\\SMS.Business.INFRA\\
+		SccProjectUniqueName4 = SMS\\SMS.Business.LIB\\SMS.Business.LIB.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = SMS\\SMS.Business.LIB\\
+		SccProjectUniqueName5 = SMS\\SMS.Business.OPS\\SMS.Business.OPS.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = SMS\\SMS.Business.OPS\\
+		SccProjectUniqueName6 = SMS\\SMS.Business.PBill\\SMS.Business.PBILL.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = SMS\\SMS.Business.PBill\\
+		SccProjectUniqueName7 = SMS\\SMS.Business.PMS\\SMS.Business.PMS.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = SMS\\SMS.Business.PMS\\
+		SccProjectUniqueName8 = SMS\\SMS.Business.PURC\\SMS.Business.PURC.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = SMS\\SMS.Business.PURC\\
+		SccProjectUniqueName9 = SMS\\SMS.Business.QMS\\SMS.Business.QMS.csproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = SMS\\SMS.Business.QMS\\
+		SccProjectUniqueName10 = SMS\\SMS.Business.QMSDB\\SMS.Business.QMSDB.csproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = SMS\\SMS.Business.QMSDB\\
+		SccProjectUniqueName11 = SMS\\SMS.Business.Tech\\SMS.Business.TECH.csproj
+		SccLocalPath11 = .
+		SccProjectFilePathRelativizedFromConnection11 = SMS\\SMS.Business.Tech\\
+		SccProjectUniqueName12 = SMS\\SMS.Business.TRAV\\SMS.Business.TRAV.csproj
+		SccLocalPath12 = .
+		SccProjectFilePathRelativizedFromConnection12 = SMS\\SMS.Business.TRAV\\
+		SccProjectUniqueName13 = SMS\\SMS.Data.CREW\\SMS.Data.CREW.csproj
+		SccLocalPath13 = .
+		SccProjectFilePathRelativizedFromConnection13 = SMS\\SMS.Data.CREW\\
+		SccProjectUniqueName14 = SMS\\SMS.Data.DMS\\SMS.Data.DMS.csproj
+		SccLocalPath14 = .
+		SccProjectFilePathRelativizedFromConnection14 = SMS\\SMS.Data.DMS\\
+		SccProjectUniqueName15 = SMS\\SMS.Data.eForms\\SMS.Data.eForms.csproj
+		SccLocalPath15 = .
+		SccProjectFilePathRelativizedFromConnection15 = SMS\\SMS.Data.eForms\\
+		SccProjectUniqueName16 = SMS\\SMS.Data.INFRA\\SMS.Data.INFRA.csproj
+		SccLocalPath16 = .
+		SccProjectFilePathRelativizedFromConnection16 = SMS\\SMS.Data.INFRA\\
+		SccProjectUniqueName17 = SMS\\SMS.Data.LIB\\SMS.Data.LIB.csproj
+		SccLocalPath17 = .
+		SccProjectFilePathRelativizedFromConnection17 = SMS\\SMS.Data.LIB\\
+		SccProjectUniqueName18 = SMS\\SMS.Data.OPS\\SMS.Data.OPS.csproj
+		SccLocalPath18 = .
+		SccProjectFilePathRelativizedFromConnection18 = SMS\\SMS.Data.OPS\\
+		SccProjectUniqueName19 = SMS\\SMS.Data.PBill\\SMS.Data.PBILL.csproj
+		SccLocalPath19 = .
+		SccProjectFilePathRelativizedFromConnection19 = SMS\\SMS.Data.PBill\\
+		SccProjectUniqueName20 = SMS\\SMS.Data.PMS\\SMS.Data.PMS.csproj
+		SccLocalPath20 = .
+		SccProjectFilePathRelativizedFromConnection20 = SMS\\SMS.Data.PMS\\
+		SccProjectUniqueName21 = SMS\\SMS.Data.PURC\\SMS.Data.PURC.csproj
+		SccLocalPath21 = .
+		SccProjectFilePathRelativizedFromConnection21 = SMS\\SMS.Data.PURC\\
+		SccProjectUniqueName22 = SMS\\SMS.Data.QMS\\SMS.Data.QMS.csproj
+		SccLocalPath22 = .
+		SccProjectFilePathRelativizedFromConnection22 = SMS\\SMS.Data.QMS\\
+		SccProjectUniqueName23 = SMS\\SMS.Data.QMSDB\\SMS.Data.QMSDB.csproj
+		SccLocalPath23 = .
+		SccProjectFilePathRelativizedFromConnection23 = SMS\\SMS.Data.QMSDB\\
+		SccProjectUniqueName24 = SMS\\SMS.Data.SEP\\SMS.Data.SEP.csproj
+		SccLocalPath24 = .
+		SccProjectFilePathRelativizedFromConnection24 = SMS\\SMS.Data.SEP\\
+		SccProjectUniqueName25 = SMS\\SMS.Data.Tech\\SMS.Data.TECH.csproj
+		SccLocalPath25 = .
+		SccProjectFilePathRelativizedFromConnection25 = SMS\\SMS.Data.Tech\\
+		SccProjectUniqueName26 = SMS\\SMS.Data.TRAV\\SMS.Data.TRAV.csproj
+		SccLocalPath26 = .
+		SccProjectFilePathRelativizedFromConnection26 = SMS\\SMS.Data.TRAV\\
+		SccProjectUniqueName27 = SMS\\SMS.Properties\\SMS.Properties.csproj
+		SccLocalPath27 = .
+		SccProjectFilePathRelativizedFromConnection27 = SMS\\SMS.Properties\\
+		SccProjectUniqueName28 = SMS\\SMS.WCFService\\SMS.WCFService.csproj
+		SccLocalPath28 = .
+		SccProjectFilePathRelativizedFromConnection28 = SMS\\SMS.WCFService\\
+		SccProjectUniqueName29 = SMS\\SMS.WebService\\SMS.WebService.csproj
+		SccLocalPath29 = .
+		SccProjectFilePathRelativizedFromConnection29 = SMS\\SMS.WebService\\
+		SccProjectUniqueName30 = SMS\\WebQuotation\\WebQuotation.csproj
+		SccLocalPath30 = .
+		SccProjectFilePathRelativizedFromConnection30 = SMS\\WebQuotation\\
+		SccWebProject31 = true
+		SccProjectUniqueName31 = JIBE
+		SccLocalPath31 = .
+		SccProjectFilePathRelativizedFromConnection31 = JIBE\\
+		SccProjectEnlistmentChoice31 = 2
+		SccProjectUniqueName32 = SMS\\SMS.Business.ASL\\SMS.Business.ASL.csproj
+		SccProjectName32 = \u0022$/JIBE/SMS/SMS.Business.ASL\u0022,\u0020USZDAAAA
+		SccLocalPath32 = SMS\\SMS.Business.ASL
+		SccProjectUniqueName33 = SMS\\SMS.Data.ASL\\SMS.Data.ASL.csproj
+		SccProjectName33 = \u0022$/JIBE/SMS/SMS.Data.ASL\u0022,\u0020XSZDAAAA
+		SccLocalPath33 = SMS\\SMS.Data.ASL
+		SccProjectUniqueName34 = SMS\\SMS.Business.LMS\\SMS.Business.LMS.csproj
+		SccProjectName34 = \u0022$/JIBE/SMS/SMS.Business.LMS\u0022,\u0020ATZDAAAA
+		SccLocalPath34 = SMS\\SMS.Business.LMS
+		SccProjectUniqueName35 = SMS\\SMS.Data.LMS\\SMS.Data.LMS.csproj
+		SccProjectName35 = \u0022$/JIBE/SMS/SMS.Data.LMS\u0022,\u0020HTZDAAAA
+		SccLocalPath35 = SMS\\SMS.Data.LMS
+		SccProjectUniqueName36 = SMS\\SMS.Business.CREW\\SMS.Business.CREW.csproj
+		SccProjectName36 = \u0022$/JIBE/SMS/SMS.Business.CREW\u0022,\u0020IJYCAAAA
+		SccLocalPath36 = SMS\\SMS.Business.CREW
+		SccProjectUniqueName37 = SMS\\SMS.Data.VM\\SMS.Data.VM.csproj
+		SccLocalPath37 = .
+		SccProjectFilePathRelativizedFromConnection37 = SMS\\SMS.Data.VM\\
+		SccProjectUniqueName38 = SMS\\SMS.Business.VM\\SMS.Business.VM.csproj
+		SccLocalPath38 = .
+		SccProjectFilePathRelativizedFromConnection38 = SMS\\SMS.Business.VM\\
+		SccProjectUniqueName39 = SMS\\SMS.Business.ODM\\SMS.Business.ODM.csproj
+		SccLocalPath39 = .
+		SccProjectFilePathRelativizedFromConnection39 = SMS\\SMS.Business.ODM\\
+		SccProjectUniqueName40 = SMS\\SMS.Data.ODM\\SMS.Data.ODM.csproj
+		SccLocalPath40 = .
+		SccProjectFilePathRelativizedFromConnection40 = SMS\\SMS.Data.ODM\\
+		SccProjectUniqueName41 = SMS\\SMS.DPLService\\SMS.DPLService.csproj
+		SccProjectName41 = \u0022$/JIBE/SMS/SMS.DPLService\u0022,\u0020ERREAAAA
+		SccLocalPath41 = SMS\\SMS.DPLService
+		SccProjectUniqueName42 = SMS\\SMS.FAQService\\SMS.FAQService.csproj
+		SccProjectName42 = \u0022$/JIBE/SMS/SMS.FAQService\u0022,\u0020JASEAAAA
+		SccLocalPath42 = SMS\\SMS.FAQService
+		SccProjectUniqueName43 = SMS\\SMS.BuildService\\SMS.BuildService.csproj
+		SccProjectName43 = \u0022$/JIBE/SMS/SMS.BuildService\u0022,\u0020SBSEAAAA
+		SccLocalPath43 = SMS\\SMS.BuildService
+		SccProjectUniqueName44 = SMS\\SMS.Data.JRA\\SMS.Data.JRA.csproj
+		SccProjectName44 = \u0022$/JIBE/SMS/SMS.Data.JRA\u0022,\u0020EPFFAAAA
+		SccLocalPath44 = SMS\\SMS.Data.JRA
+		SccProjectUniqueName45 = SMS\\SMS.Business.JRA\\SMS.Business.JRA.csproj
+		SccProjectName45 = \u0022$/JIBE/SMS/SMS.Business.JRA\u0022,\u0020XOFFAAAA
+		SccLocalPath45 = SMS\\SMS.Business.JRA
+		SccProjectUniqueName46 = SMS\\SMS.Business.CP\\SMS.Business.CP.csproj
+		SccProjectName46 = \u0022$/JIBE/SMS/SMS.Business.CP\u0022,\u0020NBHFAAAA
+		SccLocalPath46 = SMS\\SMS.Business.CP
+		SccProjectUniqueName47 = SMS\\SMS.Business.FAQ\\SMS.Business.FAQ.csproj
+		SccProjectName47 = \u0022$/JIBE/SMS/SMS.Business.FAQ\u0022,\u0020LDSEAAAA
+		SccLocalPath47 = SMS\\SMS.Business.FAQ
+		SccProjectUniqueName48 = SMS\\SMS.Business.POLOG\\SMS.Business.POLOG.csproj
+		SccProjectName48 = \u0022$/JIBE/SMS/SMS.Business.POLOG\u0022,\u0020HJSEAAAA
+		SccLocalPath48 = SMS\\SMS.Business.POLOG
+		SccProjectUniqueName49 = SMS\\SMS.Data.CP\\SMS.Data.CP.csproj
+		SccProjectName49 = \u0022$/JIBE/SMS/SMS.Data.CP\u0022,\u0020QBHFAAAA
+		SccLocalPath49 = SMS\\SMS.Data.CP
+		SccProjectUniqueName50 = SMS\\SMS.Data.FAQ\\SMS.Data.FAQ.csproj
+		SccProjectName50 = \u0022$/JIBE/SMS/SMS.Data.FAQ\u0022,\u0020ODSEAAAA
+		SccLocalPath50 = SMS\\SMS.Data.FAQ
+		SccProjectUniqueName51 = SMS\\SMS.Data.POLOG\\SMS.Data.POLOG.csproj
+		SccProjectName51 = \u0022$/JIBE/SMS/SMS.Data.POLOG\u0022,\u0020KJSEAAAA
+		SccLocalPath51 = SMS\\SMS.Data.POLOG
+		SccProjectUniqueName52 = SMS\\SMS.WebsService.INSP\\SMS.WebService.INSP.csproj
+		SccProjectName52 = \u0022$/JIBE/SMS/SMS.WebsService.INSP\u0022,\u0020BDYEAAAA
+		SccLocalPath52 = SMS\\SMS.WebsService.INSP
+		SccProjectUniqueName53 = SMS\\SMS.Business.FMS\\SMS.Business.FMS.csproj
+		SccProjectName53 = \u0022$/JIBE/SMS/SMS.Business.FMS\u0022,\u0020XBYEAAAA
+		SccLocalPath53 = SMS\\SMS.Business.FMS
+		SccProjectUniqueName54 = SMS\\SMS.Business.INSP\\SMS.Business.INSP.csproj
+		SccProjectName54 = \u0022$/JIBE/SMS/SMS.Business.INSP\u0022,\u0020JCYEAAAA
+		SccLocalPath54 = SMS\\SMS.Business.INSP
+		SccProjectUniqueName55 = SMS\\SMS.Data.FMS\\SMS.Data.FMS.csproj
+		SccProjectName55 = \u0022$/JIBE/SMS/SMS.Data.FMS\u0022,\u0020ACYEAAAA
+		SccLocalPath55 = SMS\\SMS.Data.FMS
+		SccProjectUniqueName56 = SMS\\SMS.Data.INSP\\SMS.Data.INSP.csproj
+		SccProjectName56 = \u0022$/JIBE/SMS/SMS.Data.INSP\u0022,\u0020SCYEAAAA
+		SccLocalPath56 = SMS\\SMS.Data.INSP
+		SccProjectUniqueName57 = SMS\\SMS.Business.SURV\\SMS.Business.SURV.csproj
+		SccProjectName57 = \u0022$/JIBE/SMS/SMS.Business.SURV\u0022,\u0020RSJFAAAA
+		SccLocalPath57 = SMS\\SMS.Business.SURV
+		SccProjectUniqueName58 = SMS\\SMS.Data.SURV\\SMS.Data.SURV.csproj
+		SccProjectName58 = \u0022$/JIBE/SMS/SMS.Data.SURV\u0022,\u0020USJFAAAA
+		SccLocalPath58 = SMS\\SMS.Data.SURV
+		SccProjectUniqueName59 = SMS\\SMS.Business.SLC\\SMS.Business.SLC.csproj
+		SccProjectName59 = \u0022$/JIBE/SMS/SMS.Business.SLC\u0022,\u0020ZVHFAAAA
+		SccLocalPath59 = SMS\\SMS.Business.SLC
+		SccProjectUniqueName60 = SMS\\SMS.Data.SLC\\SMS.Data.SLC.csproj
+		SccProjectName60 = \u0022$/JIBE/SMS/SMS.Data.SLC\u0022,\u0020CWHFAAAA
+		SccLocalPath60 = SMS\\SMS.Data.SLC
+		SccProjectUniqueName61 = SMS\\SMS.VMService\\SMS.VMService.csproj
+		SccLocalPath61 = .
+		SccProjectFilePathRelativizedFromConnection61 = SMS\\SMS.VMService\\
+		SccProjectUniqueName62 = SMS\\SMS.Business.TMSA\\SMS.Business.TMSA.csproj
+		SccProjectName62 = \u0022$/JIBE/SMS/SMS.Business.TMSA\u0022,\u0020TNNFAAAA
+		SccLocalPath62 = SMS\\SMS.Business.TMSA
+		SccProjectUniqueName63 = SMS\\SMS.Data.TMSA\\SMS.Data.TMSA.csproj
+		SccProjectName63 = \u0022$/JIBE/SMS/SMS.Data.TMSA\u0022,\u0020WNNFAAAA
+		SccLocalPath63 = SMS\\SMS.Data.TMSA
+		SccProjectUniqueName64 = SMS\\SMS.KPI.Service\\SMS.KPI.Service.csproj
+		SccLocalPath64 = .
+		SccProjectFilePathRelativizedFromConnection64 = SMS\\SMS.KPI.Service\\
+		SccProjectUniqueName65 = SMS\\SMS.WebsService.INF\\SMS.WebsService.INF.csproj
+		SccLocalPath65 = .
+		SccProjectFilePathRelativizedFromConnection65 = SMS\\SMS.WebsService.INF\\
+		SccProjectUniqueName66 = SMS\\SMS.JiBeMenuService\\SMS.JiBeMenuService.csproj
+		SccLocalPath66 = .
+		SccProjectFilePathRelativizedFromConnection66 = SMS\\SMS.JiBeMenuService\\
+		SccProjectUniqueName67 = SMS\\SMS.Business.Dashboard\\SMS.Business.Dashboard.csproj
+		SccProjectName67 = \u0022$/JIBE/SMS/SMS.Business.Dashboard\u0022,\u0020RKNFAAAA
+		SccLocalPath67 = SMS\\SMS.Business.Dashboard
+		SccProjectUniqueName68 = SMS\\SMS.Data.Dashboard\\SMS.Data.Dashboard.csproj
+		SccProjectName68 = \u0022$/JIBE/SMS/SMS.Data.Dashboard\u0022,\u0020XKNFAAAA
+		SccLocalPath68 = SMS\\SMS.Data.Dashboard
+		SccProjectUniqueName69 = SMS\\SMS.DashboardService\\SMS.DashboardService.csproj
+		SccProjectName69 = \u0022$/JIBE/SMS/SMS.DashboardService\u0022,\u0020UKNFAAAA
+		SccLocalPath69 = SMS\\SMS.DashboardService
+		SccProjectUniqueName70 = SMS\\SMS.WCFMobileService\\SMS.WCFMobileService.csproj
+		SccLocalPath70 = .
+		SccProjectFilePathRelativizedFromConnection70 = SMS\\SMS.WCFMobileService\\
+		SccProjectUniqueName71 = SMS\\SMS.Business.VET\\SMS.Business.VET.csproj
+		SccLocalPath71 = .
+		SccProjectFilePathRelativizedFromConnection71 = SMS\\SMS.Business.VET\\
+		SccProjectUniqueName72 = SMS\\SMS.Data.VET\\SMS.Data.VET.csproj
+		SccProjectName72 = \u0022$/JIBE/SMS/SMS.Data.VET\u0022,\u0020FJLGAAAA
+		SccLocalPath72 = SMS\\SMS.Data.VET
+		SccProjectUniqueName73 = SMS\\SMS.Business.BDS\\SMS.Business.BDS.csproj
+		SccLocalPath73 = .
+		SccProjectFilePathRelativizedFromConnection73 = SMS\\SMS.Business.BDS\\
+		SccProjectUniqueName74 = SMS\\SMS.Data.BDS\\SMS.Data.BDS.csproj
+		SccLocalPath74 = .
+		SccProjectFilePathRelativizedFromConnection74 = SMS\\SMS.Data.BDS\\
+		SccProjectUniqueName75 = SMS\\SMS.Business.OCAAdmin\\SMS.Business.OCAAdmin.csproj
+		SccProjectName75 = \u0022$/JIBE/SMS/SMS.Business.OCAAdmin\u0022,\u0020ORHFAAAA
+		SccLocalPath75 = SMS\\SMS.Business.OCAAdmin
+		SccProjectUniqueName76 = SMS\\SMS.Data.OCAAdmin\\SMS.Data.OCAAdmin.csproj
+		SccProjectName76 = \u0022$/JIBE/SMS/SMS.Data.OCAAdmin\u0022,\u0020WRHFAAAA
+		SccLocalPath76 = SMS\\SMS.Data.OCAAdmin
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{045A10A7-6E8C-472B-8F3E-692DCE2971E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045A10A7-6E8C-472B-8F3E-692DCE2971E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045A10A7-6E8C-472B-8F3E-692DCE2971E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045A10A7-6E8C-472B-8F3E-692DCE2971E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D724EE6-4263-4C02-B19F-8D786CC26E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D724EE6-4263-4C02-B19F-8D786CC26E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D724EE6-4263-4C02-B19F-8D786CC26E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D724EE6-4263-4C02-B19F-8D786CC26E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01975551-250D-478E-AEEA-16446D2DEA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01975551-250D-478E-AEEA-16446D2DEA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01975551-250D-478E-AEEA-16446D2DEA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01975551-250D-478E-AEEA-16446D2DEA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE52527F-6836-46BD-BDCC-C5B0C990FC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE52527F-6836-46BD-BDCC-C5B0C990FC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE52527F-6836-46BD-BDCC-C5B0C990FC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE52527F-6836-46BD-BDCC-C5B0C990FC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{758B2069-A346-4B5C-B8CC-C54E9C48356D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758B2069-A346-4B5C-B8CC-C54E9C48356D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758B2069-A346-4B5C-B8CC-C54E9C48356D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758B2069-A346-4B5C-B8CC-C54E9C48356D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467D7578-A86A-4B05-A801-3692DED55958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467D7578-A86A-4B05-A801-3692DED55958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467D7578-A86A-4B05-A801-3692DED55958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467D7578-A86A-4B05-A801-3692DED55958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB920997-5C03-4381-AF86-FB8AF556DB66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB920997-5C03-4381-AF86-FB8AF556DB66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB920997-5C03-4381-AF86-FB8AF556DB66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB920997-5C03-4381-AF86-FB8AF556DB66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DA1350-21DF-4C73-A3DB-81A1F67466B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C46EAB-8463-448F-ACFB-E3FAB1F32614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCCF30F-2D3A-4995-8F35-BF726CE1D6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786FB69E-CB47-418D-9145-F8E530A907C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786FB69E-CB47-418D-9145-F8E530A907C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786FB69E-CB47-418D-9145-F8E530A907C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786FB69E-CB47-418D-9145-F8E530A907C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D8FFFF-34AD-4F8C-AE83-BB0DFDE3DA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE84C45-9BED-4BAA-B08E-4679D7D72674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE84C45-9BED-4BAA-B08E-4679D7D72674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE84C45-9BED-4BAA-B08E-4679D7D72674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE84C45-9BED-4BAA-B08E-4679D7D72674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E14E0BC1-D8F1-4DCC-956A-7B7BA9291A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9FD0D0-C8D1-41F2-8785-36FDBDEB311A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9FD0D0-C8D1-41F2-8785-36FDBDEB311A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9FD0D0-C8D1-41F2-8785-36FDBDEB311A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9FD0D0-C8D1-41F2-8785-36FDBDEB311A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD199762-0D24-4CF5-8D66-EF3FD47FA916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD199762-0D24-4CF5-8D66-EF3FD47FA916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD199762-0D24-4CF5-8D66-EF3FD47FA916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD199762-0D24-4CF5-8D66-EF3FD47FA916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012F6AD6-3FE7-486D-9E52-CD4F3FA9F2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012F6AD6-3FE7-486D-9E52-CD4F3FA9F2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012F6AD6-3FE7-486D-9E52-CD4F3FA9F2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012F6AD6-3FE7-486D-9E52-CD4F3FA9F2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E43AE3-8630-44DA-8FB8-CC68DD23B93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E43AE3-8630-44DA-8FB8-CC68DD23B93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E43AE3-8630-44DA-8FB8-CC68DD23B93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E43AE3-8630-44DA-8FB8-CC68DD23B93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1B2A82-A871-46B9-A18D-8E5E7C0D6DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1B2A82-A871-46B9-A18D-8E5E7C0D6DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1B2A82-A871-46B9-A18D-8E5E7C0D6DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1B2A82-A871-46B9-A18D-8E5E7C0D6DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3406D5-B2E2-4304-804D-E907578B1F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3406D5-B2E2-4304-804D-E907578B1F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3406D5-B2E2-4304-804D-E907578B1F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3406D5-B2E2-4304-804D-E907578B1F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689D494B-5773-4E70-A409-F6077427E0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689D494B-5773-4E70-A409-F6077427E0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689D494B-5773-4E70-A409-F6077427E0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689D494B-5773-4E70-A409-F6077427E0A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D33C4C8-E77C-4909-B3FB-39D7F0F156F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C99893B-FB60-4E9A-ABD5-5419029DCC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C99893B-FB60-4E9A-ABD5-5419029DCC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C99893B-FB60-4E9A-ABD5-5419029DCC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C99893B-FB60-4E9A-ABD5-5419029DCC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A7B066-C1D3-4EA6-B659-A6FD96D1D849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A7B066-C1D3-4EA6-B659-A6FD96D1D849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A7B066-C1D3-4EA6-B659-A6FD96D1D849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A7B066-C1D3-4EA6-B659-A6FD96D1D849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBA7C65-8315-4C01-AFC9-A9873595584C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBA7C65-8315-4C01-AFC9-A9873595584C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBA7C65-8315-4C01-AFC9-A9873595584C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBA7C65-8315-4C01-AFC9-A9873595584C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D12E2E33-2C95-4726-8294-960624B248BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12E2E33-2C95-4726-8294-960624B248BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12E2E33-2C95-4726-8294-960624B248BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12E2E33-2C95-4726-8294-960624B248BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63E1ECC-6541-47C7-AEC0-E335782793D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63E1ECC-6541-47C7-AEC0-E335782793D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63E1ECC-6541-47C7-AEC0-E335782793D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63E1ECC-6541-47C7-AEC0-E335782793D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDD8BDE-85AC-4BDC-BEDC-AFF8600D3068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDD8BDE-85AC-4BDC-BEDC-AFF8600D3068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDD8BDE-85AC-4BDC-BEDC-AFF8600D3068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDD8BDE-85AC-4BDC-BEDC-AFF8600D3068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F89F5EDF-3662-481A-ADE7-9EC89192961F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89F5EDF-3662-481A-ADE7-9EC89192961F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89F5EDF-3662-481A-ADE7-9EC89192961F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89F5EDF-3662-481A-ADE7-9EC89192961F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A618E3-9676-4E5B-AC50-62DB37EE9B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A618E3-9676-4E5B-AC50-62DB37EE9B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A618E3-9676-4E5B-AC50-62DB37EE9B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A618E3-9676-4E5B-AC50-62DB37EE9B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA8A44D-42E3-4229-B7A5-BBCE73DBC76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8065B55-B8E3-4CDE-9F19-73688EEBB5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8065B55-B8E3-4CDE-9F19-73688EEBB5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8065B55-B8E3-4CDE-9F19-73688EEBB5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8065B55-B8E3-4CDE-9F19-73688EEBB5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D481CB2F-45B5-4A2D-85A2-A7ED22DE9576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F321A2A-8B73-4178-AAED-AE1B316B7072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F321A2A-8B73-4178-AAED-AE1B316B7072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F321A2A-8B73-4178-AAED-AE1B316B7072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F321A2A-8B73-4178-AAED-AE1B316B7072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB11375-E9AD-426A-A1D3-CBCDBED2A8ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D395C43-A056-4DB3-8172-2BFDD6BAB306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D395C43-A056-4DB3-8172-2BFDD6BAB306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D395C43-A056-4DB3-8172-2BFDD6BAB306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D395C43-A056-4DB3-8172-2BFDD6BAB306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3683C021-649B-4F0C-AFAB-10B9BA935E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3683C021-649B-4F0C-AFAB-10B9BA935E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3683C021-649B-4F0C-AFAB-10B9BA935E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3683C021-649B-4F0C-AFAB-10B9BA935E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB32FF39-7509-4913-B16D-FE1754AEF76B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB32FF39-7509-4913-B16D-FE1754AEF76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB32FF39-7509-4913-B16D-FE1754AEF76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB32FF39-7509-4913-B16D-FE1754AEF76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F3CE4A-9FA0-4901-A10C-18BF3024A87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F3CE4A-9FA0-4901-A10C-18BF3024A87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F3CE4A-9FA0-4901-A10C-18BF3024A87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F3CE4A-9FA0-4901-A10C-18BF3024A87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E2322A-C752-4D66-9C2A-DB168AA21153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E2322A-C752-4D66-9C2A-DB168AA21153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E2322A-C752-4D66-9C2A-DB168AA21153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E2322A-C752-4D66-9C2A-DB168AA21153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279E27FB-4F4C-4F88-8E03-2478C9BBAA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279E27FB-4F4C-4F88-8E03-2478C9BBAA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279E27FB-4F4C-4F88-8E03-2478C9BBAA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279E27FB-4F4C-4F88-8E03-2478C9BBAA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B76A329-716B-429A-A295-9D333650BE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B76A329-716B-429A-A295-9D333650BE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B76A329-716B-429A-A295-9D333650BE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B76A329-716B-429A-A295-9D333650BE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6639CC2C-4802-4C0E-AFB7-294380D906DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6639CC2C-4802-4C0E-AFB7-294380D906DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6639CC2C-4802-4C0E-AFB7-294380D906DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6639CC2C-4802-4C0E-AFB7-294380D906DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF77340-717E-4BA5-887C-A2F5826A8F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF77340-717E-4BA5-887C-A2F5826A8F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF77340-717E-4BA5-887C-A2F5826A8F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF77340-717E-4BA5-887C-A2F5826A8F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D09A2F-4134-405E-BCA0-DFC0696509F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D09A2F-4134-405E-BCA0-DFC0696509F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D09A2F-4134-405E-BCA0-DFC0696509F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D09A2F-4134-405E-BCA0-DFC0696509F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA15F215-C74A-48E3-A618-C24E3A8502F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA15F215-C74A-48E3-A618-C24E3A8502F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA15F215-C74A-48E3-A618-C24E3A8502F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA15F215-C74A-48E3-A618-C24E3A8502F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1137E879-C38F-4431-9931-654B0FA8800A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1137E879-C38F-4431-9931-654B0FA8800A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1137E879-C38F-4431-9931-654B0FA8800A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1137E879-C38F-4431-9931-654B0FA8800A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1B76FC-0DF4-4ED9-92DD-7631785B3722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1B76FC-0DF4-4ED9-92DD-7631785B3722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1B76FC-0DF4-4ED9-92DD-7631785B3722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1B76FC-0DF4-4ED9-92DD-7631785B3722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0806952-7B73-438A-A8AE-5DC8282C3050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0806952-7B73-438A-A8AE-5DC8282C3050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0806952-7B73-438A-A8AE-5DC8282C3050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0806952-7B73-438A-A8AE-5DC8282C3050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7896A4-B14F-4EAF-9EC7-5B34855B5D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7896A4-B14F-4EAF-9EC7-5B34855B5D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7896A4-B14F-4EAF-9EC7-5B34855B5D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7896A4-B14F-4EAF-9EC7-5B34855B5D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84293C27-07CC-4745-95CC-712BA9DF1649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84293C27-07CC-4745-95CC-712BA9DF1649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84293C27-07CC-4745-95CC-712BA9DF1649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84293C27-07CC-4745-95CC-712BA9DF1649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068E3271-9584-491B-AC5E-2765A7A03CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068E3271-9584-491B-AC5E-2765A7A03CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068E3271-9584-491B-AC5E-2765A7A03CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068E3271-9584-491B-AC5E-2765A7A03CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1586C5FD-8D05-4E20-8C51-A9F37C3559FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E018BE25-A7C3-46B5-96AD-8B7633DE3DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E018BE25-A7C3-46B5-96AD-8B7633DE3DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E018BE25-A7C3-46B5-96AD-8B7633DE3DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E018BE25-A7C3-46B5-96AD-8B7633DE3DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB027A2-8B56-4800-9953-C9E560947EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB027A2-8B56-4800-9953-C9E560947EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB027A2-8B56-4800-9953-C9E560947EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB027A2-8B56-4800-9953-C9E560947EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E16EC4E-7C13-4F9B-B486-5C376E4D1D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E16EC4E-7C13-4F9B-B486-5C376E4D1D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E16EC4E-7C13-4F9B-B486-5C376E4D1D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E16EC4E-7C13-4F9B-B486-5C376E4D1D95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9E9E6A-1955-4EAE-BBAB-8870B5868B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9E9E6A-1955-4EAE-BBAB-8870B5868B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9E9E6A-1955-4EAE-BBAB-8870B5868B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9E9E6A-1955-4EAE-BBAB-8870B5868B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F697886E-0FBF-4B3F-B8F9-59C151C6632C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F697886E-0FBF-4B3F-B8F9-59C151C6632C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F697886E-0FBF-4B3F-B8F9-59C151C6632C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F697886E-0FBF-4B3F-B8F9-59C151C6632C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1EBD32-B96A-4329-B104-3ABB61163A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1EBD32-B96A-4329-B104-3ABB61163A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1EBD32-B96A-4329-B104-3ABB61163A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1EBD32-B96A-4329-B104-3ABB61163A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2533754-83C1-4156-AF9E-D004F0C3E72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2533754-83C1-4156-AF9E-D004F0C3E72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2533754-83C1-4156-AF9E-D004F0C3E72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2533754-83C1-4156-AF9E-D004F0C3E72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD676421-F4A3-4C81-BBDD-3486394FC307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD676421-F4A3-4C81-BBDD-3486394FC307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD676421-F4A3-4C81-BBDD-3486394FC307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD676421-F4A3-4C81-BBDD-3486394FC307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948EEA42-88FE-4D98-B41D-0C5D3E913919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948EEA42-88FE-4D98-B41D-0C5D3E913919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948EEA42-88FE-4D98-B41D-0C5D3E913919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948EEA42-88FE-4D98-B41D-0C5D3E913919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593AA15A-8A01-4BCF-AA74-CE7A2D9EE3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593AA15A-8A01-4BCF-AA74-CE7A2D9EE3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593AA15A-8A01-4BCF-AA74-CE7A2D9EE3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593AA15A-8A01-4BCF-AA74-CE7A2D9EE3BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FD46CC-3673-4FDE-B224-4EF7A46D7EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FD46CC-3673-4FDE-B224-4EF7A46D7EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FD46CC-3673-4FDE-B224-4EF7A46D7EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FD46CC-3673-4FDE-B224-4EF7A46D7EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D52262C-B30F-4D69-A9D8-96D201696899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D52262C-B30F-4D69-A9D8-96D201696899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D52262C-B30F-4D69-A9D8-96D201696899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D52262C-B30F-4D69-A9D8-96D201696899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28E8921-C016-4991-B6E3-4C767F62097C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28E8921-C016-4991-B6E3-4C767F62097C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28E8921-C016-4991-B6E3-4C767F62097C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28E8921-C016-4991-B6E3-4C767F62097C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE66176-9A2B-4307-A20F-CC7F1A70B32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE66176-9A2B-4307-A20F-CC7F1A70B32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE66176-9A2B-4307-A20F-CC7F1A70B32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE66176-9A2B-4307-A20F-CC7F1A70B32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EAC2C8-9680-4516-B7E2-5E337FF0080C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EAC2C8-9680-4516-B7E2-5E337FF0080C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EAC2C8-9680-4516-B7E2-5E337FF0080C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42EAC2C8-9680-4516-B7E2-5E337FF0080C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0CBB4D-C583-46B2-9F49-CB5B77962103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0CBB4D-C583-46B2-9F49-CB5B77962103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0CBB4D-C583-46B2-9F49-CB5B77962103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0CBB4D-C583-46B2-9F49-CB5B77962103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A93E8A-1DEE-491F-9AFF-7E38B0E959E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A93E8A-1DEE-491F-9AFF-7E38B0E959E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A93E8A-1DEE-491F-9AFF-7E38B0E959E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A93E8A-1DEE-491F-9AFF-7E38B0E959E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD6B758-FB8B-448A-9EA1-F202FAA0E91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD6B758-FB8B-448A-9EA1-F202FAA0E91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD6B758-FB8B-448A-9EA1-F202FAA0E91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD6B758-FB8B-448A-9EA1-F202FAA0E91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF5CB05-7EB2-4248-9A2E-BBFC1AF236CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF5CB05-7EB2-4248-9A2E-BBFC1AF236CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF5CB05-7EB2-4248-9A2E-BBFC1AF236CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF5CB05-7EB2-4248-9A2E-BBFC1AF236CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1818A666-16A8-4768-A35A-F647795D25B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1818A666-16A8-4768-A35A-F647795D25B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1818A666-16A8-4768-A35A-F647795D25B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1818A666-16A8-4768-A35A-F647795D25B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,996 @@
+﻿
+
+
+/* ----- =============== --------------------*/
+/* -----  GRID            ------------------ */
+/* ----- =============== --------------------*/
+
+.HeaderStyle-css
+{
+    height: 30px;
+}
+
+/* ----- =============== --------------------*/
+/* -----  GENERAL     ------------------ */
+/* ----- =============== --------------------*/
+
+
+fieldset
+{
+    text-align: left;
+    margin: 0px;
+    padding: 2px;
+    font-size: 12px;
+}
+legend
+{
+    text-align: left;
+    margin: 0px;
+    padding: 2px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.dataTable
+{
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+    color: Teal;
+}
+.dataTable td
+{
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+}
+.dataTable .data
+{
+    vertical-align: top;
+    background-color: #ffffff;
+    color: Black;
+}
+.inline-edit
+{
+    font-family: Verdana;
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: normal;
+    color: Blue;
+    cursor: pointer;
+}
+.up
+{
+    background-image: url(../Images/up.png);
+    background-repeat: no-repeat;
+}
+.down
+{
+    background-image: url(../Images/down.png);
+    background-repeat: no-repeat;
+}
+.class-doc-list
+{
+    font-size: 11px;
+}
+.class-doc-edit
+{
+    font-size: 11px;
+}
+.control-edit
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 0px;
+    width: 150px;
+}
+.error-message
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: Red;
+    text-align: center;
+    background-color: Yellow;
+}
+.tooltip
+{
+    display: none;
+    background: transparent url(../Images/black_arrow.png);
+    font-size: 12px;
+    height: 70px;
+    width: 160px;
+    padding: 25px;
+    color: #fff;
+}
+.taskpane
+{
+    background-image: url(../images/taskpane.png);
+    background-repeat: no-repeat;
+    background-position: -2px -2px;
+}
+
+.required
+{
+    background-color: #F2F5A9;
+    border: 1px solid #dcdcdc;
+    height: 18px;
+}
+.popup-background
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.popup-content
+{
+    position: absolute;
+    float: left;
+    z-index: 1;
+    padding: 10px;
+}
+.imgCOC
+{
+    vertical-align: middle;
+}
+.error-message
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: Red;
+    text-align: center;
+    background-color: Yellow;
+}
+.gradiant-css-browne
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#81F79F',EndColorStr='#088A4B');
+    background: -webkit-gradient(linear, left top, left bottom, from(#81F79F), to(#088A4B));
+    background: -moz-linear-gradient(top,  #81F79F,  #088A4B);
+    color: Black;
+}
+.gradiant-css-orange
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#F8D79B',EndColorStr='#F1C15F');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8D79B), to(#F1C15F));
+    background: -moz-linear-gradient(top,  #F8D79B,  #F1C15F);
+    color: Black;
+}
+.gradiant-css-blue
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    color: Black;
+}
+.rounded-corner-box-blue
+{
+    border: 2px solid #A9BCF5;
+    padding: 2px;
+    text-align: center;
+    color: Black;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.rounded-corner-box-orange
+{
+    border: 2px solid #F1C15F;
+    padding: 2px;
+    text-align: center;
+    color: Black;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.section-title-broad-lightyellow
+{
+    text-align: left;
+    font-size: 18px;
+    background-color: #F9F2CC;
+    border-bottom: 1px solid #cccccc;
+    padding: 6px;
+}
+
+.watermarked
+{
+    color: #cccccc;
+}
+.linkbtn a
+{
+    color: Black;
+}
+
+.linkbtn
+{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    border-left: 1px solid #cccccc;
+    padding-left: 10px;
+    border-top: 1px solid #cccccc;
+    padding-top: 5px;
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 3px;
+    background-color: #F1F8E0;
+    white-space: nowrap;
+}
+
+.linkImageBtn
+{
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    border-left: 1px solid #cccccc;
+    padding-left: 10px;
+    border-top: 1px solid #cccccc;
+    padding-top: 2px;
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 2px;
+    background-color: #F1F8E0;
+    white-space: nowrap;
+    background: url(../Images/bg.png) left -1675px repeat-x;
+    cursor: pointer;
+}
+.linkImageBtn:hover
+{
+    color: Blue;
+    background: url(../Images/bg.png) left -1672px repeat-x;
+}
+
+.modal-popup-container
+{
+    display: none;
+    background-color: #CBE1EF;
+    border-color: #5C87B2;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    color: black;
+    cursor: move;
+}
+.modal-popup-content
+{
+    background-color: White;
+    cursor: default;
+}
+.roundedBox
+{
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #E3F6CE;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin: 2px;
+}
+
+.HeaderStyle-css-2
+{
+    background-color: gray;
+    font-weight: bold;
+    color: White;
+    text-align: center;
+}
+.eval-background-pink
+{
+    background-color: #FCD2E9;
+}
+.eval-background-lightgreen
+{
+    background-color: #A6F7A6;
+}
+.eval-background-red
+{
+    background-color: red;
+    color: white;
+}
+
+/* ----- ======================== --------------------*/
+/* ----- INTERVIEW MODULE RELATED ------------------- */
+/* ----- ======================== --------------------*/
+
+.crew-interview-grid-css
+{
+    color: #333333;
+}
+.crew-interview-grid-header
+{
+    border-bottom: 1px solid #cccccc;
+    background-color: White;
+    font-weight: bold;
+    color: Black;
+}
+.crew-interview-grid-editrow
+{
+    background-color: #58FA82;
+}
+.crew-interview-grid-alternaterow
+{
+    background-color: White;
+    color: #284775;
+}
+.crew-interview-grid-row
+{
+    color: #333333;
+    background-color: #F7F6F3;
+}
+.crew-interview-grid-selected-row
+{
+    color: #333333;
+    background-color: #E2DED6;
+    font-weight: bold;
+    border: 1px solid gray;
+}
+.crew-interview-grid-selected-row td
+{
+    background-color: #E2DED6;
+    font-weight: normal;
+}
+.crew-interview-grid-col-sorted-asc
+{
+    background-color: #E9E7E2;
+}
+.crew-interview-grid-header-sorted-asc
+{
+    background-color: #506C8C;
+}
+.crew-interview-grid-col-sorted-desc
+{
+    background-color: #FFFDF8;
+}
+.crew-interview-grid-header-sorted-desc
+{
+    background-color: #6F8DAE;
+}
+
+.interview-question-box
+{
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    font-size: 14px;
+    vertical-align: top;
+}
+.interview-answer-box
+{
+    border: 1px solid #cccccc;
+    background-color: #DEF7FF;
+    vertical-align: top;
+}
+.interview-answer-sheet-fixed
+{
+    max-height: 400px;
+    overflow: scroll;
+    position: relative;
+}
+.interview-answer-sheet-expand
+{
+    max-height: 1400px;
+    overflow: scroll;
+    position: relative;
+}
+
+.interview-questionbank-fixed
+{
+    height: 600px;
+    overflow: auto;
+}
+.highlight
+{
+    background-color: #FFFF88;
+}
+
+.interview-title-approved
+{
+    background-color: Yellow;
+    color: Black;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.interview-result-table .interview-title-approved
+{
+    background-color: Yellow;
+    color: Black;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.interview-result-table .interview-title-rejected, .interview-title-rejected
+{
+    background-color: red;
+    color: Yellow;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.interview-title-rejected
+{
+    background-color: red;
+    color: Yellow;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.interview-result-table .interview-title-pending
+{
+    background-color: gray;
+    color: Black;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.interview-title-pending
+{
+    background-color: gray;
+    color: Black;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.user-answer-table
+{
+    font-size: 10px;
+    font-family: Verdana;
+    border: 1px solid gray;
+    width: 350px;
+}
+.user-answer-table td
+{
+    padding: 2px;
+    white-space: nowrap;
+}
+.interviewer-table
+{
+    font-size: 10px;
+    font-family: Verdana;
+    border: 1px solid gray;
+    background-color: #bfcfdf;
+    width: 350px;
+}
+.interviewer-table td
+{
+    background-color: #bfcfdf;
+}
+.interview-result-table
+{
+    font-size: 10px;
+    font-family: Verdana;
+    border: 1px solid gray;
+    width: 350px;
+}
+.interview-reasult
+{
+    background-color: Yellow;
+    text-align: center;
+}
+.interview-result-table td
+{
+    vertical-align: top;
+}
+.interview-remarks-table
+{
+    font-size: 10px;
+    font-family: Verdana;
+    border: 1px solid gray;
+    width: 294px;
+    padding: 2px;
+    background-color: #E3F6CE;
+    width: 100%;
+}
+.Question
+{
+    width: 80%;
+    border-bottom: 1px solid #efefef;
+}
+.ans1
+{
+    background-color: Green;
+    border: 1px solid black;
+    color: White;
+    text-align: center;
+    cursor: pointer;
+}
+.ans2
+{
+    background-color: #FFBF00;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+.ans3
+{
+    background-color: #FFBF00;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+.ans4
+{
+    background-color: Red;
+    border: 1px solid black;
+    color: White;
+    text-align: center;
+    cursor: pointer;
+}
+.AttributeEditBox
+{
+    border: 0;
+    width: 100%;
+}
+.interview-schedule-table
+{
+
+}
+
+/* ----- =============== --------------------*/
+/*------- TOOLTIP             ---------------*/
+/* ----- =============== --------------------*/
+
+.thdrcell
+{
+    background: #F3F0E7;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+}
+.tdatacell
+{
+    font-family: arial;
+    font-size: 12px;
+    padding: 5px;
+    background: #FFFFFF;
+}
+.dvhdr1
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+    width: 200px;
+    color: Black; /*background: #F5D0A9;*/
+    border: 1px solid #F1C15F;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#F8D79B',EndColorStr='#F1C15F');
+    background:#F1C15F;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8D79B), to(#F1C15F));
+    background: -moz-linear-gradient(top,  #F8D79B,  #F1C15F);
+    color: Black;
+}
+.dvbdy1
+{
+    background: #FFFFFF;
+    font-family: arial;
+    font-size: 11px; /*border-left: 2px solid #3B0B0B;             border-right: 2px solid #3B0B0B;             border-bottom: 2px solid #3B0B0B;*/
+    padding: 5px;
+    width: 200px;
+    background-color: #E0F8E0;
+    border: 1px solid #F1C15F;
+}
+p
+{
+    margin-top: 20px;
+}
+h1
+{
+    font-size: 13px;
+}
+.dogvdvhdr
+{
+    width: 300;
+    background: #C4D5E3;
+    border: 1px solid #C4D5E3;
+    font-weight: bold;
+    padding: 10px;
+}
+.dogvdvbdy
+{
+    width: 300;
+    background: #FFFFFF;
+    border-left: 1px solid #C4D5E3;
+    border-right: 1px solid #C4D5E3;
+    border-bottom: 1px solid #C4D5E3;
+    padding: 10px;
+}
+.pgdiv
+{
+    width: 320;
+    height: 250;
+    background: #E9EFF4;
+    border: 1px solid #C4D5E3;
+    padding: 10px;
+    margin-bottom: 20;
+    font-family: arial;
+    font-size: 12px;
+}
+
+/* ----- =============== --------------------*/
+/*------- PAGER             ---------------*/
+/* ----- =============== --------------------*/
+.pager span
+{
+    border: 1px solid gray;
+    padding: 0px 3px 0px 3px;
+    background: url(../Images/bg.png) left -1672px repeat-x;
+}
+.pager a
+{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 0px 3px 0px 3px;
+}
+.pager a:link
+{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 0px 3px 0px 3px;
+}
+.pager a:visited
+{
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 0px 3px 0px 3px;
+}
+.pager a:hover
+{
+    color: blue;
+    background-color: #efefef;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 0px 3px 0px 3px;
+}
+
+#grid-container a:link
+{
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+    border: 0px;
+}
+#grid-container a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+#grid-container a:hover
+{
+    color: blue;
+    text-decoration: none;
+}
+
+/* ----- =============== --------------------*/
+/*------- CREW INDEX - STATUS ---------------*/
+/* ----- =============== --------------------*/
+.CrewStatus_Current
+{
+    background-color: #aabbdd;
+}
+.CrewStatus_SigningOff
+{
+    background-color: #F3F781;
+}
+.CrewStatus_SignedOff
+{
+    background-color: #F5A9A9;
+}
+.CrewStatus_Assigned
+{
+    background-color: #BBB6FF;
+}
+.CrewStatus_Planned
+{
+    background-color: #F781F3;
+}
+.CrewStatus_Pending
+{
+    background-color: #81BEF7;
+}
+.CrewStatus_Inactive
+{
+    background-color: #848484;
+    color: #E6E6E6;
+}
+.CrewStatus_NoVoyage
+{
+    background-color: #A9F5D0;
+}
+.CrewStatus_NTBR
+{
+    background-color: RED;
+    color: Yellow;
+}
+.CrewStatus_NTBR_Row
+{
+    color: Red;
+}
+.CrewStatus_UNFIT
+{
+    background-color: RED;
+    color: Yellow;
+}
+.CrewStatus_UNFIT_Row
+{
+    color: Red;
+}
+.imgCOC
+{
+    vertical-align: middle;
+}
+.CrewStatus_Rejected
+{
+    background-color: RED;
+    color: Yellow;
+}
+.hide
+{
+    display: none;
+}
+.show
+{
+    display: block;
+}
+#tblPager .tdpager
+{
+    border: 0px;
+}
+#tblPager .Paging-Custom:hover
+{
+    background-color: #CECEF6;
+}
+.Ready_NoVoyage
+{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.Available_Next30Days
+{
+    background-color: Yellow;
+    color: black;
+}
+.Availabledate_NotUpdated
+{
+    background-color: transparent;
+    color: Red;
+    font-weight: bold;
+}
+.fixed-header
+{
+    background-color: #cccccc;
+    color: black;
+    font-weight: bold;
+}
+.toolTipTable
+{
+    width: 100%;
+    background-color: #F9F2CC;
+}
+
+
+/* ----- =============== --------------------*/
+/*------- INTERVIEW PLANNER ---------------*/
+/* ----- =============== --------------------*/
+
+.headerText
+{
+    font-weight: bold;
+    font-size: 12px;
+}
+.calTable
+{
+    width: 100%;
+    border: 1px solid #dcdcdc;
+}
+.cellMonth
+{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #01DF74;
+    padding: 2px;
+}
+.cellDHeader
+{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #CEE3F6;
+}
+.cellToday
+{
+    font-size: 10px;
+    border: 1px solid blue;
+    height: 70px;
+    width: 80px;
+    vertical-align: top;
+}
+.cellDay
+{
+    font-size: 10px;
+    border: 1px solid #dcdcdc;
+    height: 70px;
+    width: 80px;
+    vertical-align: top;
+}
+
+/*---------------- CREW EVALUATION -------------------------------*/
+/*================================================================*/
+.overdue
+{
+    color: Red;
+}
+
+.grid-col .ThisMonth
+{
+    background-color: #81BEF7;
+}
+.Current
+{
+    background: url(../Images/bg.png) left -1672px repeat-x;
+}
+.link
+{
+    color: Blue;
+    cursor: pointer;
+}
+.grid-col .Current
+{
+    border: 0;
+}
+.grid-col .Current .Pending
+{
+    text-decoration: underline;
+}
+.grid-col .Current .Complete
+{
+    text-decoration: underline;
+}
+.Fixed
+{
+    position: relative;
+    border-bottom: 1px solid #cccccc;
+    font-size: 11px;
+}
+.grid td
+{
+    border: 1px solid #cccccc;
+}
+.grid-row
+{
+    padding: 6px;
+}
+
+.grid-col
+{
+    border: 1px solid #cccccc;
+}
+
+/* ----------------------------- CREW QUERY ----------------------*/
+/*----------------------------------------------------------------*/
+
+.crewquery-data-field
+{
+    height: 20px;
+    border: 1px solid #B2D1D1;
+    background-color: #FEFEF9;
+    color: Black;
+    padding: 2px 2px 2px 5px;
+}
+.crewquery-section-header
+{
+    margin-top: 5px;
+    border: 1px solid #B2D1D1;
+    background-color: #CCE0E0;
+    color: #444;
+    padding: 4px 4px 4px 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.crewquery-table
+{
+    border: 1px solid #B2D1D1;
+    background-color: #FFFFFF;
+    color: Black;
+    font-size: 12px;
+    width: 100%;
+    padding: 2px;
+    margin-top:-1px;
+}
+.crewquery-table-header
+{
+    color: Black;
+    font-size: 12px;
+    height: 25px;
+    font-weight: bold;
+}
+.crewquery-table-header td
+{
+    padding: 5px;
+    background-color: #66FFFF;
+}
+.crewquery-table-row
+{
+    background-color: #ffffff;
+    color: Black;
+    font-size: 12px;
+    height: 22px;
+}
+.crewquery-table-alt-row
+{
+    background-color: #F2F7F7;
+    color: Black;
+    font-size: 12px;
+    height: 22px;
+}
+.crewquery-table-alt-row td
+{
+    padding: 5px;
+}
+.crewquery-table-row td
+{
+    padding: 5px;
+}
+.crewquery-table-footer-row
+{            
+    border: 1px solid #B2D1D1;
+    background-color: #FFFFD9;
+    color: Black;
+    font-size: 12px;
+    height: 22px;
+    font-weight: bold;
+}
+
+.CrewQuery-Attachments-table
+{
+    min-width:200px;
+    background-color:white;
+    border:0;
+    
+}
+.CrewQuery-Attachments-Data
+{
+    border:0;
+    padding:10px;
+    font-size:12px;
+    background-color:transparent;
+}
+.CrewQuery-Attachments-DataHeader
+{
+    border:0;    
+    font-size:12px;
+    padding:10px;
+    text-align:center;
+}
+
+.CrewQuery-Followup-table
+{
+    min-width:200px;
+    background-color:white;
+    border:0;
+}
+.CrewQuery-Followup-Data
+{
+    border: 1px solid #B2D1D1;
+    padding:10px;
+    font-size:12px;
+    background-color:transparent;
+}
+.CrewQuery-Followup-DataHeader
+{
+    border:0;    
+    font-size:12px;
+    padding:10px;
+    text-align:center;
+}

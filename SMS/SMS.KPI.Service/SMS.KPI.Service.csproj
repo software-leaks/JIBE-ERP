@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD676421-F4A3-4C81-BBDD-3486394FC307}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.KPI.Service</RootNamespace>
+    <AssemblyName>SMS.KPI.Service</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SMS.Data.LIB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMS.Data.LIB\bin\Debug\SMS.Data.LIB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContract\PMSOverdue.cs" />
+    <Compile Include="DataContract\CrewRetention.cs" />
+    <Compile Include="DataContract\KPIGeneric.cs" />
+    <Compile Include="DataContract\KPICO2.cs" />
+    <Compile Include="DataContract\KPINOx.cs" />
+    <Compile Include="DataContract\KPISOx.cs" />
+    <Compile Include="DataContract\REPORT.cs" />
+    <Compile Include="DataContract\TDATE.cs" />
+    <Compile Include="DataContract\VettingReport.cs" />
+    <Compile Include="DataContract\WorkList.cs" />
+    <Compile Include="IKPIService.cs" />
+    <Compile Include="KPIService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Business.INFRA\SMS.Business.INFRA.csproj">
+      <Project>{6D724EE6-4263-4C02-B19F-8D786CC26E6B}</Project>
+      <Name>SMS.Business.INFRA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.LIB\SMS.Business.LIB.csproj">
+      <Project>{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}</Project>
+      <Name>SMS.Business.LIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.TMSA\SMS.Business.TMSA.csproj">
+      <Project>{FF1EBD32-B96A-4329-B104-3ABB61163A7E}</Project>
+      <Name>SMS.Business.TMSA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Business.VET\SMS.Business.VET.csproj">
+      <Project>{42EAC2C8-9680-4516-B7E2-5E337FF0080C}</Project>
+      <Name>SMS.Business.VET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.TMSA\SMS.Data.TMSA.csproj">
+      <Project>{C2533754-83C1-4156-AF9E-D004F0C3E72A}</Project>
+      <Name>SMS.Data.TMSA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Properties\SMS.Properties.csproj">
+      <Project>{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}</Project>
+      <Name>SMS.Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
+        <WcfProjectProperties>
+          <AutoStart>True</AutoStart>
+        </WcfProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

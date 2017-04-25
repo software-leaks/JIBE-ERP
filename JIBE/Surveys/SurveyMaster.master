@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SurveyMaster.master.cs"
+    Inherits="Technical_Inspection_SurveyMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="../Scripts/Common_Functions.js"></script>
+    <link href="../Styles/purchase.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/smscss_blue.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body
+        {
+            font-family: Tahoma;
+        }
+        .RowStyle-css
+        {
+            height: 25px;
+        }
+        .AlternatingRowStyle-css
+        {
+            height: 25px;
+        }
+        .gridmain-css tr:hover
+        {
+            background-color: #feecec;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager2" runat="server">
+        </asp:ScriptManager>
+        <asp:HiddenField ID="hdnDateFromatMasterPage" ClientIDMode="Static" runat="server"
+            Value="dd-MM-yyyy" />
+        <center>
+            <div id="divLoggout" runat="server" style="color: red; font-size: 14px;">
+                Session expired!! Please log out and login again
+            </div>
+        </center>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

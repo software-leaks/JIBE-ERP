@@ -1,0 +1,41 @@
+ 1/1/1753 12:00:00 AM and 12/31/9999 
+
+
+ClientMgmt.aspx   ---- 4202
+ClientMgmt.aspx.cs
+ClientVesselMgmt.aspx
+ClientVesselMgmt.aspx.cs
+AsyncTaskList.aspx
+AddNewFile.aspx
+AsyncSPM.js
+
+
+JIT_Get_Currency_Search ---4201
+
+
+ClientVesselMgmt.aspx-- 4224
+
+ClientVesselMgmt.aspx-- 4219
+
+ClientMgmt.aspx.cs --4237
+
+JIT_Get_UserList --4211
+
+JIT_Get_Company --4210
+CRM/Client/ClientMgmt.aspx----4226
+Infra/User/User.aspx
+Infra/User/UserList.aspx
+
+
+Account/Register.aspx------4228
+Account/ResetPassword.aspx
+CRM/Client/ClientMgmt.aspx
+CRM/Client/ClientVesselMgmt.aspx
+Infra/Libraries/Fleet.aspx
+Infra/Libraries/VesselFlag.aspx
+Infra/User/User.aspx
+Infra/User/UserList.aspx
+
+
+
+

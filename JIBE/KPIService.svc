@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SMS.KPI.Service.KPIService" CodeBehind="SMS.KPI.Service.dll" %>

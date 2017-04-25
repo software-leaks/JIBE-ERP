@@ -1,0 +1,238 @@
+﻿
+body
+{
+    font-family: Tahoma ,Tahoma, Sans-Serif;
+}
+
+
+.RedCell
+{
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+}
+
+
+
+.GridView-css
+{
+    color: #333333;
+}
+.FooterStyle-css
+{
+    background-color: #5D7B9D;
+    font-weight: normal;
+    font-size: 11px;
+    color: White; /*ForeColor:White;*/
+}
+.PagerStyle-css
+{
+    background-color: Silver;
+    color: Black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold; /*HorizontalAlign:Center;*/
+}
+.HeaderStyle-css
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    font-size: 12px;
+    color: White;
+    font-family: Tahoma;
+    border-spacing: 3px;
+}
+
+.QtnEval-HeaderStyle-css
+{
+    background-color: #045FB4;
+    font-size: 11px;
+    color: White;
+    font-family: Tahoma;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 0px 0px 0px 0px;
+    font-weight: bold;
+    /*z-index:90;*/
+    z-index: 1;
+}
+
+.QtnEval-AltHeaderStyle-css
+{
+    background-color: #610B38;
+    font-size: 11px;
+    color: White;
+    font-family: Tahoma;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    /*z-index:90;*/
+    z-index: 1;
+    
+}
+
+
+.QtnEval-ItemStyle-css
+{
+    background-color: #E0F8F7;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 0px 0px 0px 0px;
+    margin-right: -10px;
+}
+
+.QtnEval-AltItemStyle-css
+{
+    background-color: #F8E0EC;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+.AlternatingRowStyle-css
+{
+    background-color: White;
+    color: #333333;
+    font-size: 11px;
+   
+}
+.SelectedRowStyle-Css
+{
+    background-color: Navy;
+    color: #284775;
+    font-size: 11px;
+}
+.RowStyle-css
+{
+    font-size: 11px;
+    background-color:#E0ECF8;
+    color: #333333;
+    
+}
+
+.button-css
+{
+    height: 20px;
+    font-family: Tahoma;
+    letter-spacing: normal;
+    font-size: 10px;
+    border-style: none;
+}
+
+.msg-css
+{
+    background-color: Transparent;
+    color: Maroon;
+    font-family: Tahoma,Tahoma;
+    letter-spacing: normal;
+    font-size: 9px;
+}
+
+
+.textbox-css
+{
+    font-size: 10px;
+    font-family: Tahoma;
+}
+.dropdown-css
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    background-color: White;
+}
+#select-css
+{
+    position: relative;
+    top: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+
+
+.radio-css
+{
+    color: Green;
+}
+
+.check-css
+{
+    color: Green;
+}
+
+.listbox-css
+{
+    color: Green;
+    border-style: solid;
+    border-color: Green;
+    border-width: 1px;
+}
+.label-css
+{
+    color: Black;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+
+
+
+
+.btnCSS
+{
+    color: #4169e1;
+    background-color: #D3D3A8;
+    border: solid 1px #b0c4de;
+    font-size: 8.3pt;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.btnNewAddCSS
+{
+    color: Red;
+    background-color: #D3D3A8;
+    border: solid 1px #b0c4de;
+    font-size: 8.3pt;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.ddlCSS
+{
+    font-size: 11px;
+    border: solid 1px #7F9DB9;
+    font-family: Tahoma;
+    color: #333333;
+}
+.textBox
+{
+    width: 200px;
+    background-color: #FFFFFF;
+    color: #333333;
+    border: solid 1px #7F9DB9;
+    padding: 2px 2px;
+    margin-bottom: 0px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+
+.popup-css
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#FAAC58',EndColorStr='#8fb9cc');
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9eff2), to(#8fb9cc));
+    background: -moz-linear-gradient(top,  #e9eff2,  #8fb9cc);
+    color: Black;
+}
+
+.Button-Gradient
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='white',EndColorStr='gray');
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9eff2), to(#8fb9cc));
+    background: -moz-linear-gradient(top,  #e9eff2,  #8fb9cc);
+    color: Black;
+    border: 0px solid white;
+}
+

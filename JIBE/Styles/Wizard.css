@@ -1,0 +1,9 @@
+﻿#steps .item1 {
+  background: url(step1.png) no-repeat;
+}
+#steps .item2 {
+  background: url(step2.png) no-repeat;
+}
+#steps .item3 {
+  background: url(step3.png) no-repeat;
+}

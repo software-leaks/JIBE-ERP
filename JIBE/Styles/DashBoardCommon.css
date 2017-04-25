@@ -1,0 +1,294 @@
+﻿
+.PartStyle-css-blue
+{
+    background-color: #F0F4FD;
+}
+
+.PartStyle-css-orange
+{
+    background-color: #FFCDBA;
+}
+
+.PartStyle-css-brown
+{
+    background-color: #E8E8E8;
+}
+
+.PartStyle-css-marron
+{
+    background-color: #FBF1FB;
+}
+
+.PartStyle-css-white
+{
+    background-color: White;
+}
+
+.PartStyle-css-olive
+{
+    background-color: #FFFFCC;
+}
+
+
+.PartTitleStyle-css
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    background: linear-gradient(#CEE3F6, #99BBE6); 
+    color: Black;
+    font-family: Verdana;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 12px;
+}
+
+
+.PartTitleStyle-css-black
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#778899',EndColorStr='#C6C6C6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#778899), to(#C6C6C6));
+    background: -moz-linear-gradient(top,  #778899,  #C6C6C6);
+    color: Navy;
+    font-family: Verdana;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.PartChromeStyle-css
+{
+    padding: 2px;
+    border-radius: 5px;
+}
+.HeaderStyle-css-dash
+{
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 10px;
+    color: White;
+    font-family: Tahoma;
+    border-spacing: 1px;
+    font-family: Verdana;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.AlternatingRowStyle-css-dash
+{
+    background-color: transparent;
+    color: Black;
+    font-size: 10px;
+    text-align: left;
+    font-family: Verdana;
+    border-bottom: 1px solid #cccccc;
+}
+.RowStyle-css-dash
+{
+    font-size: 10px;
+    background-color: transparent;
+    color: Black;
+    text-align: left;
+    font-family: Verdana;
+    border-bottom: 1px solid #cccccc;
+}
+
+.tbl-css-dash
+{
+    vertical-align: top;
+}
+
+.td-css-dash
+{
+    vertical-align: top;
+}
+
+.cell-HD-css
+{
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: Black;
+    border: 1px solid gray;
+    padding: 0px;
+}
+
+
+.tooltip
+{
+    display: none;
+    background: transparent url(../Images/black_arrow.png);
+    font-size: 12px;
+    height: 70px;
+    width: 160px;
+    padding: 25px;
+    color: #fff;
+}
+.fixed-header
+{
+    top: 0px;
+    background-color: #5D7B9D;
+    color: White;
+}
+.interview-schedule-table
+{
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+    color: Black;
+}
+.interview-schedule-header
+{
+    background-color: #D8D8D8;
+    color: Black;
+}
+
+.interview-schedule-table td
+{
+    padding: 2px;
+    font-size: 10px;
+    font-family: Verdana;
+}
+
+.interview-schedule-table th
+{
+    background-color: #D8D8D8;
+    color: Black;
+}
+
+.interview-schedule-table .icon
+{
+    border: 0px solid gray;
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+    background: url(../Images/Interview_1.png) no-repeat;
+}
+.interview-schedule-table .Candidate
+{
+    background-color: #cfdfef;
+    padding: 0 5px 0 5px;
+}
+.interview-schedule-table .PlanDate
+{
+    background-color: #cfdfef;
+    padding: 0 5px 0 5px;
+}
+.Overdue
+{
+    background-color: Red;
+    color: yellow;
+    font-weight: bold;
+}
+.Due
+{
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+.gradiant-css-blue
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    color: Black;
+}
+.data-table
+{
+    width: 100%;
+}
+
+
+.YELLOWCARD_PROPOSED
+{
+    background-color: Yellow;
+    color: Black;
+    font-weight: bold;
+}
+.YELLOWCARD_ISSUED
+{
+    background-color: Yellow;
+    color: Red;
+    font-weight: bold;
+}
+.REDCARD_PROPOSED
+{
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+}
+.REDCARD_ISSUED
+{
+    background-color: Red;
+    color: Yellow;
+    font-weight: bold;
+}
+
+.tbl-common-Css
+{
+    width: 100%;
+    border: 1 px solid gray;
+    border-collapse: collapse;
+}
+.hdr-common-Css
+{
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 10px;
+    color: White;
+    font-family: Tahoma;
+    border-spacing: 1px;
+    font-family: Verdana;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.row-common-Css
+{
+    font-size: 10px;
+    background-color: transparent;
+    color: Black;
+    text-align: left;
+    font-family: Verdana;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 5px;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+     height:18px;
+}
+
+._link
+{
+    text-decoration: underline;
+    color: Blue;
+    cursor: pointer;
+}
+
+.pendingWorkList-estComplOverdue-css
+{
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+.hdr-center-Css
+{
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 10px;
+    color: White;
+    font-family: Tahoma;
+    border-spacing: 1px;
+    font-family: Verdana;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align:center;
+}
+.Expired_Surveys 
+{
+    background-color: Red;
+    color: Yellow;
+    font-weight: bold;
+}
+

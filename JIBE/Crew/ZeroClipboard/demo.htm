@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <style type="text/css">
+        #d_clip_button
+        {
+            text-align: center;
+            border: 1px solid black;
+            background-color: #ccc;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        #d_clip_button.hover
+        {
+            background-color: #eee;
+        }
+        #d_clip_button.active
+        {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="ZeroClipboard.js"></script>
+    Copy to Clipboard:
+    <input type="text" id="clip_text" size="40" value="Copy me!" /><br />
+    <br />
+
+    
+    <div id="dvVesselInfo" style="border: 5px solid #B6DAFD; background-color: White; padding: 2px; margin-bottom: 5px;position:absolute;-moz-box-shadow: 0 0 5px 5px #555;
+            -webkit-box-shadow: 0 0 5px 5px#555;
+            box-shadow: 0 0 5px 5px #555;
+            border-radius: 10px;">
+    <div style="background-color:#E8F3FE;margin: 5px;">
+        
+                <table border=1 style="border-collapse:collapse;font-size:14px;" cellpadding="4">
+                    <tr style="background-color:White">
+                        <td colspan="2">
+                            <img src="../Images/Company_logo.jpg" />
+                        </td>
+                    </tr>
+                    
+                    <tr style="background-color:#E3F6CE;font-weight:bold;text-align:center">
+                        <td colspan="2">
+                            Vessel General Information
+                        </td>
+                    </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel Name
+                    </td>
+                    <td style="text-align: left">
+                        SANYA
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel Type
+                    </td>
+                    <td style="text-align: left">
+                        Cellular Steel ContainerShip
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel Flag
+                    </td>
+                    <td style="text-align: left">
+                        SINGAPORE
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel Deadweight
+                    </td>
+                    <td style="text-align: left">
+                        24,327
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel Depth in Metres
+                    </td>
+                    <td style="text-align: left">
+                        14.00
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Cargo Capacity
+                    </td>
+                    <td style="text-align: left">
+                        1,560 TEU
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel LOA in Metres
+                    </td>
+                    <td style="text-align: left">
+                        172.90
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Gear profile
+                    </td>
+                    <td style="text-align: left">
+                        Gearless
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Gross Tonnage
+                    </td>
+                    <td style="text-align: left">
+                        16705
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Nett Tonnage
+                    </td>
+                    <td style="text-align: left">
+                        9118
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Year Built
+                    </td>
+                    <td style="text-align: left">
+                        1999
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Vessel Estimated Speed (Knots)
+                    </td>
+                    <td style="text-align: left">
+                        18.50 Knots
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td style="text-align: right">
+                        Type of Engine : Make / Model / Number
+
+                    </td>
+                    <td style="text-align: left">
+                        Diesel
+MItsui B&W 6S60MC (MARK V)
+Number:1
+                    </td>
+                </tr>
+            
+                </table>
+            
+        <span id="lblDateStamp">05/04/2012 11:08</span>
+    </div>
+    </div>
+
+    
+    <div id="d_clip_button">
+        Copy To Clipboard</div>
+    <script type="text/javascript">
+        var clip = new ZeroClipboard.Client();
+        clip.setText('');
+        // will be set later on mouseDown                        
+        clip.setHandCursor(true);
+        clip.setCSSEffects(true);
+        clip.addEventListener('load', function (client) {
+            // alert( "movie is loaded" );                        
+        });
+
+        clip.addEventListener('complete', function (client, text) {
+            alert("Copied text to clipboard: " + text);
+        });
+
+        clip.addEventListener('mouseOver', function (client) {
+            // alert("mouse over");                         
+        });
+
+        clip.addEventListener('mouseOut', function (client) {
+            // alert("mouse out");                         
+        });
+
+        clip.addEventListener('mouseDown', function (client) {
+            // set text to copy here                                
+            clip.setText(document.getElementById('dvVesselInfo').innerHTML);
+            // alert("mouse down");                         
+        });
+
+        clip.addEventListener('mouseUp', function (client) {
+            // alert("mouse up");                         
+        });
+        clip.glue('d_clip_button');                
+    </script>
+</body>
+</html>

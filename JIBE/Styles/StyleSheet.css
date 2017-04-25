@@ -1,0 +1,41 @@
+﻿
+.txt-css
+{
+    border: 1px solid gray;
+    font-family: Tahoma;
+}
+
+.ddl-css
+{
+    border: 1px solid gray;
+}
+
+.hdbox
+{
+    text-align: right;
+    padding-right: 4px;
+    font-weight: normal;
+}
+
+.databox
+{
+    border: 1px solid #ddccdd;
+    background-color: #ffffff;
+    padding-left: 4px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.RedCell
+{
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+}
+
+.Paging-Custom
+{
+    background-color:White;
+    color:Black;
+    font-size:11px;
+}

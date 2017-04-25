@@ -1,0 +1,246 @@
+﻿/*z-index: 1 has been changed due to menu hiding in quotation evaluation page*/
+.RedCell
+{
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+}
+
+.HeaderStyle-css-Gradient
+{
+    background: url(../Images/gridheaderbg.png) left 0px repeat-x; /*filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#E6E6FA',EndColorStr='#D3D3D3');     background: -webkit-gradient(linear, left top, left bottom, from(#E6E6FA), to(#D3D3D3));     background: -moz-linear-gradient(top,  #E6E6FA,  #D3D3D3);*/
+    color: Black;
+    background-color: #ADD8E6;
+    font-size: 11px;
+    padding: 2px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.HeaderStyle-css-teal
+{
+    color: Black;
+    background-color: #ADD8E6;
+    font-size: 11px;
+    padding: 2px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.HeaderStyle-css-Gradient-silver
+{
+    background: url(../Images/bg.png) left -2248px repeat-x;
+    color: Black;
+    background-color: #ADD8E6;
+    font-size: 11px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+.suppgridHeaderStyle-css
+{
+    background-image: url(../images/suppliergridbk.png);
+    color: Black;
+    border-collapse: collapse;
+}
+
+.QtnEval-HeaderStyle-css
+{
+    background-color: #045FB4;
+    font-size: 11px;
+    color: White;
+    font-family: Tahoma;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 2px 0px 2px 0px;
+    font-weight: bold;
+    /*z-index: 90;*/
+    z-index: 1;
+    white-space: nowrap;
+    padding-left: 2px;
+}
+
+.QtnEval-AltHeaderStyle-css
+{
+    background-color: #610B38;
+    font-size: 11px;
+    color: White;
+    font-family: Tahoma;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    font-weight: bold;
+    padding: 2px 0px 2px 0px;
+    z-index: 1;
+    white-space: nowrap;
+    padding-left: 2px;
+}
+
+
+.QtnEval-ItemStyle-css
+{
+    background-color: #E0F8F7;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 0px 2px 0px 0px;
+    margin-right: -10px;
+}
+
+.QtnEval-AltItemStyle-css
+{
+    background-color: #F8E0EC;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 0px 2px 0px 0px;
+}
+
+tdTooltip
+{
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+.tdHtip
+{
+    font-weight: bold;
+    text-align: right;
+    font-size: 11px;
+    font-family: Verdana;
+    vertical-align: top;
+}
+.tdDtip
+{
+    text-align: left;
+    padding-left: 3px;
+    font-size: 11px;
+    font-family: Verdana;
+    vertical-align: top;
+}
+
+.tblRemarkAll
+{
+    border-bottom: 1px solid gray;
+    width: 550px;
+    border: 1px solid gray;
+}
+.tdHAll
+{
+    font-weight: bold;
+    text-align: left;
+    font-size: 11px;
+    font-family: Verdana;
+    vertical-align: top;
+    padding: 2px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    background-color: #3399cc;
+    color: White;
+}
+.tdDAll
+{
+    text-align: left;
+    padding-left: 1px;
+    font-size: 11px;
+    font-family: Verdana;
+    vertical-align: top;
+    padding: 2px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    width: 100px;
+    background-color: #CED8F6;
+}
+.tdDAllRemark
+{
+    text-align: left;
+    padding-left: 1px;
+    font-size: 11px;
+    font-family: Verdana;
+    vertical-align: top;
+    padding: 2px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    width: 345px;
+    background-color: #CED8F6;
+}
+.msg-css
+{
+    background-color: Transparent;
+    color: Maroon;
+    font-family: Tahoma,Tahoma;
+    letter-spacing: normal;
+    font-size: 9px;
+}
+
+
+.Tooltip-css
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#F2F5A9',EndColorStr='#FFFF00');
+    background: -webkit-gradient(linear, left top, left bottom, from(#F2F5A9), to(#FFFF00));
+    background: -moz-linear-gradient(top,  #F2F5A9,  #FFFF00);
+     background: linear-gradient(#F2F5A9, #FFFF00); 
+    color: Black;
+    background-color: #F2F5A9;
+}
+
+.Button-Gradient
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='white',EndColorStr='gray');
+    background: -webkit-gradient(linear, left top, left bottom, from(#e9eff2), to(#8fb9cc));
+    background: -moz-linear-gradient(top,  #e9eff2,  #8fb9cc);
+    color: Black;
+    border: 0px solid white;
+}
+.Ctp-QtnEval-HeaderStyle-css
+{
+    background-color: #66B366;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 2px 2px 1px 1px;
+    font-weight: bold;
+    /*z-index: 90;*/
+    z-index: 1;
+    white-space: nowrap;
+    padding-left: 2px;
+    border-collapse: collapse;
+}
+
+.Ctp-QtnEval-AltHeaderStyle-css
+{
+    background-color: #99CCFF;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    font-weight: bold;
+    padding: 2px 2px 1px 1px;
+    z-index: 1;
+    white-space: nowrap;
+    padding-left: 2px;
+}
+
+
+.Ctp-QtnEval-ItemStyle-css
+{
+    background-color: #E6F2E6;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 1px 2px 1px 4px;
+    margin-right: -10px;
+}
+
+.Ctp-QtnEval-AltItemStyle-css
+{
+    background-color: #E7F5FE;
+    font-size: 11px;
+    color: Black;
+    font-family: Tahoma;
+    padding: 1px 2px 1px 4px;
+}
+#select-css
+{
+    position: relative;
+    top: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    font-size: 12px;
+}

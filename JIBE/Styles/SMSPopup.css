@@ -1,0 +1,713 @@
+.xfCon{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: x-small;
+	background: #ffffff;
+	visibility: hidden;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	cursor: default;
+	color: #000;
+	padding-top: 0px;
+	border: #cccccc 1px outset;
+	position: absolute;
+}
+.xfTBar{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 4px;
+	position: absolute;
+	height: 1.4em;
+	font-family: Tahoma, Arial, Verdana;
+}
+.xfTBarF{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 4px;
+	position: absolute;
+	height: 1.4em;
+	font-family: Tahoma, Arial, Verdana;
+}
+.xfSBar{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 1px;
+	position: absolute;
+	height: 1.2em;
+}
+.xfSBarF{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 1px;
+	position: absolute;
+	height: 1.2em;
+}
+.xfTBar{
+	cursor: move;
+}
+.xfTBarF{
+	cursor: move;
+}
+.xfTBar{
+	font-weight: normal;
+	background-image:url(../Images/xf_topbar.png);
+	color: #696969;
+}
+.xfTBarF{
+	font-weight: bold;
+	background-image:url(../Images/xf_topbar_f.png);
+	color: #000000;
+}
+.xfSBar{
+	color: #cccccc;
+}
+.xfSBarF{
+	color: #cccccc;
+}
+.xfSBar{
+	background-image:url(../Images/xf_topbar_f.png);
+}
+ 
+.xfNIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xfMIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xfOIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 20px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 16px;
+}
+.xfCIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 25px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 16px;
+}
+
+.xfCIco_D{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 0px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 0px;
+}
+
+.xfRIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xfNIco{
+	background-image: url(../Images/xf_minimize_icon.png);
+}
+.xfMIco{
+	background-image: url(../Images/xf_maximize_icon.png);
+}
+.xfOIco{
+	background-image: url(../Images/xf_restore_icon.png);
+}
+.xfCIco{
+	background-image: url(../Images/xf_close_icon.png);
+}
+
+.xfCIco_D{
+	background-image: url(../Images/xf_close_icon.png);
+}
+
+
+.xfRIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	background: url(../Images/xf_resize_icon.gif);
+	padding-bottom: 0px;
+	margin: 0px;
+	width: 14px;
+	cursor: se-resize;
+	padding-top: 0px;
+	height: 14px;
+}
+.xfClient{
+	padding: 0px;
+    border: 1px solid #cccccc;
+    z-index: 5;
+	margin: 0px;
+	overflow: auto;
+	position: absolute !important;
+}
+
+/* -------- Alert Window Style ------- */
+.xafCon{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: x-small;
+	background: #FFFFFF;
+	visibility: hidden;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	cursor: default;
+	color: #000;
+	padding-top: 0px;
+	position: absolute;
+	border: 1px outset #cccccc;
+}
+.xafTBar{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 4px;
+	position: absolute;
+	height: 1.4em;
+	font: 10px tahoma;
+	font-weight: bold;
+	font-family: Tahoma, Arial, Verdana;
+}
+.xafTBarF{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 4px;
+	position: absolute;
+	height: 1.4em;
+	font: 10px tahoma;
+	font-weight: bold;
+	font-family: Tahoma, Arial, Verdana;
+}
+.xafSBar{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 1px;
+	position: absolute;
+	height: 1.2em;
+}
+.xafSBarF{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 1px;
+	position: absolute;
+	height: 1.2em;
+}
+.xafTBar{
+	cursor: move;
+}
+.xafTBarF{
+	cursor: move;
+}
+.xafTBar{
+	font-weight: normal;
+	background-image:url(../Images/xfa_topbar.png);
+	color: #696969;
+}
+.xafTBarF{
+	font-weight: bold;
+	background-image:url(../Images/xfa_topbar.png);
+	color: #000000;
+}
+.xafSBar{
+	color: #000;
+}
+.xafSBarF{
+	color: #000;
+}
+.xafSBar{
+	background-image:url(../Images/xfa_topbar.png);
+}
+.xafSBarF{
+	background-image:url(../Images/xfa_topbar.png);
+}
+.xafNIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 20px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 16px;
+}
+
+.xafNIco_D{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 0px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 0px;
+}
+
+.xafMIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 20px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 16px;
+}
+.xafMIco_D{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 0px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 0px;
+}
+
+
+.xafOIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xafCIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+
+.xafCIco_D{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 0px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 0px;
+}
+
+.xafRIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xafNIco{
+	background-image: url(../Images/xf_minimize_icon.png);
+}
+
+.xafNIco_D{
+	background-image: url(../Images/xf_minimize_icon.png);
+}
+
+.xafMIco{
+	background-image: url(../Images/xf_maximize_icon.png);
+}
+.xafOIco{
+	background-image: url(../Images/xf_restore_icon.png);
+}
+.xafCIco{
+	background-image: url(../Images/xf_close_icon.png);
+	
+}
+.xafRIco{
+	padding-right: 0px;
+	padding-left: 0px;
+    background: url(../Images/xf_resize_icon.gif);
+	padding-bottom: 0px;
+	margin: 0px;
+	width: 14px;
+	cursor: se-resize;
+	padding-top: 0px;
+	height: 14px;
+}
+.xafClient{
+	padding: 0px;
+    z-index: 5;
+    margin: 0px;
+    overflow: auto;
+    position: absolute !important;
+	border: 1px solid #cccccc;
+}
+
+/* ----- Alert Window Style Ends Here --- */
+
+/* ----- Tool Popup Style Starts Here --- */
+.xtfCon{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: x-small;
+	background: #ffffcc;
+	visibility: hidden;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	cursor: default;
+	color: #000;
+	padding-top: 0px;
+	position: absolute;
+	border: 1px outset #cccccc;
+}
+.xtfTBar{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 4px;
+	position: absolute;
+	height: 1.4em;
+}
+.xtfTBarF{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 4px;
+	position: absolute;
+	height: 1.4em;
+}
+.xtfSBar{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 1px;
+	position: absolute;
+	height: 1.2em;
+}
+.xtfSBarF{
+	padding-right: 4px;
+	padding-left: 4px;
+	font-size: x-small;
+	z-index: 9;
+	padding-bottom: 1px;
+	margin: 0px;
+	overflow: hidden;
+	padding-top: 1px;
+	position: absolute;
+	height: 1.2em;
+}
+.xtfTBar{
+	cursor: move;
+}
+.xtfTBarF{
+	cursor: move;
+}
+.xtfTBar{
+	font-weight: normal;
+	background-image:url(../Images/xft_topbar.png);
+	color: #696969;
+}
+.xtfTBarF{
+	font-weight: bold;
+	background-image:url(../Images/xft_topbar.png);
+	color: #000000;
+}
+.xtfSBar{
+	color: #000;
+}
+.xtfSBarF{
+	color: #000;
+}
+.xtfSBar{
+	background-image:url(../Images/xft_topbar.png);
+}
+.xtfSBarF{
+	background-image:url(../Images/xft_topbar.png);
+}
+.xtfNIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xtfMIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xtfOIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xtfCIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 1px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xtfRIco{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 10;
+	background: none transparent scroll repeat 0% 0%;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 0px;
+	position: absolute;
+	height: 14px;
+}
+.xtfNIco{
+
+}
+.xtfMIco{
+
+}
+.xtfOIco{
+
+}
+.xtfCIco{
+	background-image: url(../Images/xft_close_icon.png);
+}
+.xtfRIco{
+	padding-right: 0px;
+	padding-left: 0px;    
+	padding-bottom: 0px;
+	margin: 0px;
+	width: 14px;
+	cursor: se-resize;
+	padding-top: 0px;
+	height: 14px;
+}
+.xtfClient{
+	padding: 0px;
+    z-index: 5;
+	margin: 0px;
+	overflow: auto;
+	position: absolute !important;
+	border: 1px solid #cccccc;
+}
+/* ----- Tool Popup Style Ends Here ----- */
+
+.fenster-content{
+    PADDING-RIGHT: 1em;
+    PADDING-LEFT: 1em;
+    PADDING-BOTTOM: 1em;
+    PADDING-TOP: 1em;
+}
+.xFenster{
+    display:none;
+    overflow:auto;
+}
+
+#modaldiv{
+    width:100%;
+    height:100%;
+    display:none;
+    background-color:#333333;
+    position:absolute;
+    top:0;
+    left:0;	    
+    z-index:10;
+    moz-opacity: 0.5;
+    khtml-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+ ul{
+    font: 11px arial;
+}
+
+/*---- Error Msg Window Style-----*/
+
+.error_window{
+	border-color:Black;
+	border-style:Double;
+	width:360px;
+	text-align:justify;
+	position:absolute;
+	left:350px;
+	filter:alpha(opacity=95);
+	-moz-opacity:.95;
+	opacity:.95;
+	z-index:3;
+	background-color:White;
+}
+
+.error_text{
+	color:#ff0000;
+}

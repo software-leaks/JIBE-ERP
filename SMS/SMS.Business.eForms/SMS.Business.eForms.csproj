@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D12E2E33-2C95-4726-8294-960624B248BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.Business.eForms</RootNamespace>
+    <AssemblyName>SMS.Business.eForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLL_FRM_QC1200.cs" />
+    <Compile Include="BLL_ColdWorkPermit.cs" />
+    <Compile Include="BLL_DANFormO1DrugAndAlcoholPolicyDeclaration.cs" />
+    <Compile Include="BLL_DANFormO2AlcoholTestLog.cs" />
+    <Compile Include="BLL_eForms_Admin.cs" />
+    <Compile Include="BLL_FRM_AEPerformanceReport.cs" />
+    <Compile Include="BLL_FRM_AERunningHoursMonthlyReport.cs" />
+    <Compile Include="BLL_FRM_BilgeAlarmMonthlyTestingReport.cs" />
+    <Compile Include="BLL_FRM_LIB_DrillReport.cs" />
+    <Compile Include="BLL_FRM_MEPerformanceReport.cs" />
+    <Compile Include="BLL_FRM_MERunningHoursMonthlyReport.cs" />
+    <Compile Include="BLL_Infra_LashingGearInventoryLib.cs" />
+    <Compile Include="BLL_LGInventoryReport.cs" />
+    <Compile Include="BLL_TankerInspection.cs" />
+    <Compile Include="BLL_ToolboxMeetingReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Business.LIB\SMS.Business.Lib.csproj">
+      <Project>{52B8BF3C-D5EB-4F3D-A7BD-F9083F99BCDC}</Project>
+      <Name>SMS.Business.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.eForms\SMS.Data.eForms.csproj">
+      <Project>{B63E1ECC-6541-47C7-AEC0-E335782793D7}</Project>
+      <Name>SMS.Data.eForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Data.LIB\SMS.Data.Lib.csproj">
+      <Project>{D7D249F6-933E-4005-8BC3-F1FBA21ADF4C}</Project>
+      <Name>SMS.Data.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

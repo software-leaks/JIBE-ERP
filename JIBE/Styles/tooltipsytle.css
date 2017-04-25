@@ -1,0 +1,111 @@
+     
+        .thdrcell
+        {
+            background: #E0F8E0;
+            font-family: arial;
+            font-size: 12px;
+            font-weight: normal;
+            padding: 5px;
+            border-bottom: 1px solid #E6E6E6;
+        }
+        .tdatacell
+        {
+            font-family: arial;
+            font-size: 12px;
+            padding: 5px;
+            background: #FFFFFF;
+        }
+        .dvhdr1
+        {
+            background: #E0F8E0;
+            font-family: Verdana;
+            color:Black;
+            font-size: 11px;
+            font-weight: normal;
+            border: 1px solid #E6E6E6;
+            padding: 5px;
+            width: 250px;
+            background-color:#F4FA58;
+        }
+        .dvbdy1
+        {
+            background: #FFFFFF;
+               color:Black;
+            font-family: Verdana;
+            font-size: 11px;
+            border-left: 1px solid #E6E6E6;
+            border-right: 1px solid #E6E6E6;
+            border-bottom: 1px solid #E6E6E6;
+            padding: 5px;
+            width: 250px;
+            background-color:#F4FA58;
+        }
+        
+         .dvhdr2
+        {
+            font-family: Tahoma;
+            font-size: 12px;
+            font-weight: normal;
+            padding: 5px;
+            width: 200px;
+            color: Black; /*background: #F5D0A9;*/
+            border: 1px solid #F1C15F;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#F8D79B',EndColorStr='#F1C15F');
+            background: -webkit-gradient(linear, left top, left bottom, from(#F8D79B), to(#F1C15F));
+            background: -moz-linear-gradient(top,  #F8D79B,  #F1C15F);
+            color: Black;
+        }
+        .dvbdy2
+        {
+            background: #FFFFFF;
+            font-family: arial;
+            font-size: 11px; /*border-left: 2px solid #3B0B0B;
+            border-right: 2px solid #3B0B0B;
+            border-bottom: 2px solid #3B0B0B;*/
+            padding: 5px;
+            width: 200px;
+            background-color: #E8FDE8;
+            border: 1px solid #F1C15F;
+            color: Black;
+        }
+        
+        
+        
+        p
+        {
+            margin-top: 20px;
+        }
+        h1
+        {
+            font-size: 13px;
+        }
+        .dogvdvhdr
+        {
+            width: 300;
+            background: #C4D5E3;
+            border: 1px solid #E6E6E6;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .dogvdvbdy
+        {
+            width: 300;
+            background: #FFFFFF;
+            border-left: 1px solid #E6E6E6;
+            border-right: 1px solid #E6E6E6;
+            border-bottom: 1px solid #E6E6E6;
+            padding: 10px;
+        }
+        .pgdiv
+        {
+            width: 320;
+            height: 250;
+            background: #E9EFF4;
+            border: 1px solid #E6E6E6;
+            padding: 10px;
+            margin-bottom: 20;
+            font-family: arial;
+            font-size: 12px;
+        }
+   
+ 

@@ -1,0 +1,48 @@
+ 
+ {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT: 12px Verdana, Arial, Helvetica, sans-serif; COLOR: #666
+}
+#wrapper {
+	MARGIN: 50px auto; WIDTH: 300px
+}
+.form {
+	BORDER-RIGHT: #cfcfcf 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cfcfcf 2px solid; PADDING-LEFT: 10px; BACKGROUND: #f3f3f3; FLOAT: left; PADDING-BOTTOM: 10px; BORDER-LEFT: #cfcfcf 2px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #cfcfcf 2px solid
+}
+.form LABEL {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 100px; PADDING-TOP: 10px
+}
+.form SELECT {
+	MARGIN-TOP: 10px; FLOAT: left; WIDTH: 146px
+}
+.form INPUT {
+	MARGIN-TOP: 10px; FLOAT: left
+}
+.form .submit {
+	CLEAR: both
+}
+#msg {
+	DISPLAY: none; PADDING-LEFT: 7px; Z-INDEX: 200;BACKGROUND: url(../images/msg_arrow.gif) no-repeat left center;  POSITION: absolute;
+}
+#msgcontent
+{
+	padding-right: 5px;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+	display: block;
+	padding-left: 5px;
+	background: #7dbcFb; 
+	padding-bottom: 5px;
+	color: Black;
+	min-width: 150px;
+	max-width: 250px;
+	filter: alpha(opacity=100);
+	opacity: 0;
+}
+.startupscreenBOX
+{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='white',EndColorStr='skyblue');
+}

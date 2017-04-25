@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SMS.DPLService.JibeDPLService" CodeBehind="SMS.DPLService.dll" %>

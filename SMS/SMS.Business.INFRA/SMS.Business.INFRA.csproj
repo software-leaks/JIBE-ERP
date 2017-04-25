@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D724EE6-4263-4C02-B19F-8D786CC26E6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMS.Business.INFRA</RootNamespace>
+    <AssemblyName>SMS.Business.INFRA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\BLL_Infra_AirPort.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Approval_Group.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Approval_Group_Department.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Approval_Limit.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Approval_Type.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_City.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Common.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Company.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_CompanyType.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_CompMailAction.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Country.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Currency.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_DaemonSettings.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_DashBoard.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_DrillQuestionnaire.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_ExchangeRate.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Exch_Rate.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_FirewallLog.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_InspectionReportConfig.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_InspectionType.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Lib_ModuleTemp.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_LicenseKey.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_MenuManagement.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_OfficeDepartment.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Port.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_PortageBillRule.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_PortCall.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Rank.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_ReadAccessRight.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_ShipDepartment.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_ShipSettings.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Supplier.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_SupplierList.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_SynchronizerSettings.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_SysParam.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_Thesaurus.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_UploadFileSize.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_User.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_UserType.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_VesselFlag.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_VesselLib.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_VesselType.cs" />
+    <Compile Include="Infrastructure\BLL_PMS_Access.cs" />
+    <Compile Include="Infrastructure\BLL_SysParameter.cs" />
+    <Compile Include="Infrastructure\BLL_Infra_TimeZones.cs" />
+    <Compile Include="Infrastructure\BLL_Worklist_Access.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMS.Data.INFRA\SMS.Data.Infra.csproj">
+      <Project>{786FB69E-CB47-418D-9145-F8E530A907C8}</Project>
+      <Name>SMS.Data.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMS.Properties\SMS.Properties.csproj">
+      <Project>{D175440F-F8A5-49CF-9B7D-8FE7607FDEDB}</Project>
+      <Name>SMS.Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

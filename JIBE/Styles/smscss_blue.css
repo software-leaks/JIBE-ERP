@@ -1,0 +1,688 @@
+﻿/*------------------------------GENERAL STYLE--------------------------------------*/
+body
+{
+    /*font-family: Tahoma ,Tahoma, Sans-Serif;*/
+}
+h4
+{
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+}
+button
+{
+    height: 20px;
+    font-family: Tahoma;
+    letter-spacing: normal;
+    font-size: 10px;
+    border-style: none;
+}
+input
+{
+    font-size: 12px; /* font-family: Tahoma;*/
+}
+select
+{
+    min-height: 21px;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.verticaltext
+{
+    font: normal 10px;
+    background-color: #3399CC;
+    color: White;
+    border-color: Black;
+    writing-mode: tb-lr;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    font-size: 11px;
+    height: 113px;
+    width: 22px;
+    font-weight: normal;
+}
+.verticaltext1
+{
+    font: normal 10px Tahoma;
+    background-color: #3399CC;
+    color: White;
+    writing-mode: tb-lr;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    font-size: 11px;
+    border: 1px;
+    height: 80px;
+    width: 22px;
+    font-weight: normal;
+}
+.verticaltext2
+{
+    font: bold 10px Tahoma;
+    background-color: #3399CC;
+    color: White;
+    writing-mode: tb-rl;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    font-size: 11px;
+    border: 1px;
+    height: 45px;
+    width: 30px;
+    font-weight: normal;
+}
+.verticaltext5
+{
+    font: bold 10px Tahoma;
+    background-color: #3399CC;
+    color: White;
+    writing-mode: tb-lr;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    font-size: 11px;
+    border: 1px;
+    height: 132px;
+    width: 22px;
+    font-weight: normal;
+}
+
+.Vert_stbtext23
+{
+    filter: flipV() flipH();
+    writing-mode: tb-rl;
+    font-weight: bolder;
+    border-bottom-color: #999999;
+    border-right-color: #999999;
+}
+/*
+.verticaltext 
+{
+    font:bold 10px Tahoma;
+    color: #0000FF;
+     filter: flipH() flipV();
+    writing-mode: tb-lr;    
+    background-color: #5588bb;
+    font-weight: bold;
+    font-size: 12px;
+    color: White;   
+    border-spacing: 3px;
+    border: 1px solid #efefef;
+    filter: flipH() flipV();
+    
+}*/
+
+.css-vertical-text
+{
+    color: #333;
+    border: 0px solid red;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0;
+    width: auto;
+    height: 100px;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-shadow: 0px 0px 1px #333;
+    border: 1px;
+}
+
+
+/*------------------------------PAGE/POPUPS/CONTROLS/GRADIENTS/TOOL TIPS STYLE--------------------------------------*/
+.page-title
+{
+    border: 1px solid #cccccc;
+    height: 20px;
+    vertical-align: bottom;
+    background: url(/JIBE/Images/bg.png) left -10px repeat-x;
+    color: Black;
+    text-align: left;
+    padding: 2px;
+    background-color: #F6CEE3;
+    text-align: center;
+    font-weight: bold;
+}
+.page-content-main
+{
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+    margin-top: -1px;
+    min-height: 600px;
+}
+.page-content
+{
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+    margin-top: -1px;
+}
+.button-css
+{
+    height: 20px;
+    font-family: Tahoma;
+    letter-spacing: normal;
+    font-size: 12px;
+    border: 1px solid gray;
+}
+.textbox-css
+{
+    font-size: 10px;
+    font-family: Tahoma;
+}
+.dropdown-css
+{
+    font-size: 11px;
+    font-family: Tahoma;
+    background-color: White;
+}
+.select-css
+{
+    position: relative;
+    top: 25px;
+    height: 25px;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+.radio-css
+{
+    color: Green;
+}
+.checkbox-css
+{
+    color: Green;
+}
+.listbox-css
+{
+    color: Green;
+    border-style: solid;
+    border-color: Green;
+    border-width: 1px;
+}
+.label-css
+{
+    color: Black;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+
+.popup-css
+{
+    border: 4px solid #FFA500;
+    background-color: #F5F5F5;
+    color: Black;
+}
+
+.Paging-link-nav
+{
+    border: 1px solid gray;
+    text-decoration: none;
+}
+
+/*------------------------------GRID STYLE--------------------------------------*/
+
+
+.PMSGridHeaderStyle-css
+{
+ /*  background-color: #D8D8D8;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    font-family: Tahoma;
+    border-spacing: 3px;
+    border: 1px solid #efefef;*/
+    
+   background: url(../Images/gridheaderbg-silver-image.png) left -0px repeat-x; /*background: url(../Images/gradient-blue.png) left -500px repeat-x;*/
+    color: #333333;
+    font-size: 12px;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #959EAF;
+    border-collapse: collapse;
+}
+.PMSGridHeaderStyle-css th
+{
+       border: 1px solid #959EAF;
+    border-collapse: collapse;
+}
+.PMSGridAlternatingRowStyle-css
+{
+    /*EDF1F8*/
+    background-color: #F6F6F6;
+    color: #333333;
+    font-size: 12px;
+}
+.PMSGridAlternatingRowStyle-css td
+{
+      border-bottom: 1px solid #EAEAEA;
+}
+.PMSGridSelectedRowStyle-css
+{
+    background-color: #bbddff;
+}
+
+.PMSGridRowStyle-css
+{
+    font-size: 12px;
+    background-color: white;
+    color: #333333;
+}
+
+.PMSGridItemStyle-css
+{
+    border: 1px solid #efefef;
+}
+
+
+.PMSPagerStyle-css
+{
+    background-color:#D8D8D8;
+    color: Black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #efefef;
+    font-family: Tahoma;
+}
+
+
+#blur-on-updateprogress
+{
+    width: 100%;
+    background-color: black;
+    moz-opacity: 0.5;
+    khtml-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 700;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+#dvDisabled
+{
+    width: 100%;
+    background-color: black;
+    moz-opacity: 0.5;
+    khtml-opacity: .5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 700;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+.GridView-css
+{
+    border-collapse: collapse;
+    border: 1px solid #959EAF;
+}
+.HeaderStyle-css
+{
+    background: url(../Images/gridheaderbg-silver-image.png) left -0px repeat-x; /*background: url(../Images/gradient-blue.png) left -500px repeat-x;*/
+    color: #333333;
+    font-size: 11px;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #959EAF;
+    border-collapse: collapse;
+}
+.HeaderStyle-css th
+{
+    border: 1px solid #959EAF;
+    border-collapse: collapse;
+}
+
+
+.AlternatingRowStyle-css
+{
+    /*EDF1F8*/
+    background-color: #F6F6F6;
+    color: #333333;
+    font-size: 11px;
+}
+
+
+.AlternatingRowStyle-css td
+{
+    border-bottom: 1px solid #EAEAEA;
+}
+
+
+.RowStyle-css
+{
+    font-size: 11px;
+    background-color: white;
+    color: #333333;
+}
+
+.RowStyle-css td
+{
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.gridmain-css
+{
+    border-collapse: collapse;
+    border: 1px solid #959EAF;
+}
+
+.FooterStyle-css
+{
+    background: url(../Images/gridheaderbg-silver-image.png) left -20px repeat-x;
+    color: #333333;
+    background-color: #5D7B9D;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid #959EAF;
+}
+.FooterStyle-css td
+{
+    border: 1px solid #959EAF;
+    border-collapse: collapse;
+}
+
+.SelectedRowStyle-Css
+{
+    background-color: Navy;
+    color: #284775;
+    font-size: 11px;
+}
+.EmptyDataRowStyle
+{
+}
+
+.SortedAscendingCellStyle-css
+{
+}
+.SortedAscendingHeaderStyle-css
+{
+}
+.SortedDescendingCellStyle-css
+{
+}
+.SortedDescendingHeaderStyle
+{
+}
+
+.tdHeaderBackGround
+{
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#CEE3F6',EndColorStr='#99BBE6');
+    background: -webkit-gradient(linear, left top, left bottom, from(#CEE3F6), to(#99BBE6));
+    background: -moz-linear-gradient(top,  #CEE3F6,  #99BBE6);
+    padding: 0px;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    height: 22px;
+}
+
+/* Grid Footer Entry - Mandatory and Non Mandatory fields*/
+.gridinput
+{
+    background-color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333333;
+    border: 1px solid #9f9fff;
+    width: 100%;
+    height: inherit;
+}
+
+.gridinput_mandatory
+{
+    background-color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333333;
+    border: 1px solid #ff9191; /*ff0000*/
+    width: 100%;
+}
+
+.gridposition
+{
+    position: relative;
+}
+
+.gridnavlink
+{
+    color: #ffffff;
+}
+/* Screen Entry - Mandatory and Non Mandatory fields*/
+
+
+.input_lable
+{
+    color: #000080;
+}
+
+.input
+{
+    background-color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333333;
+    border: 1px solid ActiveBorder;
+    height: inherit;
+}
+
+.input_mandatory
+{
+    background-color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333333;
+    border: 1px solid #ff9191; /*ff0000*/
+    width: 120px;
+    height: inherit;
+}
+
+/*style for Readonly Text Box*/
+.readonlytextbox
+{
+    background-color: #EEEEEE;
+    border: 1px solid #D6D5B6;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333333;
+    height: inherit;
+}
+
+/*style for mandatory dropdownlist*/
+.dropdown_mandatory
+{
+    background-color: #FFFFFF;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #333333;
+    border: 1px solid #ff9191; /*ff0000*/
+}
+.DataGrid-HeaderStyle
+{
+    background-color: #5588bb;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    cursor: default;
+    z-index: 10;
+}
+
+.datagrid_alternatingstyle
+{
+    background-color: #f9f9fa;
+}
+
+.datagrid_footerstyle
+{
+    color: #000066;
+    background-color: #dfdfdf;
+}
+
+.datagrid_selectedstyle
+{
+    background-color: #bbddff;
+    font-weight: bold;
+}
+
+.datagrid_pagestyle
+{
+    background-color: #88bbee;
+}
+
+/*Grid Messages */
+.grid_statusmessage
+{
+    visibility: visible;
+    height: 65px;
+    width: 300px;
+    left: 350px;
+    top: 0px;
+    background-color: #bddeff;
+    border: solid 1px #043b76;
+    color: #043b76;
+    text-align: center;
+    position: fixed;
+}
+.centeralinment
+{
+    text-align: center;
+}
+
+/* ---------------------------------------------------- E-FORMS ----------------------------------*/
+.eform-report-header
+{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: Black;
+}
+.eform-report-sub-header
+{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
+    background-color: #cccccc;
+}
+.eform-header-row
+{
+    font-weight: bold;
+    font-size: 12px;
+    background-color: gray;
+    text-align: center;
+}
+.eform-field-caption
+{
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 20px;
+    padding: 4px;
+}
+.eform-field-data
+{
+    font-weight: normal;
+    font-size: 12px;
+    padding: 4px;
+    background-color: #FAF8CC;
+    min-height: 20px;
+}
+.eform-report-table
+{
+}
+.eform-vertical-text
+{
+    writing-mode: tb-rl;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    font: bold 16px verdana;
+    font-weight: normal;
+}
+.tbl-common-Css
+{
+    width: 100%;
+    border: 1 px solid gray;
+    border-collapse: collapse;
+}
+.hdr-common-Css
+{
+    background-color: #006699;
+    font-weight: bold;
+    font-size: 10px;
+    color: White;
+    font-family: Tahoma;
+    border-spacing: 1px;
+    font-family: Verdana;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.row-common-Css
+{
+    font-size: 10px;
+    background-color: transparent;
+    color: Black;
+    text-align: left;
+    font-family: Verdana;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 5px;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+}
+
+.hdr-common-Css-Vertical
+{
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 10px;
+    color: Black;
+    font-family: Tahoma;
+    font-family: Verdana;
+    border: 1px solid #cccccc;
+    width:200px;
+    vertical-align:top;
+}
+
+.row-common-Css-Vertical
+{
+    font-size: 10px;
+    background-color: transparent;
+    color: Black;
+    text-align: left;
+    font-family: Verdana;
+    border: 1px solid #cccccc;
+    padding-left: 5px;
+   
+    
+}
+
+.tdh
+{
+    font-size: 11px;
+    text-align: right;
+    padding: 0px 3px 0px 0px;
+    width: auto;
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
+.tdd
+{
+    font-size: 11px;
+    text-align: left;
+    padding: 0px 0px 0px 3px;
+    width:auto;
+    vertical-align: middle;
+   
+}
+

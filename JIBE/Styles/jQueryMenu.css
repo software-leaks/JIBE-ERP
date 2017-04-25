@@ -1,0 +1,165 @@
+/**
+ *********************************************
+ * Prototype of styles for horizontal CSS-menu
+ * @data 30.06.2009
+ *********************************************
+ * (X)HTML-scheme:
+ *  <div id="menu">
+ *      <ul class="menu">
+ *          <li><a href="#" class="parent"><span>level 1</span></a>
+ *              <ul>
+ *                  <li><a href="#" class="parent"><span>level 2</span></a>
+ *                      <ul><li><a href="#"><span>level 3</span></a></li></ul>
+ *                  </li>
+ *              </ul>
+ *          </li>
+ *          <li class="last"><a href="#"><span>level 1</span></a></li>
+ *      </ul>
+ *  </div>
+ *********************************************
+ */
+
+/* menu::base */
+div#menu {
+    height:26px; 
+}
+
+div#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left; 
+       
+}
+div#menu ul.menu {
+    padding-left: 5px;
+}
+
+div#menu li {
+    position: relative;
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;        
+}
+div#menu li:hover>ul {
+    left: -2px;
+}
+
+div#menu a {
+    position: relative;
+    z-index: 5001;
+    height: 26px;
+    display: block;
+    float: left;
+    line-height: 26px;
+    text-decoration: none;
+    font: normal 12px Tahoma;
+}
+div#menu a:hover, div#menu a:hover span { color: #000; }
+div#menu ul li:hover>a	
+{	
+	background-color:#F5D0A9;	
+	color:#000;
+}
+
+div#menu li.current a {}
+
+div#menu span {
+    display: block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+div#menu ul ul a.parent span {
+    background-position:95% 8px;
+    background-image: url(/JIBE/images/item-pointer.gif);
+}
+div#menu ul ul a.parent:hover span {
+    background-image: url(/JIBE/images/item-pointer-mover.gif);
+}
+div#menu ul li a.parent{
+    font-weight:bold;    
+}
+div#menu ul li ul li a.parent{
+    font-weight:normal;    
+}
+
+
+/* menu::level1 */
+div#menu a {
+    padding: 0 10px 5px 5px;
+    line-height: 26px;
+    color: White;
+}
+div#menu span {
+    margin-top: 5px;
+}/**@replace#1*/
+div#menu li {  }
+div#menu li.last {}
+
+/* menu::level2 */
+div#menu ul ul li {border:1px solid white;}
+div#menu ul ul {
+    position: absolute;
+    top: 26px;
+    left: -999em;
+    width: 195px;
+    padding: 5px 0 0 0;    
+    margin-top:1px;
+    
+}
+div#menu ul ul a {
+    padding: 0 0 0 5px;
+    height: auto;
+    float: none;
+    display: block;
+    line-height: 24px;
+    color: Blue;
+}
+div#menu ul ul span {
+    margin-top: 0;
+    padding-right: 15px;
+    _padding-right: 20px;
+    color: Blue;
+}
+div#menu ul ul a:hover span {
+    color: #000;
+}
+div#menu ul ul li.last { background: none; }
+div#menu ul ul li {
+    width: 100%;
+}
+
+/* menu::level3 */
+div#menu ul ul ul {
+    padding: 0;
+    margin: -27px 0 0 193px !important;
+    margin-left:172px;
+}
+
+/* colors */
+div#menu ul ul li {background: #F2F5A9;}
+div#menu ul ul ul { background: #F2F5A9; }
+div#menu ul ul ul ul { background: rgb(1,59,85); }
+div#menu ul ul ul ul { background: rgb(35,35,35); }
+
+
+/* lava lamp */
+div#menu li.back {
+    background: url(/JIBE/images/lava.png) no-repeat right -44px !important;
+    background-image: url(/JIBE/images/lava.gif);
+    width: 13px;
+    height: 44px;
+    z-index: 5002;
+    position: absolute;
+    margin: -1px 0 0 -5px;
+}
+div#menu li.back .left {
+    background: url(/JIBE/images/lava.png) no-repeat top left !important;
+    background-image: url(/JIBE/images/lava.gif);
+    height: 44px;
+    margin-right: 8px;
+}
+
